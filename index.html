@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0f7ea3">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=28">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body class="anasayfa-body">
 
@@ -65,7 +65,7 @@
 
   <div class="ilce-alan" id="ilce-alan" style="display:none">
     <p class="ilce-baslik">
-      <a href="#" id="sehir-degistir" style="color:inherit;text-decoration:underline;">&larr; Şehir değiştir</a>
+      <a href="#" id="sehir-degistir" style="color:inherit;text-decoration:underline;">&larr; Ana Sayfaya Dön</a>
       &nbsp;·&nbsp; En meşhur sahil ilçeleri
     </p>
     <div class="ilce-grid" id="ilce-grid"></div>
@@ -82,6 +82,9 @@
     "Muğla": ["Fethiye", "Marmaris", "Bodrum", "Dalyan/Ortaca"]
   };
   const renkler = ["r1", "r2", "r3", "r4", "r5", "r6"];
+  // Şehir kartları için, karışmasın diye birbirinden belirgin şekilde uzak renkler
+  const SEHIR_RENK_HARITASI = { "İzmir": "r5", "Aydın": "r2", "Muğla": "r7", "Antalya": "r8" };
+  const yedekSehirRenkleri = ["r1", "r3", "r4", "r6"];
 
   const heroBaslik = document.getElementById("hero-baslik");
   const heroAlt = document.getElementById("hero-alt");
@@ -96,7 +99,8 @@
   Object.keys(ILCELER_BY_IL).forEach((il, i) => {
     const sayi = PLAJLAR.filter(p => p.il === il).length;
     const a = document.createElement("a");
-    a.className = `ilce-kart ${renkler[i % renkler.length]}`;
+    const sehirRenk = SEHIR_RENK_HARITASI[il] || yedekSehirRenkleri[i % yedekSehirRenkleri.length];
+    a.className = `ilce-kart ${sehirRenk}`;
     a.href = "#";
     a.innerHTML = `
       <span class="ilce-adi">${il}</span>
