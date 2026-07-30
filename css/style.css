@@ -368,6 +368,18 @@ body.anasayfa-body {
   margin: 0;
 }
 
+.alt-bilgi-link {
+  text-align: center;
+  margin: 18px 0 4px;
+}
+
+.alt-bilgi-link a {
+  color: white;
+  opacity: 0.75;
+  font-size: 0.78rem;
+  text-decoration: underline;
+}
+
 .yildiz-rozet {
   color: #f5a623;
   font-size: 0.9rem;

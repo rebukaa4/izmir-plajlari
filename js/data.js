@@ -2708,8 +2708,7 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/kaputas/kaputas-1.jpg",
       "fotoğraflar/kaputas/kaputas-2.jpg",
-      "fotoğraflar/kaputas/kaputas-3.jpg",
-      "fotoğraflar/kaputas/kaputas-4.jpg"
+      "fotoğraflar/kaputas/kaputas-3.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "urlaubsguru.de", "gezire.com"],

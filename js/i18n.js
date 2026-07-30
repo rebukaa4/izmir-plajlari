@@ -74,7 +74,29 @@ const I18N = {
     otherNotes: "Diğer Notlar",
     directions: "📍 Yol Tarifi Al",
     sourcePrefix: "Kaynak:",
-    lightboxClose: "✕ Kapat"
+    lightboxClose: "✕ Kapat",
+
+    footerPrivacyLink: "Gizlilik Politikası",
+    pageTitlePrivacy: "Gizlilik Politikası — Ücretsiz Halk Plajları",
+    privacyHeading: "Gizlilik Politikası",
+    privacyUpdated: "Son güncelleme: Temmuz 2026",
+    privacyIntro: "Ücretsiz Halk Plajları Rehberi (\"uygulama\"), kullanıcılarının gizliliğine önem verir. Bu sayfa, uygulamayı kullanırken hangi verilerin işlendiğini açıklar.",
+    privacyNoAccountTitle: "Hesap oluşturma yok",
+    privacyNoAccountText: "Uygulamayı kullanmak için hesap oluşturmanız, giriş yapmanız veya herhangi bir kişisel bilginizi (ad, e-posta, telefon vb.) paylaşmanız gerekmez.",
+    privacyNoDataTitle: "Kişisel veri toplanmıyor",
+    privacyNoDataText: "Uygulama hiçbir kişisel veriyi toplamaz, saklamaz veya üçüncü taraflarla paylaşmaz. Sunucu tarafında kullanıcı verisi tutulmaz.",
+    privacyLocalStorageTitle: "Cihazda saklanan tek bilgi: dil tercihi",
+    privacyLocalStorageText: "Seçtiğiniz dil (Türkçe/İngilizce/Almanca/Rusça) yalnızca kendi cihazınızda (tarayıcı depolama alanında) saklanır. Bu bilgi hiçbir sunucuya gönderilmez ve bizimle veya başka biriyle paylaşılmaz.",
+    privacyNoAnalyticsTitle: "Analitik, reklam veya takip yok",
+    privacyNoAnalyticsText: "Uygulamada reklam ağı, analitik yazılımı (ör. Google Analytics) veya kullanıcı takibi yapan herhangi bir üçüncü taraf servis bulunmaz.",
+    privacyThirdPartyTitle: "Harita bağlantıları",
+    privacyThirdPartyText: "Plaj sayfalarındaki \"Yol Tarifi Al\" bağlantıları sizi Google Maps'e yönlendirir. Google Maps'i kullanırken Google'ın kendi gizlilik politikası geçerlidir; bu, bizim kontrolümüz dışındadır.",
+    privacyChildrenTitle: "Çocukların gizliliği",
+    privacyChildrenText: "Uygulama, herhangi bir kullanıcıdan (çocuklar dahil) kişisel veri toplamadığı için çocuklar açısından da güvenlidir.",
+    privacyChangesTitle: "Bu politikada değişiklikler",
+    privacyChangesText: "Bu gizlilik politikası güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.",
+    privacyContactTitle: "İletişim",
+    privacyContactText: "Sorularınız için: "
   },
 
   en: {
@@ -146,7 +168,29 @@ const I18N = {
     otherNotes: "Other Notes",
     directions: "📍 Get Directions",
     sourcePrefix: "Source:",
-    lightboxClose: "✕ Close"
+    lightboxClose: "✕ Close",
+
+    footerPrivacyLink: "Privacy Policy",
+    pageTitlePrivacy: "Privacy Policy — Free Public Beaches",
+    privacyHeading: "Privacy Policy",
+    privacyUpdated: "Last updated: July 2026",
+    privacyIntro: "Free Public Beaches Guide (\"the app\") cares about your privacy. This page explains what data is processed while you use the app.",
+    privacyNoAccountTitle: "No account creation",
+    privacyNoAccountText: "You do not need to create an account, log in, or share any personal information (name, email, phone, etc.) to use the app.",
+    privacyNoDataTitle: "No personal data is collected",
+    privacyNoDataText: "The app does not collect, store, or share any personal data with third parties. No user data is kept on any server.",
+    privacyLocalStorageTitle: "The only thing stored on your device: language preference",
+    privacyLocalStorageText: "Your chosen language (Turkish/English/German/Russian) is stored only on your own device (browser storage). This information is never sent to any server and is never shared with us or anyone else.",
+    privacyNoAnalyticsTitle: "No analytics, ads, or tracking",
+    privacyNoAnalyticsText: "The app does not include any ad network, analytics software (e.g. Google Analytics), or third-party service that tracks users.",
+    privacyThirdPartyTitle: "Map links",
+    privacyThirdPartyText: "The \"Get Directions\" links on beach pages take you to Google Maps. When using Google Maps, Google's own privacy policy applies, which is outside our control.",
+    privacyChildrenTitle: "Children's privacy",
+    privacyChildrenText: "Since the app does not collect personal data from any user (including children), it is safe for children as well.",
+    privacyChangesTitle: "Changes to this policy",
+    privacyChangesText: "This privacy policy may be updated from time to time. The current version is always published on this page.",
+    privacyContactTitle: "Contact",
+    privacyContactText: "For questions, contact: "
   },
 
   de: {
@@ -218,7 +262,29 @@ const I18N = {
     otherNotes: "Weitere Hinweise",
     directions: "📍 Route anzeigen",
     sourcePrefix: "Quelle:",
-    lightboxClose: "✕ Schließen"
+    lightboxClose: "✕ Schließen",
+
+    footerPrivacyLink: "Datenschutzerklärung",
+    pageTitlePrivacy: "Datenschutzerklärung — Kostenlose öffentliche Strände",
+    privacyHeading: "Datenschutzerklärung",
+    privacyUpdated: "Letzte Aktualisierung: Juli 2026",
+    privacyIntro: "Der Führer zu kostenlosen öffentlichen Stränden (\"die App\") legt Wert auf Ihre Privatsphäre. Diese Seite erklärt, welche Daten bei der Nutzung der App verarbeitet werden.",
+    privacyNoAccountTitle: "Keine Kontoerstellung",
+    privacyNoAccountText: "Sie müssen kein Konto erstellen, sich nicht anmelden und keine persönlichen Informationen (Name, E-Mail, Telefon usw.) angeben, um die App zu nutzen.",
+    privacyNoDataTitle: "Keine Erhebung personenbezogener Daten",
+    privacyNoDataText: "Die App erhebt, speichert oder teilt keine personenbezogenen Daten mit Dritten. Es werden keine Nutzerdaten auf einem Server gespeichert.",
+    privacyLocalStorageTitle: "Das Einzige, was auf Ihrem Gerät gespeichert wird: die Sprachpräferenz",
+    privacyLocalStorageText: "Ihre gewählte Sprache (Türkisch/Englisch/Deutsch/Russisch) wird ausschließlich auf Ihrem eigenen Gerät (Browser-Speicher) gespeichert. Diese Information wird niemals an einen Server gesendet und niemals mit uns oder Dritten geteilt.",
+    privacyNoAnalyticsTitle: "Keine Analyse, Werbung oder Nachverfolgung",
+    privacyNoAnalyticsText: "Die App enthält kein Werbenetzwerk, keine Analysesoftware (z. B. Google Analytics) und keinen Drittanbieterdienst, der Nutzer nachverfolgt.",
+    privacyThirdPartyTitle: "Kartenlinks",
+    privacyThirdPartyText: "Die Links \"Route anzeigen\" auf den Strandseiten führen zu Google Maps. Bei der Nutzung von Google Maps gilt die eigene Datenschutzerklärung von Google, die außerhalb unserer Kontrolle liegt.",
+    privacyChildrenTitle: "Datenschutz für Kinder",
+    privacyChildrenText: "Da die App von keinem Nutzer (auch nicht von Kindern) personenbezogene Daten erhebt, ist sie auch für Kinder unbedenklich.",
+    privacyChangesTitle: "Änderungen dieser Richtlinie",
+    privacyChangesText: "Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden. Die aktuelle Version wird immer auf dieser Seite veröffentlicht.",
+    privacyContactTitle: "Kontakt",
+    privacyContactText: "Bei Fragen wenden Sie sich an: "
   },
 
   ru: {
@@ -290,7 +356,29 @@ const I18N = {
     otherNotes: "Прочие заметки",
     directions: "📍 Построить маршрут",
     sourcePrefix: "Источник:",
-    lightboxClose: "✕ Закрыть"
+    lightboxClose: "✕ Закрыть",
+
+    footerPrivacyLink: "Политика конфиденциальности",
+    pageTitlePrivacy: "Политика конфиденциальности — Бесплатные общественные пляжи",
+    privacyHeading: "Политика конфиденциальности",
+    privacyUpdated: "Последнее обновление: июль 2026",
+    privacyIntro: "Путеводитель по бесплатным общественным пляжам (\"приложение\") заботится о вашей конфиденциальности. На этой странице объясняется, какие данные обрабатываются при использовании приложения.",
+    privacyNoAccountTitle: "Регистрация не требуется",
+    privacyNoAccountText: "Для использования приложения не нужно создавать учётную запись, входить в систему или сообщать какие-либо личные данные (имя, e-mail, телефон и т.д.).",
+    privacyNoDataTitle: "Личные данные не собираются",
+    privacyNoDataText: "Приложение не собирает, не хранит и не передаёт третьим лицам никакие личные данные. Никакие пользовательские данные не хранятся на сервере.",
+    privacyLocalStorageTitle: "Единственное, что сохраняется на вашем устройстве: языковые настройки",
+    privacyLocalStorageText: "Выбранный вами язык (турецкий/английский/немецкий/русский) сохраняется только на вашем собственном устройстве (в хранилище браузера). Эта информация никогда не отправляется на сервер и не передаётся нам или кому-либо ещё.",
+    privacyNoAnalyticsTitle: "Без аналитики, рекламы и отслеживания",
+    privacyNoAnalyticsText: "Приложение не содержит рекламных сетей, программ аналитики (например, Google Analytics) или сторонних сервисов, отслеживающих пользователей.",
+    privacyThirdPartyTitle: "Ссылки на карты",
+    privacyThirdPartyText: "Ссылки «Построить маршрут» на страницах пляжей ведут в Google Maps. При использовании Google Maps действует собственная политика конфиденциальности Google, которая находится вне нашего контроля.",
+    privacyChildrenTitle: "Конфиденциальность детей",
+    privacyChildrenText: "Поскольку приложение не собирает личные данные ни от одного пользователя (включая детей), оно безопасно и для детей.",
+    privacyChangesTitle: "Изменения в этой политике",
+    privacyChangesText: "Эта политика конфиденциальности может периодически обновляться. Актуальная версия всегда публикуется на этой странице.",
+    privacyContactTitle: "Контакты",
+    privacyContactText: "По вопросам обращайтесь: "
   }
 };
 
