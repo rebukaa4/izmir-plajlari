@@ -38,6 +38,7 @@ function kartOlustur(p, index) {
       <h2>${p.isim}</h2>
       <span class="ilce-etiket">${p.ilce} / ${p.il}</span>
     </div>
+    <div class="yildiz-rozet">${yildizHtmlOlustur(plajYildizHesapla(p))}</div>
     <div class="rozet-satir">
       ${p.zemin && p.zemin !== "Bilinmiyor" ? `<span class="rozet">${trValue("zemin", p.zemin)}</span>` : ""}
       ${p.derinlik && p.derinlik !== "Bilinmiyor" ? `<span class="rozet">${trValue("derinlik", p.derinlik)}</span>` : ""}
@@ -114,7 +115,8 @@ function tumSecenekleriGuncelle() {
 function filtreleVeCiz() {
   tumSecenekleriGuncelle();
 
-  const sonuclar = eslesenler(aktifFiltreler(null));
+  const sonuclar = eslesenler(aktifFiltreler(null))
+    .sort((a, b) => plajYildizHesapla(b) - plajYildizHesapla(a) || a.isim.localeCompare(b.isim, "tr"));
 
   listeEl.innerHTML = "";
 

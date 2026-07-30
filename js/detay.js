@@ -22,7 +22,7 @@ if (!plaj) {
   icerikEl.innerHTML = `<div class="bos-durum">${t("beachNotFoundMsg")}</div>`;
 } else {
   basligEl.textContent = plaj.isim;
-  ilceEl.textContent = plaj.ilce + " / " + plaj.il;
+  ilceEl.innerHTML = `${plaj.ilce} / ${plaj.il} &nbsp;<span class="yildiz-rozet">${yildizHtmlOlustur(plajYildizHesapla(plaj))}</span>`;
 
   const fotografHtml = (plaj.fotograflar && plaj.fotograflar.length > 0)
     ? `<div class="foto-galeri">
