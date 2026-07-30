@@ -6,6 +6,9 @@ const filtreZemin = document.getElementById("filtre-zemin");
 const filtreDerinlik = document.getElementById("filtre-derinlik");
 const filtrePark = document.getElementById("filtre-park");
 
+dilSeciciOlustur("dil-secici");
+applyI18n();
+
 const KART_RENKLERI = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"];
 
 const PARK_SIRASI = ["ucretsiz", "kismi", "ucretli", "bilinmiyor"];
@@ -19,11 +22,11 @@ function parkRozetSinifi(park) {
 }
 
 function parkRozetMetni(park) {
-  if (park === "ucretsiz") return "Ücretsiz Park";
-  if (park === "kismi") return "Kısmi Park";
-  if (park === "ucretli") return "Ücretli Park";
-  if (park === "bilinmiyor") return "Park Bilgisi Yok";
-  return "Park Yok";
+  if (park === "ucretsiz") return t("parkFree");
+  if (park === "kismi") return t("parkPartial");
+  if (park === "ucretli") return t("parkPaid");
+  if (park === "bilinmiyor") return t("parkUnknown");
+  return t("parkNone");
 }
 
 function kartOlustur(p, index) {
@@ -36,11 +39,11 @@ function kartOlustur(p, index) {
       <span class="ilce-etiket">${p.ilce} / ${p.il}</span>
     </div>
     <div class="rozet-satir">
-      ${p.zemin && p.zemin !== "Bilinmiyor" ? `<span class="rozet">${p.zemin}</span>` : ""}
-      ${p.derinlik && p.derinlik !== "Bilinmiyor" ? `<span class="rozet">${p.derinlik}</span>` : ""}
+      ${p.zemin && p.zemin !== "Bilinmiyor" ? `<span class="rozet">${trValue("zemin", p.zemin)}</span>` : ""}
+      ${p.derinlik && p.derinlik !== "Bilinmiyor" ? `<span class="rozet">${trValue("derinlik", p.derinlik)}</span>` : ""}
       ${p.park && p.park !== "bilinmiyor" ? `<span class="rozet ${parkRozetSinifi(p.park)}">${parkRozetMetni(p.park)}</span>` : ""}
-      ${p.dus === true ? '<span class="rozet ucretsiz">Duş Var</span>' : ""}
-      ${p.tuvalet === true ? '<span class="rozet ucretsiz">Tuvalet Var</span>' : (p.tuvalet === false ? '<span class="rozet yok">Tuvalet Yok</span>' : "")}
+      ${p.dus === true ? `<span class="rozet ucretsiz">${t("showerYes")}</span>` : ""}
+      ${p.tuvalet === true ? `<span class="rozet ucretsiz">${t("toiletYes")}</span>` : (p.tuvalet === false ? `<span class="rozet yok">${t("toiletNo")}</span>` : "")}
     </div>
   `;
   return a;
@@ -67,7 +70,7 @@ function eslesenler(f) {
   });
 }
 
-function secenekleriGuncelle(selectEl, alanAdi, haric, etiketFn, siraliDeger) {
+function secenekleriGuncelle(selectEl, alanAdi, haric, varsayilanAnahtar, etiketFn, siraliDeger) {
   const oncekiDeger = selectEl.dataset.beklenenDeger || selectEl.value;
   delete selectEl.dataset.beklenenDeger;
   const adaylar = eslesenler(aktifFiltreler(haric));
@@ -84,17 +87,16 @@ function secenekleriGuncelle(selectEl, alanAdi, haric, etiketFn, siraliDeger) {
     });
   }
 
-  const varsayilanMetin = selectEl.options[0].textContent;
   selectEl.innerHTML = "";
   const varsayilanOpt = document.createElement("option");
   varsayilanOpt.value = "";
-  varsayilanOpt.textContent = varsayilanMetin;
+  varsayilanOpt.textContent = t(varsayilanAnahtar);
   selectEl.appendChild(varsayilanOpt);
 
   degerler.forEach(d => {
     const opt = document.createElement("option");
     opt.value = d;
-    opt.textContent = etiketFn ? etiketFn(d) : d;
+    opt.textContent = etiketFn ? etiketFn(d) : trValue(alanAdi, d);
     selectEl.appendChild(opt);
   });
 
@@ -102,11 +104,11 @@ function secenekleriGuncelle(selectEl, alanAdi, haric, etiketFn, siraliDeger) {
 }
 
 function tumSecenekleriGuncelle() {
-  secenekleriGuncelle(filtreIl, "il", "il");
-  secenekleriGuncelle(filtreIlce, "ilce", "ilce");
-  secenekleriGuncelle(filtreZemin, "zemin", "zemin");
-  secenekleriGuncelle(filtreDerinlik, "derinlik", "derinlik");
-  secenekleriGuncelle(filtrePark, "park", "park", parkRozetMetni, PARK_SIRASI);
+  secenekleriGuncelle(filtreIl, "il", "il", "allCities");
+  secenekleriGuncelle(filtreIlce, "ilce", "ilce", "allDistricts");
+  secenekleriGuncelle(filtreZemin, "zemin", "zemin", "allGrounds");
+  secenekleriGuncelle(filtreDerinlik, "derinlik", "derinlik", "allDepths");
+  secenekleriGuncelle(filtrePark, "park", "park", "allParking", parkRozetMetni, PARK_SIRASI);
 }
 
 function filtreleVeCiz() {
@@ -117,12 +119,12 @@ function filtreleVeCiz() {
   listeEl.innerHTML = "";
 
   if (sonuclar.length === 0) {
-    listeEl.innerHTML = `<div class="bos-durum">Bu filtrelere uyan plaj bulunamadı.</div>`;
+    listeEl.innerHTML = `<div class="bos-durum">${t("noMatch")}</div>`;
   } else {
     sonuclar.forEach((p, i) => listeEl.appendChild(kartOlustur(p, i)));
   }
 
-  sonucSayisiEl.textContent = `${sonuclar.length} plaj bulundu`;
+  sonucSayisiEl.textContent = t("resultsCount", sonuclar.length);
 }
 
 [filtreIl, filtreIlce, filtreZemin, filtreDerinlik, filtrePark].forEach(el => {
