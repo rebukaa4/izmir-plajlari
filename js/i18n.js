@@ -20,7 +20,7 @@ const I18N = {
     districtsFooterNote: "Zamanla tüm ilçeler eklenecek 🙂",
     searchNoResults: "Sonuç bulunamadı",
     ratingMethodTitle: "⭐ Yıldız puanları nasıl hesaplanıyor?",
-    ratingMethodText: "Her plaj 3 yıldızdan başlar. Mavi Bayrak sertifikası varsa +1, kaynaklarda ulusal/uluslararası düzeyde tanınmış veya popüler olarak öne çıkıyorsa +1 yıldız eklenir. Kaynaklarda belirgin olumsuz yorumlar (kirli, bakımsız vb.) varsa 1 yıldız düşülür. Puanlar TripAdvisor gibi bir siteden alınmıyor; açık kaynak araştırmasına dayanan otomatik bir değerlendirmedir.",
+    ratingMethodText: "Her plaj 3 yıldızdan başlar. Mavi Bayrak sertifikası varsa +1, kaynaklarda ulusal/uluslararası düzeyde tanınmış veya popüler olarak öne çıkıyorsa +1 yıldız eklenir. Kaynaklarda belirgin olumsuz yorumlar (kirli, bakımsız vb.) varsa 1 yıldız düşülür. Puanlar dışarıdan bir değerlendirme sitesinden alınmıyor; açık kaynak araştırmasına dayanan otomatik bir değerlendirmedir.",
 
     pageTitleList: "Ücretsiz Halk Plajları Rehberi",
     backToHomePage: "← Ana Sayfa",
@@ -92,7 +92,7 @@ const I18N = {
     districtsFooterNote: "More districts will be added over time 🙂",
     searchNoResults: "No results found",
     ratingMethodTitle: "⭐ How are star ratings calculated?",
-    ratingMethodText: "Every beach starts at 3 stars. It gets +1 star for holding Blue Flag certification, and +1 star if sources describe it as nationally or internationally well-known or popular. 1 star is deducted if sources mention clear negative feedback (dirty, poorly maintained, etc.). Ratings aren't pulled from a site like TripAdvisor — they're an automatic assessment based on our open-source research.",
+    ratingMethodText: "Every beach starts at 3 stars. It gets +1 star for holding Blue Flag certification, and +1 star if sources describe it as nationally or internationally well-known or popular. 1 star is deducted if sources mention clear negative feedback (dirty, poorly maintained, etc.). Ratings aren't pulled from an external review site — they're an automatic assessment based on our open-source research.",
 
     pageTitleList: "Free Public Beaches Guide",
     backToHomePage: "← Home",
@@ -163,7 +163,7 @@ const I18N = {
     comingSoon: "demnächst",
     districtsFooterNote: "Weitere Bezirke werden nach und nach ergänzt 🙂",
     ratingMethodTitle: "⭐ Wie werden die Sternebewertungen berechnet?",
-    ratingMethodText: "Jeder Strand startet mit 3 Sternen. +1 Stern gibt es bei Blaue-Flagge-Zertifizierung, +1 Stern, wenn Quellen ihn als national oder international bekannt oder beliebt beschreiben. 1 Stern wird abgezogen, wenn Quellen deutlich negatives Feedback erwähnen (schmutzig, schlecht gepflegt usw.). Die Bewertungen stammen nicht von einer Seite wie TripAdvisor — sie sind eine automatische Einschätzung auf Basis unserer offenen Quellenrecherche.",
+    ratingMethodText: "Jeder Strand startet mit 3 Sternen. +1 Stern gibt es bei Blaue-Flagge-Zertifizierung, +1 Stern, wenn Quellen ihn als national oder international bekannt oder beliebt beschreiben. 1 Stern wird abgezogen, wenn Quellen deutlich negatives Feedback erwähnen (schmutzig, schlecht gepflegt usw.). Die Bewertungen stammen nicht von einer externen Bewertungsseite — sie sind eine automatische Einschätzung auf Basis unserer offenen Quellenrecherche.",
     searchNoResults: "Keine Ergebnisse gefunden",
 
     pageTitleList: "Führer zu kostenlosen öffentlichen Stränden",
@@ -235,7 +235,7 @@ const I18N = {
     comingSoon: "скоро",
     districtsFooterNote: "Со временем добавятся и остальные районы 🙂",
     ratingMethodTitle: "⭐ Как рассчитывается рейтинг в звёздах?",
-    ratingMethodText: "Каждый пляж начинается с 3 звёзд. +1 звезда — за сертификат «Голубой флаг», +1 звезда — если источники описывают его как известный или популярный на национальном или международном уровне. 1 звезда вычитается, если источники упоминают явно негативные отзывы (грязно, плохое состояние и т.д.). Рейтинги не берутся с таких сайтов, как TripAdvisor — это автоматическая оценка на основе нашего открытого исследования.",
+    ratingMethodText: "Каждый пляж начинается с 3 звёзд. +1 звезда — за сертификат «Голубой флаг», +1 звезда — если источники описывают его как известный или популярный на национальном или международном уровне. 1 звезда вычитается, если источники упоминают явно негативные отзывы (грязно, плохое состояние и т.д.). Рейтинги не берутся со стороннего сайта отзывов — это автоматическая оценка на основе нашего открытого исследования.",
     searchNoResults: "Ничего не найдено",
 
     pageTitleList: "Путеводитель по бесплатным общественным пляжам",
