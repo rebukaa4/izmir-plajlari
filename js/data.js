@@ -1527,7 +1527,14 @@ const PLAJLAR = [
     kalabalik: "Türkiye'nin en tanınmış tatil beldelerinden biri olduğu için yaz sezonunda çok yoğun oluyor.",
     temizlik: "",
     notlar: "Ölüdeniz'in iki ayrı bölümü var: halka açık ve ücretsiz Belcekız kısmı (bu kayıt) ile dünyaca ünlü 'Mavi Lagün' manzarasının bulunduğu Kumburnu/Ölüdeniz Tabiat Parkı kısmı — o kısım ayrı bir giriş ücreti gerektiren korunan bir tabiat parkı olduğu için kapsam dışı bırakıldı (uygulamanın ücretsiz halk plajı ilkesine uymuyor). Ölüdeniz aynı zamanda Türkiye'nin en önemli yamaç paraşütü merkezi.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/oludeniz/oludeniz-1.jpg",
+      "fotoğraflar/oludeniz/oludeniz-2.jpg",
+      "fotoğraflar/oludeniz/oludeniz-3.jpg",
+      "fotoğraflar/oludeniz/oludeniz-4.jpg",
+      "fotoğraflar/oludeniz/oludeniz-5.jpg",
+      "fotoğraflar/oludeniz/oludeniz-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["rotasenin.com", "bujuyollarda.com", "lonelyplanet.com (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=Ölüdeniz+Belcekız+Plajı+Fethiye+Muğla"
@@ -1554,7 +1561,14 @@ const PLAJLAR = [
     kalabalik: "Uluslararası tanınırlığı yüksek bir plaj olduğu için yaz sezonunda yoğun ziyaretçi alıyor.",
     temizlik: "",
     notlar: "Akdeniz'in en önemli caretta caretta (iri başlı deniz kaplumbağası) üreme alanlarından biri; kum üzerindeki yuvalama bölgeleri işaretli, ziyaretçilerin bu alanlara girmemesi isteniyor. Mayıs-Eylül arası gece 20:00-08:00 saatleri arasında plaja giriş yasak. 2011'de Hollandalı Zoover sitesi tarafından 'Avrupa'nın En İyi Plaj Destinasyonu' seçilmiş, Lonely Planet'te ayrı bir sayfası var. Giriş saatleri genelde 08:00-20:00 arası. Dalyan Nehri deltasıyla Akdeniz arasında uzanan doğal bir kumul şeridi üzerinde.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/iztuzu/iztuzu-1.jpg",
+      "fotoğraflar/iztuzu/iztuzu-2.jpg",
+      "fotoğraflar/iztuzu/iztuzu-3.jpg",
+      "fotoğraflar/iztuzu/iztuzu-4.jpg",
+      "fotoğraflar/iztuzu/iztuzu-5.jpg",
+      "fotoğraflar/iztuzu/iztuzu-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "rotasenin.com", "lonelyplanet.com (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=İztuzu+Plajı+Dalyan+Ortaca+Muğla"
@@ -1581,7 +1595,14 @@ const PLAJLAR = [
     kalabalik: "Yaz aylarında oldukça kalabalık oluyor.",
     temizlik: "Temiz suyu ve geniş sahil şeridiyle biliniyor.",
     notlar: "Hem Alman hem Rus gezi kaynaklarında Marmaris'in en popüler aile plajlarından biri olarak öne çıkıyor, altın renkli kumuyla tanınıyor. Yeşil dağlarla çevrili bir koyda yer alıyor.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/icmeler/icmeler-1.jpg",
+      "fotoğraflar/icmeler/icmeler-2.jpg",
+      "fotoğraflar/icmeler/icmeler-3.jpg",
+      "fotoğraflar/icmeler/icmeler-4.jpg",
+      "fotoğraflar/icmeler/icmeler-5.jpg",
+      "fotoğraflar/icmeler/icmeler-6.webp"
+    ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "adacreisen.de (uluslararası kaynak)", "tourister.ru (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=İçmeler+Plajı+Marmaris+Muğla"
@@ -1608,7 +1629,13 @@ const PLAJLAR = [
     kalabalik: "",
     temizlik: "",
     notlar: "Bodrum Yarımadası'nın batı ucunda, Yunanistan'a bakan Kos (İstanköy) adası manzarasıyla biliniyor. Almanca gezi kaynaklarında Bodrum'un öne çıkan halk plajlarından biri olarak anılıyor.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/akyarlar/akyarlar-1.jpg",
+      "fotoğraflar/akyarlar/akyarlar-2.jpg",
+      "fotoğraflar/akyarlar/akyarlar-3.jpg",
+      "fotoğraflar/akyarlar/akyarlar-4.jpg",
+      "fotoğraflar/akyarlar/akyarlar-5.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["otuzbeslik.com", "bodrumdabugun.com", "urlaubsguru.at (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=Akyarlar+Halk+Plajı+Bodrum+Muğla"
@@ -1635,7 +1662,14 @@ const PLAJLAR = [
     kalabalik: "4 km uzunluğundaki geniş sahili sayesinde kalabalık dağılıyor, ancak Temmuz-Ağustos'ta hem yerli hem yabancı turistlerle oldukça yoğunlaşıyor.",
     temizlik: "",
     notlar: "Fethiye'nin en sevilen halk plajlarından biri; bazı alanlarda çadır kampı da yapılabiliyor. Bölge halkı tarafından sıklıkla tercih ediliyor.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/calis/calis-1.png",
+      "fotoğraflar/calis/calis-2.webp",
+      "fotoğraflar/calis/calis-3.jpg",
+      "fotoğraflar/calis/calis-4.jpg",
+      "fotoğraflar/calis/calis-5.jpg",
+      "fotoğraflar/calis/calis-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["yoldaolmak.com", "fethiye.bel.tr"],
     haritaLinki: "https://maps.google.com/?q=Çalış+Plajı+Fethiye+Muğla"
@@ -1662,7 +1696,14 @@ const PLAJLAR = [
     kalabalik: "Temmuz-Ağustos aylarında oldukça kalabalıklaşıyor, Mayıs-Eylül gibi ara aylarda ziyaret önerilir.",
     temizlik: "Sakin ve temiz kumuyla biliniyor.",
     notlar: "Bodrum'un en popüler aile plajlarından biri; çocuk gürültüsü nedeniyle sessiz bir ortam arayanlar için uygun olmayabilir.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/bitez/bitez-1.webp",
+      "fotoğraflar/bitez/bitez-2.jpg",
+      "fotoğraflar/bitez/bitez-3.jpg",
+      "fotoğraflar/bitez/bitez-4.jpg",
+      "fotoğraflar/bitez/bitez-5.jpg",
+      "fotoğraflar/bitez/bitez-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["neredekal.com", "hellovillam.com", "adacreisen.de (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=Bitez+Halk+Plajı+Bodrum+Muğla"
@@ -1689,7 +1730,14 @@ const PLAJLAR = [
     kalabalik: "Ulaşımın zor olması sayesinde nispeten sakin ve az kalabalık.",
     temizlik: "",
     notlar: "Üç tarafı sık ormanlarla çevrili, yaklaşık 200 metre genişliğinde bir koy. İngilizce gezi kaynaklarında Fethiye'nin 'bakir/bohem' gizli cenneti olarak tanımlanıyor, kalabalıktan kaçmak isteyenler için popüler. Giriş ücretsiz.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/kabakkoyu/kabakkoyu-1.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-2.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-3.webp",
+      "fotoğraflar/kabakkoyu/kabakkoyu-4.webp",
+      "fotoğraflar/kabakkoyu/kabakkoyu-5.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["cnnturk.com", "kampyerleri.org", "wanderlustchloe.com (uluslararası kaynak)"],
     haritaLinki: "https://maps.google.com/?q=Kabak+Koyu+Faralya+Fethiye+Muğla"
@@ -1716,7 +1764,14 @@ const PLAJLAR = [
     kalabalik: "Hafta içi fazla kalabalık değil; hafta sonları, bayram tatillerinde ve yaz sezonunun yoğun dönemlerinde kalabalıklaşabiliyor. Sakin bir deniz keyfi için sabah erken saatler öneriliyor.",
     temizlik: "Suyu güzel ve sakin olarak tanımlanıyor.",
     notlar: "12 km uzunluğunda geniş bir sahil şeridi. Üst tarafındaki ormanlık alan kamp alanı olarak kullanılıyor (kamp alanı ayrıca ücretli, çadır kiralama imkanı da var).",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/sarigerme/sarigerme-1.jpg",
+      "fotoğraflar/sarigerme/sarigerme-2.jpg",
+      "fotoğraflar/sarigerme/sarigerme-3.jpg",
+      "fotoğraflar/sarigerme/sarigerme-4.webp",
+      "fotoğraflar/sarigerme/sarigerme-5.jpg",
+      "fotoğraflar/sarigerme/sarigerme-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "teknekirala.com"],
     haritaLinki: "https://maps.google.com/?q=Sarıgerme+Plajı+Ortaca+Muğla"
@@ -1743,7 +1798,14 @@ const PLAJLAR = [
     kalabalik: "Bodrum'un en çok tercih edilen beldelerinden biri olduğu için son derece kalabalık olabiliyor; Temmuz-Ağustos aylarında yoğunluktan denizin bulanık görünebildiği belirtiliyor.",
     temizlik: "Yoğun dönemlerde kalabalık nedeniyle su berraklığı düşebiliyor.",
     notlar: "Halk plajı bölümü yaklaşık 200 metre; zemin ince kum ve yer yer küçük çakıl taşlarından oluşuyor. Cankurtaran ve deniz güvenlik şeridi mevcut.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/ortakent/ortakent-1.jpg",
+      "fotoğraflar/ortakent/ortakent-2.png",
+      "fotoğraflar/ortakent/ortakent-3.jpg",
+      "fotoğraflar/ortakent/ortakent-4.jpg",
+      "fotoğraflar/ortakent/ortakent-5.webp",
+      "fotoğraflar/ortakent/ortakent-6.webp"
+    ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "gezilmesigerekenyerler.com"],
     haritaLinki: "https://maps.google.com/?q=Ortakent+Halk+Plajı+Bodrum+Muğla"
@@ -1770,7 +1832,14 @@ const PLAJLAR = [
     kalabalik: "Küçük bir plaj olduğu ve çevresindeki işletmelerin sahili kapladığı belirtiliyor, yoğun olabiliyor.",
     temizlik: "Kumlu olmayan bölümlerinde denizin daha temiz olduğu belirtiliyor.",
     notlar: "Mavi Bayrak ödüllü, yaklaşık 300 metre uzunluğunda, 10 metre genişliğinde. Hem kumlu hem taşlı bölümleri var. Deniz güvenlik şeridi mevcut.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/turunc/turunc-1.jpg",
+      "fotoğraflar/turunc/turunc-2.jpg",
+      "fotoğraflar/turunc/turunc-3.jpg",
+      "fotoğraflar/turunc/turunc-4.jpg",
+      "fotoğraflar/turunc/turunc-5.jpg",
+      "fotoğraflar/turunc/turunc-6.webp"
+    ],
     kaynak: "internet",
     kaynaklar: ["gezire.com", "bujuyollarda.com"],
     haritaLinki: "https://maps.google.com/?q=Turunç+Plajı+Marmaris+Muğla"
