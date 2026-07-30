@@ -2577,7 +2577,8 @@ const PLAJLAR = [
       "fotoğraflar/konyaalti/konyaalti-1.jpg",
       "fotoğraflar/konyaalti/konyaalti-2.jpg",
       "fotoğraflar/konyaalti/konyaalti-3.jpg",
-      "fotoğraflar/konyaalti/konyaalti-4.jpg"
+      "fotoğraflar/konyaalti/konyaalti-4.jpg",
+      "fotoğraflar/konyaalti/konyaalti-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "urlaubsguru.de"],
@@ -3064,7 +3065,10 @@ const PLAJLAR = [
     kalabalik: "Merkezi konumu nedeniyle rağbet gören bir plaj.",
     temizlik: "Mavi Bayrak ödüllü.",
     notlar: "Ham bir doğal plajdan çok, yürüyüş yolları olan peyzajlı bir park-plaj hibriti (Ayışığı Parkı) içinde yer alıyor.",
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/ayisigi/ayisigi-1.jpg",
+      "fotoğraflar/ayisigi/ayisigi-2.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["mekan360.com", "tripadvisor.com", "1001beach.com", "ayisigipark.com.tr"],
     haritaLinki: "https://maps.google.com/?q=Ayışığı+Plajı+Kemer+Antalya"
