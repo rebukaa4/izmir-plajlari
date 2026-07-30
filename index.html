@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ücretsiz Halk Plajları Rehberi</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#0f7ea3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=28">
+</head>
+<body class="anasayfa-body">
+
+<div class="hero">
+  <div class="hero-dekor" aria-hidden="true">
+    <span class="deko d1">🌊</span>
+    <span class="deko d2">⛱️</span>
+    <span class="deko d3">🐚</span>
+    <span class="deko d4">🏁</span>
+    <span class="deko d5">🌴</span>
+    <span class="deko d6">☀️</span>
+    <span class="deko d7">🕶️</span>
+    <span class="deko d8">🌊</span>
+    <span class="deko d9">🐚</span>
+    <span class="deko d10">⛵</span>
+    <span class="deko d11">🌴</span>
+    <span class="deko d12">🚩</span>
+    <span class="deko d13">🐬</span>
+    <span class="deko d14">🍉</span>
+    <span class="deko d15">🐚</span>
+    <span class="deko d16">🌊</span>
+    <span class="deko d17">🩴</span>
+    <span class="deko d18">⭐</span>
+  </div>
+
+  <div class="hero-ust">
+    <span class="ucretsiz-rozet">🆓 Ücretsiz Halk Plajları</span>
+    <h1 class="hero-baslik" id="hero-baslik">Nereye gidelim?</h1>
+    <p class="hero-alt" id="hero-alt">Güzel bir tatili herkes hak eder</p>
+  </div>
+
+  <div class="arama-alan">
+    <div class="arama-kutu">
+      <span class="arama-ikon">🔍</span>
+      <input type="text" id="arama-input" class="arama-input" placeholder="Plaj ara... (örn. Mimoza, Altınkum)" autocomplete="off">
+    </div>
+    <div class="arama-sonuclar" id="arama-sonuclar"></div>
+  </div>
+
+  <a href="liste.html" class="tum-plajlar-buton" id="tum-plajlar-buton">
+    <span class="buton-ikonlar">⛱️ 🏖️ 🌊</span>
+    <span class="buton-alt-satir">
+      <span class="buton-metin" id="tum-plajlar-metin">Tüm Plajları Gör</span>
+      <span class="buton-ok">→</span>
+    </span>
+  </a>
+
+  <div class="ilce-alan" id="sehir-alan">
+    <p class="ilce-baslik">Önce şehir seç</p>
+    <div class="ilce-grid" id="sehir-grid"></div>
+  </div>
+
+  <div class="ilce-alan" id="ilce-alan" style="display:none">
+    <p class="ilce-baslik">
+      <a href="#" id="sehir-degistir" style="color:inherit;text-decoration:underline;">&larr; Şehir değiştir</a>
+      &nbsp;·&nbsp; En meşhur sahil ilçeleri
+    </p>
+    <div class="ilce-grid" id="ilce-grid"></div>
+    <p class="ilce-not">Zamanla tüm ilçeler eklenecek 🙂</p>
+  </div>
+</div>
+
+<script src="js/data.js?v=49"></script>
+<script>
+  // Popülerlik sırasıyla şehir başına ilçeler (veri henüz olmayanlar da listelenir)
+  const ILCELER_BY_IL = {
+    "İzmir": ["Çeşme", "Urla", "Foça", "Seferihisar", "Dikili", "Karaburun"],
+    "Aydın": ["Kuşadası", "Didim"]
+  };
+  const renkler = ["r1", "r2", "r3", "r4", "r5", "r6"];
+
+  const heroBaslik = document.getElementById("hero-baslik");
+  const heroAlt = document.getElementById("hero-alt");
+  const tumPlajlarButon = document.getElementById("tum-plajlar-buton");
+  const tumPlajlarMetin = document.getElementById("tum-plajlar-metin");
+  const sehirAlan = document.getElementById("sehir-alan");
+  const ilceAlan = document.getElementById("ilce-alan");
+  const sehirGrid = document.getElementById("sehir-grid");
+  const ilceGrid = document.getElementById("ilce-grid");
+  const sehirDegistir = document.getElementById("sehir-degistir");
+
+  Object.keys(ILCELER_BY_IL).forEach((il, i) => {
+    const sayi = PLAJLAR.filter(p => p.il === il).length;
+    const a = document.createElement("a");
+    a.className = `ilce-kart ${renkler[i % renkler.length]}`;
+    a.href = "#";
+    a.innerHTML = `
+      <span class="ilce-adi">${il}</span>
+      <span class="ilce-sayi">${sayi} plaj</span>
+    `;
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      secSehir(il);
+    });
+    sehirGrid.appendChild(a);
+  });
+
+  function secSehir(il) {
+    heroBaslik.textContent = il;
+    heroAlt.textContent = "Güzel bir tatili herkes hak eder";
+    tumPlajlarButon.href = `liste.html?il=${encodeURIComponent(il)}`;
+    tumPlajlarMetin.textContent = `Tüm ${il} Plajlarını Gör`;
+
+    ilceGrid.innerHTML = "";
+    (ILCELER_BY_IL[il] || []).forEach((ilce, i) => {
+      const sayi = PLAJLAR.filter(p => p.ilce === ilce && p.il === il).length;
+      const a = document.createElement("a");
+      a.className = `ilce-kart ${renkler[i % renkler.length]}`;
+      a.href = `liste.html?ilce=${encodeURIComponent(ilce)}`;
+      a.innerHTML = `
+        <span class="ilce-adi">${ilce}</span>
+        <span class="ilce-sayi">${sayi > 0 ? sayi + " plaj" : "yakında"}</span>
+      `;
+      ilceGrid.appendChild(a);
+    });
+
+    sehirAlan.style.display = "none";
+    ilceAlan.style.display = "";
+  }
+
+  sehirDegistir.addEventListener("click", (e) => {
+    e.preventDefault();
+    heroBaslik.textContent = "Nereye gidelim?";
+    heroAlt.textContent = "Güzel bir tatili herkes hak eder";
+    tumPlajlarButon.href = "liste.html";
+    tumPlajlarMetin.textContent = "Tüm Plajları Gör";
+    ilceAlan.style.display = "none";
+    sehirAlan.style.display = "";
+  });
+
+  // Plaj arama (isim / ilçe üzerinden anlık arama)
+  const aramaInput = document.getElementById("arama-input");
+  const aramaSonuclar = document.getElementById("arama-sonuclar");
+  let aramaSeciliIndex = -1;
+
+  function turkceKucuk(s) {
+    return s.toLocaleLowerCase("tr-TR");
+  }
+
+  function aramaCiz(sorgu) {
+    const q = turkceKucuk(sorgu.trim());
+    aramaSeciliIndex = -1;
+
+    if (!q) {
+      aramaSonuclar.classList.remove("acik");
+      aramaSonuclar.innerHTML = "";
+      return;
+    }
+
+    const eslesenler = PLAJLAR.filter(p =>
+      turkceKucuk(p.isim).includes(q) || turkceKucuk(p.ilce).includes(q) || turkceKucuk(p.il).includes(q)
+    ).slice(0, 8);
+
+    aramaSonuclar.innerHTML = eslesenler.length === 0
+      ? `<div class="arama-bos">Sonuç bulunamadı</div>`
+      : eslesenler.map(p => `
+          <a href="plaj.html?id=${p.id}" class="arama-oge">
+            <span class="arama-oge-isim">${p.isim}</span>
+            <span class="arama-oge-konum">${p.ilce} / ${p.il}</span>
+          </a>
+        `).join("");
+
+    aramaSonuclar.classList.add("acik");
+  }
+
+  aramaInput.addEventListener("input", (e) => aramaCiz(e.target.value));
+  aramaInput.addEventListener("focus", (e) => {
+    if (e.target.value.trim()) aramaCiz(e.target.value);
+  });
+
+  aramaInput.addEventListener("keydown", (e) => {
+    const ogeler = Array.from(aramaSonuclar.querySelectorAll(".arama-oge"));
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      if (ogeler.length === 0) return;
+      aramaSeciliIndex = (aramaSeciliIndex + 1) % ogeler.length;
+      ogeler.forEach((el, i) => el.classList.toggle("secili", i === aramaSeciliIndex));
+      ogeler[aramaSeciliIndex].scrollIntoView({ block: "nearest" });
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      if (ogeler.length === 0) return;
+      aramaSeciliIndex = (aramaSeciliIndex - 1 + ogeler.length) % ogeler.length;
+      ogeler.forEach((el, i) => el.classList.toggle("secili", i === aramaSeciliIndex));
+      ogeler[aramaSeciliIndex].scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      const hedef = aramaSeciliIndex >= 0 ? ogeler[aramaSeciliIndex] : ogeler[0];
+      if (hedef) window.location.href = hedef.getAttribute("href");
+    } else if (e.key === "Escape") {
+      aramaSonuclar.classList.remove("acik");
+      aramaInput.blur();
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".arama-alan")) {
+      aramaSonuclar.classList.remove("acik");
+    }
+  });
+</script>
+</body>
+</html>

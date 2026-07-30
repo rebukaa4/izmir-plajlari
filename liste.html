@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ücretsiz Halk Plajları Rehberi</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#0f7ea3">
+<link rel="stylesheet" href="css/style.css?v=28">
+</head>
+<body>
+
+<header class="app-header">
+  <a href="index.html" class="geri-link">&larr; Ana Sayfa</a>
+  <h1>🏖️ Ücretsiz Halk Plajları</h1>
+  <p>Giriş ücreti yok. Sadece halk plajları.</p>
+</header>
+
+<div class="fiyat-politikasi">💡 Enflasyon ve hızlı fiyat değişimleri sebebiyle şezlong/tuvalet gibi hizmetlerde fiyat bilgisi verilmemektedir. Sadece "ücretli/ücretsiz" olduğu belirtilir.</div>
+
+<div class="filtreler">
+  <select id="filtre-il">
+    <option value="">Tüm Şehirler</option>
+  </select>
+  <select id="filtre-ilce">
+    <option value="">Tüm İlçeler</option>
+  </select>
+  <select id="filtre-zemin">
+    <option value="">Tüm Zeminler</option>
+  </select>
+  <select id="filtre-derinlik">
+    <option value="">Tüm Derinlikler</option>
+  </select>
+  <select id="filtre-park">
+    <option value="">Tüm Park Durumları</option>
+    <option value="ucretsiz">Ücretsiz Park</option>
+    <option value="kismi">Kısmi/Kısıtlı</option>
+    <option value="ucretli">Ücretli Park</option>
+  </select>
+</div>
+
+<div class="sonuc-sayisi" id="sonuc-sayisi"></div>
+
+<div class="plaj-liste" id="plaj-liste"></div>
+
+<script src="js/data.js?v=49"></script>
+<script src="js/liste.js?v=30"></script>
+</body>
+</html>

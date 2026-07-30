@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deniz" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1aa6c7"/>
+      <stop offset="55%" stop-color="#0f7ea3"/>
+      <stop offset="100%" stop-color="#095670"/>
+    </linearGradient>
+    <linearGradient id="gunes" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#ffb648"/>
+    </linearGradient>
+    <linearGradient id="semsiye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb648"/>
+      <stop offset="100%" stop-color="#d97b1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background (safe for maskable icons) -->
+  <rect width="512" height="512" fill="url(#deniz)"/>
+
+  <!-- Sun -->
+  <circle cx="378" cy="130" r="62" fill="url(#gunes)"/>
+
+  <!-- Waves -->
+  <path d="M0 330 Q 64 310 128 330 T 256 330 T 384 330 T 512 330 V 512 H 0 Z" fill="#ffffff" opacity="0.14"/>
+  <path d="M0 372 Q 64 352 128 372 T 256 372 T 384 372 T 512 372 V 512 H 0 Z" fill="#ffffff" opacity="0.22"/>
+  <path d="M0 414 Q 64 394 128 414 T 256 414 T 384 414 T 512 414 V 512 H 0 Z" fill="#eef8f6" opacity="0.95"/>
+
+  <!-- Beach umbrella -->
+  <g>
+    <rect x="250" y="330" width="12" height="120" rx="6" fill="#f4e3c1"/>
+    <path d="M256 200 C 176 200 132 268 128 316 C 128 328 140 332 150 326 C 172 312 196 306 218 314 C 224 316 232 316 238 312 C 246 306 266 306 274 312 C 280 316 288 316 294 314 C 316 306 340 312 362 326 C 372 332 384 328 384 316 C 380 268 336 200 256 200 Z" fill="url(#semsiye)"/>
+    <path d="M256 200 C 220 200 190 224 172 258 C 196 250 226 248 256 256 C 286 248 316 250 340 258 C 322 224 292 200 256 200 Z" fill="#fff6e6" opacity="0.85"/>
+  </g>
+</svg>
