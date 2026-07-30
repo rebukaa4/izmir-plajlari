@@ -2642,10 +2642,7 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/lara/lara-1.jpg",
-      "fotoğraflar/lara/lara-2.jpg",
-      "fotoğraflar/lara/lara-3.jpg",
-      "fotoğraflar/lara/lara-4.jpg"
+      "fotoğraflar/lara/lara-1.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "rotasenin.com", "advantour.com", "turkeytravelplanner.com"],
