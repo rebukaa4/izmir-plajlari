@@ -50,6 +50,38 @@ const PLAJLAR = [
     kalabalik: "Çok kalabalık.",
     temizlik: "Temiz.",
     notlar: "İzmir'in en popüler plajı olarak biliniyor. Denizin içinde ılıca (sıcak su) kaynakları karışıyor, bu yüzden su ayakların altında hissedilecek şekilde sıcak noktalar barındırıyor. Voleybol sahası ve su sporları kulübü var.",
+    ceviriler: {
+      en: {
+        parkNotu: "Parking is banned on 5221 Sokak. Side streets are limited/paid; you may need to park further away and walk.",
+        tuvaletNotu: "Municipal showers, toilets and changing cabins are available.",
+        dalgaDurumu: "Generally choppy and windy, especially after late June.",
+        aliverisYemeIcme: "There's no regular food/drink venue in the public-beach section; simit, corn and mussels can be bought from street vendors. Bringing your own food is recommended, both for cost and hygiene.",
+        cocukUygun: "The water is warm and doesn't deepen suddenly, making it suitable especially for young children.",
+        kalabalik: "Very crowded.",
+        temizlik: "Clean.",
+        notlar: "Known as İzmir's most popular beach. Warm-spring (ılıca) sources mix into the sea, so the water has warm spots you can feel underfoot. There's a volleyball court and a water-sports club."
+      },
+      de: {
+        parkNotu: "In der 5221 Sokak besteht Parkverbot. Seitenstraßen sind begrenzt/kostenpflichtig; es kann nötig sein, weiter entfernt zu parken und zu Fuß zu gehen.",
+        tuvaletNotu: "Städtische Duschen, Toiletten und Umkleidekabinen sind vorhanden.",
+        dalgaDurumu: "Meist welliger und windig, besonders nach Ende Juni.",
+        aliverisYemeIcme: "Im öffentlichen Strandbereich gibt es kein reguläres Lokal; Simit, Mais und Muscheln können bei Straßenhändlern gekauft werden. Es empfiehlt sich, eigenes Essen mitzubringen — sowohl aus Kosten- als auch Hygienegründen.",
+        cocukUygun: "Das Wasser ist warm und wird nicht plötzlich tief, besonders geeignet für kleine Kinder.",
+        kalabalik: "Sehr voll.",
+        temizlik: "Sauber.",
+        notlar: "Gilt als İzmirs beliebtester Strand. Warmwasserquellen (ılıca) mischen sich ins Meer, weshalb das Wasser unter den Füßen spürbar warme Stellen hat. Es gibt einen Volleyballplatz und einen Wassersportclub."
+      },
+      ru: {
+        parkNotu: "На улице 5221 Sokak парковка запрещена. Боковые улицы ограничены/платные; возможно, придётся парковаться подальше и идти пешком.",
+        tuvaletNotu: "Есть муниципальные душ, туалет и кабинки для переодевания.",
+        dalgaDurumu: "Обычно неспокойно и ветрено, особенно после конца июня.",
+        aliverisYemeIcme: "На общественном участке пляжа нет постоянного кафе; у уличных торговцев можно купить симит, кукурузу, мидии. Рекомендуется брать еду с собой — и из соображений экономии, и гигиены.",
+        cocukUygun: "Вода тёплая и не становится резко глубокой, что удобно для маленьких детей.",
+        kalabalik: "Очень многолюдно.",
+        temizlik: "Чисто.",
+        notlar: "Считается самым популярным пляжем Измира. В море примешиваются тёплые источники (ılıca), поэтому в воде ощущаются тёплые участки под ногами. Есть волейбольная площадка и клуб водных видов спорта."
+      }
+    },
     fotograflar: [
       "images/ilica/ilica-1.jpg",
       "images/ilica/ilica-2.jpg",
@@ -83,6 +115,38 @@ const PLAJLAR = [
     kalabalik: "",
     temizlik: "Orta.",
     notlar: "Saklı kalmış, az bilinen bir cennet köşesi. Özpamir Sitesi adlı özel bir site içinden geçilerek ulaşılıyor. Koy küçük ve sakin. Fotoğraf çekmek isteyenler için: park yerine geldiğinizde manzarayı değerlendirip güzel kareler yakalayabilirsiniz.",
+    ceviriler: {
+      en: {
+        parkNotu: "There's limited free parking at the end of a sandy track. Finding a spot is very hard on weekends after 12:00.",
+        tuvaletNotu: "No shower/toilet.",
+        yayaMesafe: "5-minute walk from the parking area, down a wide staircase and a slope.",
+        sezlong: "None.",
+        aliverisYemeIcme: "If you order using the number posted on the sign at the beach, they'll deliver to you.",
+        cocukUygun: "Popular with families for its fine sand and shallow water.",
+        temizlik: "Average.",
+        notlar: "A hidden, little-known corner of paradise. Reached by passing through a private residential complex called Özpamir Sitesi. The cove is small and calm. Photo tip: when you reach the parking area, take a moment to scout the view for a good shot."
+      },
+      de: {
+        parkNotu: "Am Ende eines Sandwegs gibt es begrenzte kostenlose Parkmöglichkeiten. Am Wochenende nach 12:00 Uhr ist es sehr schwer, einen Platz zu finden.",
+        tuvaletNotu: "Keine Dusche/Toilette.",
+        yayaMesafe: "5 Gehminuten vom Parkplatz, über eine breite Treppe und ein Gefälle.",
+        sezlong: "Keine.",
+        aliverisYemeIcme: "Wenn Sie unter der auf dem Schild am Strand angegebenen Nummer bestellen, wird bis zum Strand geliefert.",
+        cocukUygun: "Wegen des feinen Sands und flachen Wassers bei Familien beliebt.",
+        temizlik: "Mittel.",
+        notlar: "Eine verborgene, wenig bekannte Paradiesecke. Der Zugang führt durch eine private Wohnanlage namens Özpamir Sitesi. Die Bucht ist klein und ruhig. Fototipp: Wenn Sie am Parkplatz ankommen, lohnt es sich, die Aussicht für ein schönes Foto zu erkunden."
+      },
+      ru: {
+        parkNotu: "В конце песчаной дороги есть ограниченная бесплатная парковка. По выходным после 12:00 найти место очень сложно.",
+        tuvaletNotu: "Душа/туалета нет.",
+        yayaMesafe: "5 минут пешком от парковки, вниз по широкой лестнице и склону.",
+        sezlong: "Нет.",
+        aliverisYemeIcme: "Если заказать по номеру, указанному на табличке на пляже, доставят прямо туда.",
+        cocukUygun: "Популярен у семей благодаря мелкому песку и неглубокой воде.",
+        temizlik: "Средняя.",
+        notlar: "Скрытый, малоизвестный уголок рая. Добраться можно через частный жилой комплекс Özpamir Sitesi. Бухта небольшая и спокойная. Совет для фото: добравшись до парковки, стоит осмотреться в поисках красивого кадра."
+      }
+    },
     fotograflar: [
       "images/kleopatra/kleopatra-1.jpg",
       "images/kleopatra/kleopatra-2.jpg",
@@ -211,6 +275,35 @@ const PLAJLAR = [
     kalabalik: "",
     temizlik: "Kirli.",
     notlar: "Çeşme'ye yaklaşık 3 kilometre mesafede, yaklaşık 4 kilometre uzunluğunda geniş bir plaj. Deniz ince kum tabakasından oluşmaktadır. Plajı kumdan olduğundan rahat edebilirsiniz.",
+    ceviriler: {
+      en: {
+        parkNotu: "No parking area; one-way rules aren't followed. It's chaotic in front of the Boyalık hotel. There's a risk of being fined by police.",
+        tuvaletNotu: "No cabin, toilet or shower.",
+        sezlong: "Sunbeds and umbrellas are paid at private operators.",
+        aliverisYemeIcme: "There are businesses along the beach. You can lay your towel wherever you like, or choose one of the beach businesses.",
+        cocukUygun: "Quite suitable for children thanks to its shallow structure.",
+        temizlik: "Dirty.",
+        notlar: "About 3 km from Çeşme, a wide beach roughly 4 km long. The sea floor consists of a fine sand layer. Since the beach itself is sandy, it's comfortable to sit or lie on."
+      },
+      de: {
+        parkNotu: "Kein Parkplatz vorhanden; Einbahnregeln werden nicht beachtet. Vor dem Boyalık-Hotel herrscht Chaos. Es besteht das Risiko eines Bußgelds durch die Polizei.",
+        tuvaletNotu: "Keine Kabine, Toilette oder Dusche.",
+        sezlong: "Liegen und Sonnenschirme sind bei privaten Anbietern kostenpflichtig.",
+        aliverisYemeIcme: "Entlang des Strandes gibt es Betriebe. Sie können Ihr Handtuch überall ausbreiten oder einen der Strandbetriebe wählen.",
+        cocukUygun: "Dank der flachen Struktur recht gut für Kinder geeignet.",
+        temizlik: "Verschmutzt.",
+        notlar: "Etwa 3 km von Çeşme entfernt, ein breiter, rund 4 km langer Strand. Der Meeresboden besteht aus einer feinen Sandschicht. Da der Strand selbst sandig ist, lässt es sich hier bequem liegen."
+      },
+      ru: {
+        parkNotu: "Парковки нет, одностороннее движение не соблюдается. Перед отелем Boyalık царит хаос. Есть риск получить штраф от полиции.",
+        tuvaletNotu: "Нет кабинки, туалета или душа.",
+        sezlong: "Шезлонги и зонты платные у частных операторов.",
+        aliverisYemeIcme: "Вдоль пляжа есть заведения. Можно постелить полотенце где угодно или выбрать одно из пляжных заведений.",
+        cocukUygun: "Благодаря мелководью довольно подходит для детей.",
+        temizlik: "Грязновато.",
+        notlar: "Примерно в 3 км от Чешме, широкий пляж длиной около 4 км. Морское дно состоит из мелкого песка. Поскольку сам пляж песчаный, на нём удобно находиться."
+      }
+    },
     fotograflar: [
       "images/boyalik/boyalik-2.jpg"
     ],
@@ -271,6 +364,41 @@ const PLAJLAR = [
     kalabalik: "Hafta sonları kalabalıklaşıyor ama geniş alanı sayesinde yer bulmak diğer kalabalık plajlara göre daha kolay; hafta içi daha sakin.",
     temizlik: "Çeşme'nin en temiz halk plajlarından biri olarak tanımlanıyor.",
     notlar: "Büyük bir plaj, denizi kum. Pırlanta ismi kumlarının parıltısından geliyor. Plajın arkasındaki ağaçların altını genelde kampçılar ve çadırcılar kullanıyor. Mavi Bayraklı plaj. Çiftlikköy'e yakın, merkeze ~20 km.",
+    ceviriler: {
+      en: {
+        parkNotu: "There is paid parking.",
+        tuvaletNotu: "Toilet and shower service is available for those who rent sunbeds/umbrellas. The one downside is that service stops after 18:00, when the toilets and showers stop working.",
+        sezlong: "Food/drink, sunbeds and umbrellas are paid at the Ministry-run facility.",
+        dalgaDurumu: "A beach that catches good wind for windsurfing; also described as one of Çeşme's least wavy beaches.",
+        aliverisYemeIcme: "There's no snack stand/market on the beach itself; it's recommended to get supplies from nearby Çiftlikköy.",
+        cocukUygun: "Very shallow sea, suitable for families with children.",
+        kalabalik: "Gets crowded on weekends, but thanks to its large size it's easier to find space than at other busy beaches; calmer on weekdays.",
+        temizlik: "Described as one of Çeşme's cleanest public beaches.",
+        notlar: "A large beach with sandy sea floor. The name Pırlanta ('diamond') comes from the sparkle of its sand. The trees behind the beach are mostly used by campers with tents. A Blue Flag beach. Close to Çiftlikköy, about 20 km from the centre."
+      },
+      de: {
+        parkNotu: "Es gibt einen kostenpflichtigen Parkplatz.",
+        tuvaletNotu: "Für alle, die Liegen/Sonnenschirme mieten, gibt es Toiletten- und Duschservice. Der einzige Kritikpunkt: Der Service endet um 18:00 Uhr, danach funktionieren Toiletten und Duschen nicht mehr.",
+        sezlong: "Essen/Trinken, Liegen und Sonnenschirme sind in der vom Ministerium betriebenen Anlage kostenpflichtig.",
+        dalgaDurumu: "Ein Strand mit gutem Wind zum Windsurfen; gilt auch als einer der wellenärmsten Strände Çeşmes.",
+        aliverisYemeIcme: "Am Strand selbst gibt es keinen Kiosk/Markt; es wird empfohlen, sich im nahen Çiftlikköy zu versorgen.",
+        cocukUygun: "Sehr flaches Meer, geeignet für Familien mit Kindern.",
+        kalabalik: "Am Wochenende voll, aber dank der großen Fläche leichter ein Platz zu finden als an anderen belebten Stränden; unter der Woche ruhiger.",
+        temizlik: "Gilt als einer der saubersten öffentlichen Strände Çeşmes.",
+        notlar: "Ein großer Strand mit sandigem Meeresboden. Der Name Pırlanta ('Diamant') kommt vom Glitzern des Sandes. Unter den Bäumen hinter dem Strand campen meist Zeltcamper. Ein Strand mit Blauer Flagge. Nahe Çiftlikköy, etwa 20 km vom Zentrum entfernt."
+      },
+      ru: {
+        parkNotu: "Есть платная парковка.",
+        tuvaletNotu: "Для тех, кто арендует шезлонги/зонты, доступны туалет и душ. Единственный минус — обслуживание прекращается после 18:00, после этого туалеты и душ не работают.",
+        sezlong: "Еда/напитки, шезлонги и зонты платные на территории, управляемой министерством.",
+        dalgaDurumu: "Пляж с хорошим ветром для виндсёрфинга; также считается одним из наименее волнистых пляжей Чешме.",
+        aliverisYemeIcme: "На самом пляже нет киоска/магазина, рекомендуется закупиться в соседнем Чифтликкёй.",
+        cocukUygun: "Очень мелкое море, подходит для семей с детьми.",
+        kalabalik: "По выходным многолюдно, но благодаря большой площади найти место легче, чем на других людных пляжах; в будни спокойнее.",
+        temizlik: "Считается одним из самых чистых общественных пляжей Чешме.",
+        notlar: "Большой пляж с песчаным дном. Название Pırlanta («бриллиант») происходит от блеска песка. Под деревьями за пляжем обычно располагаются кемперы с палатками. Пляж с сертификатом «Голубой флаг». Рядом с Чифтликкёй, примерно в 20 км от центра."
+      }
+    },
     fotograflar: [
       "images/pirlanta/pirlanta-1.jpg",
       "images/pirlanta/pirlanta-2.jpg",
@@ -1294,6 +1422,41 @@ const PLAJLAR = [
     kalabalik: "Kuşadası'nın en popüler ve merkeze en yakın plajı olduğu için yaz aylarında, özellikle öğleden sonra, oldukça kalabalık oluyor.",
     temizlik: "Mavi Bayrak sertifikalı; ince taneli altın renkli kumu ve berrak deniziyle biliniyor.",
     notlar: "Osmanlı döneminde sadece kadınların denize girmesine izin verilen bir plaj olarak bilinir, günümüzde herkese açık. Plaj uzunluğu yaklaşık 600 metre. Kuşadası'nın merkeze en yakın halk plajı olması hem avantaj (ulaşım kolaylığı) hem dezavantaj (yoğunluk) olarak öne çıkıyor.",
+    ceviriler: {
+      en: {
+        tuvaletNotu: "In 2017 the Aydın Metropolitan Municipality renovated the shower/changing cabin/toilet areas, which are free to use. Sunbeds and umbrellas are paid.",
+        yayaMesafe: "Very close to central Kuşadası, walkable from downtown.",
+        sezlong: "Sunbeds and umbrellas are paid, rentable on the beach.",
+        dalgaDurumu: "The sea is generally calm and wave-free; depth only reaches around 150-160 cm after 35 metres from shore. It can get slightly choppy in the afternoons toward late August.",
+        aliverisYemeIcme: "There's a snack stand on the beach, and thanks to its proximity to the town centre there are many cafés/markets around it.",
+        cocukUygun: "Suitable for families with small children thanks to its shallow, wave-free sea; the wide sandy area gives children room to play.",
+        kalabalik: "As Kuşadası's most popular beach and the closest to the centre, it gets quite crowded in summer, especially in the afternoon.",
+        temizlik: "Blue Flag certified; known for its fine golden sand and clear sea.",
+        notlar: "Known as a beach where, in Ottoman times, only women were allowed to swim — today it's open to everyone. The beach is about 600 metres long. Being Kuşadası's closest public beach to the centre is both an advantage (easy access) and a disadvantage (crowding)."
+      },
+      de: {
+        tuvaletNotu: "2017 renovierte die Großstadtgemeinde Aydın die Bereiche Dusche/Umkleidekabine/Toilette, die kostenlos genutzt werden können. Liegen und Sonnenschirme sind kostenpflichtig.",
+        yayaMesafe: "Sehr nah am Zentrum von Kuşadası, zu Fuß von der Innenstadt erreichbar.",
+        sezlong: "Liegen und Sonnenschirme sind kostenpflichtig und können am Strand gemietet werden.",
+        dalgaDurumu: "Das Meer ist meist ruhig und wellenfrei; die Tiefe erreicht erst nach 35 Metern vom Ufer etwa 150-160 cm. Gegen Ende August kann es nachmittags etwas welliger werden.",
+        aliverisYemeIcme: "Am Strand gibt es einen Imbissstand, und dank der Nähe zum Zentrum gibt es viele Cafés/Märkte in der Umgebung.",
+        cocukUygun: "Dank des flachen, wellenfreien Meeres gut für Familien mit kleinen Kindern geeignet; die breite Sandfläche bietet Kindern Platz zum Spielen.",
+        kalabalik: "Als beliebtester und zentrumsnächster Strand von Kuşadası im Sommer recht voll, besonders nachmittags.",
+        temizlik: "Blaue-Flagge-zertifiziert; bekannt für feinen goldenen Sand und klares Meer.",
+        notlar: "Bekannt als Strand, an dem in osmanischer Zeit nur Frauen baden durften — heute für alle zugänglich. Der Strand ist etwa 600 Meter lang. Als zentrumsnächster öffentlicher Strand von Kuşadası ist er sowohl Vorteil (leichte Erreichbarkeit) als auch Nachteil (Andrang)."
+      },
+      ru: {
+        tuvaletNotu: "В 2017 году муниципалитет Айдына отремонтировал зоны душа/кабинок для переодевания/туалетов, которые бесплатны для посетителей. Шезлонги и зонты платные.",
+        yayaMesafe: "Очень близко к центру Кушадасы, можно дойти пешком из центра города.",
+        sezlong: "Шезлонги и зонты платные, можно арендовать на пляже.",
+        dalgaDurumu: "Море обычно спокойное, без волн; глубина достигает лишь около 150-160 см на расстоянии 35 метров от берега. Ближе к концу августа во второй половине дня может немного штормить.",
+        aliverisYemeIcme: "На пляже есть киоск с закусками, а благодаря близости к центру города рядом много кафе/магазинов.",
+        cocukUygun: "Подходит для семей с маленькими детьми благодаря мелкому морю без волн; широкая песчаная зона даёт детям место для игр.",
+        kalabalik: "Как самый популярный и ближайший к центру пляж Кушадасы, летом бывает довольно многолюдно, особенно во второй половине дня.",
+        temizlik: "Сертифицирован «Голубым флагом»; известен мелким золотистым песком и прозрачным морем.",
+        notlar: "Известен как пляж, где в османскую эпоху купаться разрешалось только женщинам — сегодня он открыт для всех. Длина пляжа около 600 метров. То, что это ближайший к центру общественный пляж Кушадасы, является как преимуществом (удобная доступность), так и недостатком (многолюдность)."
+      }
+    },
     fotograflar: [
       "fotoğraflar/kadinlardenizi/kadinlardenizi-1.jpg",
       "fotoğraflar/kadinlardenizi/kadinlardenizi-2.jpg",
@@ -1430,6 +1593,44 @@ const PLAJLAR = [
     kalabalik: "Türkiye'nin en tanınmış ve gözde plajlarından biri olduğu için özellikle yaz aylarında çok yoğun oluyor; TripAdvisor yorumlarında hafta içi öğleden sonra bile 'adım atacak yer olmadığı' belirtiliyor. Ziyaretçiler genelde plajın güzelliğini takdir etse de kalabalıktan şikayetçi.",
     temizlik: "Altın renginde kumu ve berrak deniziyle biliniyor, balıkların görülebildiği kadar temiz.",
     notlar: "İsmini altın renkli kumundan alıyor. Açılış saatleri genelde 08:00-19:00 arası. Türkiye'nin en tanınmış plajlarından biri olduğu için özellikle yaz sezonu ortasında ziyaret ediyorsanız kalabalık için hazırlıklı olun.",
+    ceviriler: {
+      en: {
+        parkNotu: "There are a few parking options, though prices can rise considerably in season. Free parking may also be possible on back streets (around Karakol Caddesi) if a spot is available.",
+        tuvaletNotu: "Toilets, showers and changing cabins are available.",
+        yayaMesafe: "Close to central Didim, within the town.",
+        sezlong: "Sunbed and umbrella rental is available, pricing varies by source.",
+        dalgaDurumu: "Shallow, calm water.",
+        aliverisYemeIcme: "Cafés and restaurants are available nearby.",
+        cocukUygun: "Good for families with small children due to the shallow water, though crowding at busy times should be kept in mind.",
+        kalabalik: "As one of Turkey's most famous and popular beaches, it gets very busy, especially in summer; TripAdvisor reviews mention there's 'no room to move' even on weekday afternoons. Visitors generally appreciate the beach's beauty but complain about the crowds.",
+        temizlik: "Known for its golden sand and clear sea, clean enough that fish can be seen.",
+        notlar: "Gets its name from its golden-coloured sand. Opening hours are generally 08:00-19:00. As one of Turkey's most famous beaches, be prepared for crowds if you visit in the middle of summer."
+      },
+      de: {
+        parkNotu: "Es gibt einige Parkmöglichkeiten, die Preise können in der Saison jedoch deutlich steigen. In den Seitenstraßen (rund um die Karakol Caddesi) ist bei freien Plätzen auch kostenloses Parken möglich.",
+        tuvaletNotu: "Toiletten, Duschen und Umkleidekabinen sind vorhanden.",
+        yayaMesafe: "Nahe dem Zentrum von Didim, innerhalb der Stadt gelegen.",
+        sezlong: "Liegen und Sonnenschirme können gemietet werden, der Preis variiert je nach Quelle.",
+        dalgaDurumu: "Flaches, ruhiges Wasser.",
+        aliverisYemeIcme: "In der Umgebung gibt es Cafés und Restaurants.",
+        cocukUygun: "Wegen des flachen Wassers gut für Familien mit kleinen Kindern geeignet, zu Stoßzeiten sollte man jedoch mit Andrang rechnen.",
+        kalabalik: "Als einer der bekanntesten und beliebtesten Strände der Türkei besonders im Sommer sehr voll; TripAdvisor-Bewertungen erwähnen, dass selbst an Wochentagnachmittagen 'kein Platz zum Bewegen' sei. Besucher schätzen meist die Schönheit des Strandes, beklagen aber den Andrang.",
+        temizlik: "Bekannt für goldenen Sand und klares Meer, sauber genug, dass Fische zu sehen sind.",
+        notlar: "Der Name stammt von der goldfarbenen Farbe des Sandes. Öffnungszeiten sind meist 08:00-19:00 Uhr. Da er einer der bekanntesten Strände der Türkei ist, sollte man bei einem Besuch mitten im Sommer mit Andrang rechnen."
+      },
+      ru: {
+        parkNotu: "Есть несколько вариантов парковки, но цены в сезон могут заметно расти. На боковых улицах (район Karakol Caddesi) при наличии места возможна и бесплатная парковка.",
+        tuvaletNotu: "Есть туалеты, душ и кабинки для переодевания.",
+        yayaMesafe: "Рядом с центром Дидима, в черте города.",
+        sezlong: "Можно взять напрокат шезлонг и зонт, цена зависит от источника.",
+        dalgaDurumu: "Мелкая, спокойная вода.",
+        aliverisYemeIcme: "Поблизости есть кафе и рестораны.",
+        cocukUygun: "Подходит для семей с маленькими детьми благодаря мелкой воде, но стоит учитывать многолюдность в пиковые часы.",
+        kalabalik: "Как один из самых известных и популярных пляжей Турции, особенно летом бывает очень многолюдно; в отзывах на TripAdvisor отмечают, что даже в будние дни днём «негде ступить». Посетители обычно ценят красоту пляжа, но жалуются на толпы.",
+        temizlik: "Известен золотистым песком и прозрачным морем, настолько чистым, что видно рыб.",
+        notlar: "Название происходит от золотистого цвета песка. Часы работы обычно 08:00-19:00. Поскольку это один из самых известных пляжей Турции, будьте готовы к толпам, если посещаете его в разгар лета."
+      }
+    },
     fotograflar: [
       "fotoğraflar/altinkum/altinkum-1.jpg",
       "fotoğraflar/altinkum/altinkum-2.jpg",
@@ -1530,6 +1731,32 @@ const PLAJLAR = [
     kalabalik: "Türkiye'nin en tanınmış tatil beldelerinden biri olduğu için yaz sezonunda çok yoğun oluyor.",
     temizlik: "",
     notlar: "Ölüdeniz'in iki ayrı bölümü var: halka açık ve ücretsiz Belcekız kısmı (bu kayıt) ile dünyaca ünlü 'Mavi Lagün' manzarasının bulunduğu Kumburnu/Ölüdeniz Tabiat Parkı kısmı — o kısım ayrı bir giriş ücreti gerektiren korunan bir tabiat parkı olduğu için kapsam dışı bırakıldı (uygulamanın ücretsiz halk plajı ilkesine uymuyor). Ölüdeniz aynı zamanda Türkiye'nin en önemli yamaç paraşütü merkezi.",
+    ceviriler: {
+      en: {
+        parkNotu: "Parking is paid; private operator car parks can get quite expensive in season.",
+        sezlong: "Sunbeds and umbrellas are paid.",
+        dalgaDurumu: "The sea deepens quickly and can get choppy; this can be challenging for unconfident swimmers or families with young children.",
+        cocukUygun: "Because the sea deepens quickly close to shore, caution is needed with small children.",
+        kalabalik: "As one of Turkey's most famous holiday resorts, it gets very busy in summer.",
+        notlar: "Ölüdeniz has two separate parts: the public, free Belcekız section (this listing) and the Kumburnu/Ölüdeniz Nature Park section with the world-famous 'Blue Lagoon' view — that part requires a separate entry fee as a protected nature park, so it's out of scope here (it doesn't fit the app's free-public-beach principle). Ölüdeniz is also Turkey's leading paragliding hub."
+      },
+      de: {
+        parkNotu: "Parkplätze sind kostenpflichtig; private Parkplätze können in der Saison ziemlich teuer werden.",
+        sezlong: "Liegen und Sonnenschirme sind kostenpflichtig.",
+        dalgaDurumu: "Das Meer wird schnell tief und kann welliger werden; das kann für unsichere Schwimmer oder Familien mit kleinen Kindern herausfordernd sein.",
+        cocukUygun: "Da das Wasser nahe am Ufer schnell tief wird, ist bei kleinen Kindern Vorsicht geboten.",
+        kalabalik: "Als einer der bekanntesten Urlaubsorte der Türkei ist es im Sommer sehr voll.",
+        notlar: "Ölüdeniz besteht aus zwei getrennten Teilen: dem öffentlichen, kostenlosen Belcekız-Abschnitt (dieser Eintrag) und dem Bereich Kumburnu/Ölüdeniz-Naturpark mit dem weltberühmten Blick auf die 'Blaue Lagune' — dieser Teil erfordert als geschützter Naturpark ein separates Eintrittsgeld und liegt daher außerhalb des Rahmens dieser App (passt nicht zum Prinzip kostenloser öffentlicher Strände). Ölüdeniz ist zudem das bedeutendste Gleitschirmflug-Zentrum der Türkei."
+      },
+      ru: {
+        parkNotu: "Парковка платная; частные парковки в сезон могут быть довольно дорогими.",
+        sezlong: "Шезлонги и зонты платные.",
+        dalgaDurumu: "Море быстро становится глубоким и может быть неспокойным; это может быть непросто для неуверенных пловцов или семей с маленькими детьми.",
+        cocukUygun: "Поскольку море быстро углубляется у берега, с маленькими детьми нужно быть осторожными.",
+        kalabalik: "Как один из самых известных курортов Турции, летом здесь очень многолюдно.",
+        notlar: "У Ölüdeniz есть две отдельные части: общественная бесплатная часть Belcekız (эта запись) и территория природного парка Кумбурну/Олюдениз со всемирно известным видом на «Голубую лагуну» — та часть требует отдельного платного входа как охраняемый природный парк, поэтому она не включена (не соответствует принципу бесплатных общественных пляжей приложения). Ölüdeniz также является главным центром парапланеризма в Турции."
+      }
+    },
     fotograflar: [
       "fotoğraflar/oludeniz/oludeniz-1.jpg",
       "fotoğraflar/oludeniz/oludeniz-2.jpg",
@@ -1564,6 +1791,35 @@ const PLAJLAR = [
     kalabalik: "Uluslararası tanınırlığı yüksek bir plaj olduğu için yaz sezonunda yoğun ziyaretçi alıyor.",
     temizlik: "",
     notlar: "Akdeniz'in en önemli caretta caretta (iri başlı deniz kaplumbağası) üreme alanlarından biri; kum üzerindeki yuvalama bölgeleri işaretli, ziyaretçilerin bu alanlara girmemesi isteniyor. Mayıs-Eylül arası gece 20:00-08:00 saatleri arasında plaja giriş yasak. 2011'de Hollandalı Zoover sitesi tarafından 'Avrupa'nın En İyi Plaj Destinasyonu' seçilmiş, Lonely Planet'te ayrı bir sayfası var. Giriş saatleri genelde 08:00-20:00 arası. Dalyan Nehri deltasıyla Akdeniz arasında uzanan doğal bir kumul şeridi üzerinde.",
+    ceviriler: {
+      en: {
+        parkNotu: "Pedestrian entry is free; there's a fee for vehicle entry (car/motorbike/minibus). A municipal car park is available.",
+        tuvaletNotu: "The beach facilities include changing cabins and cold-drink stands; umbrella rental is available.",
+        yayaMesafe: "About 12 km from Dalyan town centre; reachable by minibus, boat-dolmuş, or private vehicle.",
+        sezlong: "Umbrella rental is available.",
+        aliverisYemeIcme: "The beach facilities include cold-drink stands.",
+        kalabalik: "As an internationally famous beach, it gets busy with visitors in summer.",
+        notlar: "One of the Mediterranean's most important nesting grounds for the loggerhead sea turtle (Caretta caretta); nesting areas on the sand are marked, and visitors are asked not to enter them. Beach access is prohibited from 20:00 to 08:00 at night between May and September. In 2011 it was voted 'Europe's Best Beach Destination' by the Dutch site Zoover, and it has its own page on Lonely Planet. Opening hours are generally 08:00-20:00. It sits on a natural sand spit between the Dalyan River delta and the Mediterranean."
+      },
+      de: {
+        parkNotu: "Der Zugang zu Fuß ist kostenlos; für die Einfahrt mit Fahrzeugen (Auto/Motorrad/Minibus) wird eine Gebühr erhoben. Es gibt einen städtischen Parkplatz.",
+        tuvaletNotu: "Zur Strandausstattung gehören Umkleidekabinen und Stände für kalte Getränke; Sonnenschirme können gemietet werden.",
+        yayaMesafe: "Etwa 12 km vom Zentrum von Dalyan entfernt; erreichbar mit Minibus, Boots-Dolmuş oder eigenem Fahrzeug.",
+        sezlong: "Sonnenschirme können gemietet werden.",
+        aliverisYemeIcme: "Zur Strandausstattung gehören Stände für kalte Getränke.",
+        kalabalik: "Als international bekannter Strand ist er im Sommer stark besucht.",
+        notlar: "Einer der wichtigsten Nistplätze der Unechten Karettschildkröte (Caretta caretta) im Mittelmeer; die Nistbereiche im Sand sind markiert, Besucher werden gebeten, sie nicht zu betreten. Von Mai bis September ist der Strand nachts zwischen 20:00 und 08:00 Uhr gesperrt. 2011 wurde er von der niederländischen Seite Zoover zum 'besten Strandziel Europas' gewählt und hat eine eigene Seite bei Lonely Planet. Öffnungszeiten sind meist 08:00-20:00 Uhr. Er liegt auf einer natürlichen Sandnehrung zwischen dem Dalyan-Flussdelta und dem Mittelmeer."
+      },
+      ru: {
+        parkNotu: "Вход пешком бесплатный; за въезд на транспорте (авто/мотоцикл/микроавтобус) взимается плата. Есть муниципальная парковка.",
+        tuvaletNotu: "На пляже есть кабинки для переодевания и киоски с холодными напитками; можно взять зонт напрокат.",
+        yayaMesafe: "Около 12 км от центра Дальяна; можно добраться на маршрутке, лодке-долмуше или личном транспорте.",
+        sezlong: "Можно взять зонт напрокат.",
+        aliverisYemeIcme: "На территории пляжа есть киоски с холодными напитками.",
+        kalabalik: "Как пляж с международной известностью, летом принимает много посетителей.",
+        notlar: "Один из важнейших в Средиземноморье мест гнездования логгерхедовой морской черепахи (Caretta caretta); гнездовые участки на песке отмечены, посетителей просят туда не заходить. С мая по сентябрь вход на пляж ночью с 20:00 до 08:00 запрещён. В 2011 году голландский сайт Zoover признал его «лучшим пляжным направлением Европы», у него есть отдельная страница на Lonely Planet. Часы работы обычно 08:00-20:00. Пляж расположен на природной песчаной косе между дельтой реки Дальян и Средиземным морем."
+      }
+    },
     fotograflar: [
       "fotoğraflar/iztuzu/iztuzu-1.jpg",
       "fotoğraflar/iztuzu/iztuzu-2.jpg",
@@ -1598,6 +1854,38 @@ const PLAJLAR = [
     kalabalik: "Yaz aylarında oldukça kalabalık oluyor.",
     temizlik: "Temiz suyu ve geniş sahil şeridiyle biliniyor.",
     notlar: "Hem Alman hem Rus gezi kaynaklarında Marmaris'in en popüler aile plajlarından biri olarak öne çıkıyor, altın renkli kumuyla tanınıyor. Yeşil dağlarla çevrili bir koyda yer alıyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "There are visitor complaints about parking and sunbed charges during busy periods.",
+        tuvaletNotu: "Free toilets, showers and changing cabins are available.",
+        yayaMesafe: "About 8 km from central Marmaris.",
+        dalgaDurumu: "A warm, calm sea that deepens quickly; the ground is a mix of soft sand and pebbles.",
+        cocukUygun: "Since the sea deepens quickly, families with children and non-swimmers should be cautious.",
+        kalabalik: "Gets quite crowded in summer.",
+        temizlik: "Known for its clear water and wide stretch of coastline.",
+        notlar: "Featured in both German and Russian travel sources as one of Marmaris's most popular family beaches, known for its golden sand. Sits in a bay surrounded by green mountains."
+      },
+      de: {
+        parkNotu: "In stark besuchten Zeiten gibt es Beschwerden von Besuchern über Parkplatz- und Liegengebühren.",
+        tuvaletNotu: "Kostenlose Toiletten, Duschen und Umkleidekabinen sind vorhanden.",
+        yayaMesafe: "Etwa 8 km vom Zentrum von Marmaris entfernt.",
+        dalgaDurumu: "Ein warmes, ruhiges Meer, das schnell tief wird; der Untergrund ist eine Mischung aus weichem Sand und Kies.",
+        cocukUygun: "Da das Meer schnell tief wird, sollten Familien mit Kindern und Nichtschwimmer vorsichtig sein.",
+        kalabalik: "Im Sommer recht voll.",
+        temizlik: "Bekannt für sein klares Wasser und die breite Küstenlinie.",
+        notlar: "Wird sowohl in deutschen als auch russischen Reisequellen als einer der beliebtesten Familienstrände von Marmaris genannt, bekannt für seinen goldenen Sand. Liegt in einer von grünen Bergen umgebenen Bucht."
+      },
+      ru: {
+        parkNotu: "В загруженные периоды есть жалобы посетителей на плату за парковку и шезлонги.",
+        tuvaletNotu: "Есть бесплатные туалеты, душ и кабинки для переодевания.",
+        yayaMesafe: "Около 8 км от центра Мармариса.",
+        dalgaDurumu: "Тёплое, спокойное море, которое быстро становится глубоким; дно — смесь мягкого песка и гальки.",
+        cocukUygun: "Поскольку море быстро углубляется, семьям с детьми и не умеющим плавать стоит быть осторожными.",
+        kalabalik: "Летом довольно многолюдно.",
+        temizlik: "Известен прозрачной водой и широкой береговой линией.",
+        notlar: "Упоминается и в немецких, и в русских туристических источниках как один из самых популярных семейных пляжей Мармариса, известен золотистым песком. Расположен в бухте, окружённой зелёными горами."
+      }
+    },
     fotograflar: [
       "fotoğraflar/icmeler/icmeler-1.jpg",
       "fotoğraflar/icmeler/icmeler-2.jpg",
@@ -1699,6 +1987,44 @@ const PLAJLAR = [
     kalabalik: "Temmuz-Ağustos aylarında oldukça kalabalıklaşıyor, Mayıs-Eylül gibi ara aylarda ziyaret önerilir.",
     temizlik: "Sakin ve temiz kumuyla biliniyor.",
     notlar: "Bodrum'un en popüler aile plajlarından biri; çocuk gürültüsü nedeniyle sessiz bir ortam arayanlar için uygun olmayabilir.",
+    ceviriler: {
+      en: {
+        parkNotu: "A car park is available.",
+        tuvaletNotu: "Shower, toilet, changing cabin, umbrella and snack-stand services are available.",
+        yayaMesafe: "About 8 km from central Bodrum.",
+        sezlong: "Umbrella and sunbed rental is available.",
+        dalgaDurumu: "Sandy seabed that turns slightly weedy further out; depth increases gradually and generally stays shallow.",
+        aliverisYemeIcme: "A snack stand is available.",
+        cocukUygun: "Described as ideal for families with children thanks to its wide beach and shallow, calm sea.",
+        kalabalik: "Gets quite crowded in July-August; visiting in the shoulder months like May-September is recommended.",
+        temizlik: "Known for its calm water and clean sand.",
+        notlar: "One of Bodrum's most popular family beaches; may not suit those looking for a quiet setting due to noise from children."
+      },
+      de: {
+        parkNotu: "Es gibt einen Parkplatz.",
+        tuvaletNotu: "Dusche, Toilette, Umkleidekabine, Sonnenschirm und Imbissstand sind vorhanden.",
+        yayaMesafe: "Etwa 8 km vom Zentrum von Bodrum entfernt.",
+        sezlong: "Sonnenschirme und Liegen können gemietet werden.",
+        dalgaDurumu: "Sandiger Meeresboden, der weiter draußen leicht bewachsen wird; die Tiefe nimmt allmählich zu und bleibt meist flach.",
+        aliverisYemeIcme: "Es gibt einen Imbissstand.",
+        cocukUygun: "Gilt dank des breiten Strandes und des flachen, ruhigen Meeres als ideal für Familien mit Kindern.",
+        kalabalik: "Im Juli/August recht voll; ein Besuch in den Nebenmonaten wie Mai-September wird empfohlen.",
+        temizlik: "Bekannt für ruhiges Wasser und sauberen Sand.",
+        notlar: "Einer der beliebtesten Familienstrände Bodrums; für alle, die eine ruhige Umgebung suchen, wegen des Kinderlärms möglicherweise nicht ideal."
+      },
+      ru: {
+        parkNotu: "Есть парковка.",
+        tuvaletNotu: "Доступны душ, туалет, кабинка для переодевания, зонт и киоск с закусками.",
+        yayaMesafe: "Около 8 км от центра Бодрума.",
+        sezlong: "Можно взять напрокат зонт и шезлонг.",
+        dalgaDurumu: "Песчаное дно, которое дальше от берега слегка зарастает водорослями; глубина нарастает постепенно и в целом остаётся небольшой.",
+        aliverisYemeIcme: "Есть киоск с закусками.",
+        cocukUygun: "Считается идеальным для семей с детьми благодаря широкому пляжу и спокойному мелкому морю.",
+        kalabalik: "В июле-августе довольно многолюдно; рекомендуется посещать в межсезонье, например с мая по сентябрь.",
+        temizlik: "Известен спокойной водой и чистым песком.",
+        notlar: "Один из самых популярных семейных пляжей Бодрума; тем, кто ищет тихое место, может не подойти из-за детского шума."
+      }
+    },
     fotograflar: [
       "fotoğraflar/bitez/bitez-1.webp",
       "fotoğraflar/bitez/bitez-2.jpg",
@@ -2209,6 +2535,44 @@ const PLAJLAR = [
     kalabalik: "Antalya'nın iki amiral gemisi şehir plajından biri; özellikle yaz sezonunda oldukça kalabalık oluyor.",
     temizlik: "Nisan-Ekim sezonunda Mavi Bayrak sertifikasına sahip.",
     notlar: "7 km uzunluğunda, yaklaşık 40 numaralı halka açık giriş noktasına bölünmüş bir şehir plajı; batı ucuna doğru kumlu bölümler de bulunuyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "Both free and paid municipal car parks are available along the shore.",
+        tuvaletNotu: "Renovated free public toilets are available along the coastal boulevard.",
+        yayaMesafe: "The 7 km coastline runs along the seaside boulevard, with around 40 numbered public access points; at most points the walk from parking to the beach is short.",
+        sezlong: "Available for rent at the cafés/restaurants along the beach.",
+        dalgaDurumu: "Generally has a calm Mediterranean character; the entry ground can vary by section.",
+        aliverisYemeIcme: "Numerous cafés, restaurants, bars and free Wi-Fi areas along the boulevard.",
+        cocukUygun: "The boulevard has children's playgrounds and bike/scooter paths, with family-friendly infrastructure.",
+        kalabalik: "One of Antalya's two flagship city beaches; it gets quite crowded, especially in summer.",
+        temizlik: "Holds Blue Flag certification for the April-October season.",
+        notlar: "A 7 km-long city beach divided into about 40 numbered public access points; there are also sandy sections toward the western end."
+      },
+      de: {
+        parkNotu: "Entlang der Küste gibt es sowohl kostenlose als auch kostenpflichtige städtische Parkplätze.",
+        tuvaletNotu: "Entlang der Strandpromenade gibt es renovierte, kostenlose öffentliche Toiletten.",
+        yayaMesafe: "Die 7 km lange Küstenlinie verläuft entlang der Strandpromenade mit rund 40 nummerierten öffentlichen Zugängen; an den meisten Stellen ist der Weg vom Parkplatz zum Strand kurz.",
+        sezlong: "Kann in den Cafés/Restaurants am Strand gemietet werden.",
+        dalgaDurumu: "Hat im Allgemeinen einen ruhigen, mediterranen Charakter; der Untergrund am Einstieg kann je nach Abschnitt variieren.",
+        aliverisYemeIcme: "Entlang der Promenade gibt es zahlreiche Cafés, Restaurants, Bars und kostenlose WLAN-Bereiche.",
+        cocukUygun: "Die Promenade verfügt über Kinderspielplätze sowie Rad-/Rollerwege und bietet eine familienfreundliche Infrastruktur.",
+        kalabalik: "Einer der zwei Vorzeigestrände von Antalya; besonders im Sommer sehr voll.",
+        temizlik: "Trägt in der Saison von April bis Oktober die Blaue-Flagge-Zertifizierung.",
+        notlar: "Ein 7 km langer Stadtstrand, unterteilt in etwa 40 nummerierte öffentliche Zugangspunkte; zum westlichen Ende hin gibt es auch sandige Abschnitte."
+      },
+      ru: {
+        parkNotu: "Вдоль побережья есть как бесплатные, так и платные муниципальные парковки.",
+        tuvaletNotu: "Вдоль набережной есть отремонтированные бесплатные общественные туалеты.",
+        yayaMesafe: "7-километровая береговая линия тянется вдоль набережной, с примерно 40 пронумерованными общественными входами; в большинстве мест от парковки до пляжа идти недолго.",
+        sezlong: "Можно взять напрокат в кафе/ресторанах на пляже.",
+        dalgaDurumu: "В целом имеет спокойный средиземноморский характер; тип дна на входе может отличаться в зависимости от участка.",
+        aliverisYemeIcme: "Вдоль набережной множество кафе, ресторанов, баров и зон с бесплатным Wi-Fi.",
+        cocukUygun: "На набережной есть детские площадки и дорожки для велосипедов/самокатов — инфраструктура удобна для семей.",
+        kalabalik: "Один из двух главных городских пляжей Анталии; особенно летом бывает очень людно.",
+        temizlik: "Имеет сертификат «Голубой флаг» на сезон апрель-октябрь.",
+        notlar: "Городской пляж длиной 7 км, разделённый примерно на 40 пронумерованных общественных входов; ближе к западному концу также встречаются песчаные участки."
+      }
+    },
     fotograflar: [
       "fotoğraflar/konyaalti/konyaalti-1.jpg",
       "fotoğraflar/konyaalti/konyaalti-2.jpg",
@@ -2241,6 +2605,41 @@ const PLAJLAR = [
     kalabalik: "Halka açık bölüm yoğun; sahilin doğusu ağırlıklı olarak 5 yıldızlı otel önleri.",
     temizlik: "Mavi Bayrak'lı plaj.",
     notlar: "Halk plajında kadınlar ve erkekler için ayrı mescit bulunuyor. İsmin eski bir Luvi dilinde 'kum' anlamına geldiği iddia ediliyor (tek kaynaklı, doğrulanmamış bir bilgi).",
+    ceviriler: {
+      en: {
+        tuvaletNotu: "The public beach section (Lara Halk Plajı) has toilets and changing cabins.",
+        yayaMesafe: "Lara Halk Plajı is a roughly 2 km-long, ~45 m-wide section at the western end of the 12 km Lara coastline.",
+        sezlong: "Available for rent.",
+        dalgaDurumu: "Generally calm with light waves; some patches of small pebbles can appear near the edges.",
+        aliverisYemeIcme: "There are restaurants/cafés and picnic tables on the beach.",
+        cocukUygun: "There's a children's playground on the beach; the beach area is known to be set up for disabled access.",
+        kalabalik: "The public section is busy; the eastern part of the coastline is mostly fronted by 5-star hotels.",
+        temizlik: "A Blue Flag beach.",
+        notlar: "The public beach has separate prayer rooms for women and men. It's claimed (from a single, unverified source) that the name comes from an old Luwian word meaning 'sand'."
+      },
+      de: {
+        tuvaletNotu: "Im öffentlichen Strandbereich (Lara Halk Plajı) gibt es Toiletten und Umkleidekabinen.",
+        yayaMesafe: "Lara Halk Plajı ist ein etwa 2 km langer, ca. 45 m breiter Abschnitt am westlichen Ende der 12 km langen Küste von Lara.",
+        sezlong: "Kann gemietet werden.",
+        dalgaDurumu: "Meist ruhig mit leichtem Wellengang; am Rand können vereinzelt kleine Kiesabschnitte vorkommen.",
+        aliverisYemeIcme: "Am Strand gibt es Restaurants/Cafés und Picknicktische.",
+        cocukUygun: "Am Strand gibt es einen Kinderspielplatz; der Strandbereich gilt als barrierefrei gestaltet.",
+        kalabalik: "Der öffentliche Bereich ist gut besucht; der östliche Teil der Küste liegt größtenteils vor 5-Sterne-Hotels.",
+        temizlik: "Ein Strand mit Blauer Flagge.",
+        notlar: "Am öffentlichen Strand gibt es getrennte Gebetsräume für Frauen und Männer. Es wird behauptet (aus einer einzigen, nicht verifizierten Quelle), der Name stamme aus einem alten luwischen Wort für 'Sand'."
+      },
+      ru: {
+        tuvaletNotu: "На общественном участке пляжа (Lara Halk Plajı) есть туалеты и кабинки для переодевания.",
+        yayaMesafe: "Lara Halk Plajı — участок длиной около 2 км и шириной ~45 м в западной части 12-километрового побережья Лара.",
+        sezlong: "Можно взять напрокат.",
+        dalgaDurumu: "Обычно спокойное море с лёгкими волнами; у края местами может встречаться мелкая галька.",
+        aliverisYemeIcme: "На пляже есть рестораны/кафе и столики для пикника.",
+        cocukUygun: "На пляже есть детская площадка; территория пляжа приспособлена для людей с ограниченными возможностями.",
+        kalabalik: "Общественная часть пляжа многолюдна; восточная часть побережья в основном застроена 5-звёздочными отелями.",
+        temizlik: "Пляж с сертификатом «Голубой флаг».",
+        notlar: "На общественном пляже есть отдельные молельные комнаты для женщин и мужчин. По одной непроверенной версии, название происходит от древнего лувийского слова, означающего «песок»."
+      }
+    },
     fotograflar: [
       "fotoğraflar/lara/lara-1.jpg",
       "fotoğraflar/lara/lara-2.jpg",
@@ -2273,6 +2672,41 @@ const PLAJLAR = [
     kalabalik: "Çok popüler ve kalabalık; erken saatte gidilmesi öneriliyor.",
     temizlik: "",
     notlar: "Kaş ile Kalkan arasında; Türkiye'nin en çok fotoğraflanan plajlarından biri olarak biliniyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "There is limited free roadside parking, but it tends to fill up due to high demand.",
+        tuvaletNotu: "There are municipal changing cabins and toilets; some sources say the shower/toilet use may be paid, this is not fully confirmed.",
+        yayaMesafe: "Reached via a 187-step staircase down from the coastal road to the beach.",
+        sezlong: "Available for rent.",
+        dalgaDurumu: "A cove formed at the mouth of a canyon reaching the sea; known for its turquoise, clear water.",
+        aliverisYemeIcme: "A municipal café serves visitors on the beach.",
+        cocukUygun: "The 187-step descent can be challenging for people with mobility issues and families with small children.",
+        kalabalik: "Very popular and crowded; arriving early is recommended.",
+        notlar: "Located between Kaş and Kalkan; known as one of Turkey's most photographed beaches."
+      },
+      de: {
+        parkNotu: "Es gibt eine begrenzte Anzahl kostenloser Parkplätze am Straßenrand, die wegen hoher Nachfrage meist belegt sind.",
+        tuvaletNotu: "Es gibt städtische Umkleidekabinen und Toiletten; einige Quellen berichten, dass Dusche/Toilette kostenpflichtig sein könnten, dies ist nicht endgültig bestätigt.",
+        yayaMesafe: "Erreichbar über eine Treppe mit 187 Stufen von der Küstenstraße hinunter zum Strand.",
+        sezlong: "Kann gemietet werden.",
+        dalgaDurumu: "Eine Bucht, die an der Mündung einer Schlucht ins Meer entstanden ist; bekannt für ihr türkisfarbenes, klares Wasser.",
+        aliverisYemeIcme: "Ein städtisches Café versorgt die Besucher am Strand.",
+        cocukUygun: "Der Abstieg über 187 Stufen kann für Menschen mit eingeschränkter Mobilität und Familien mit kleinen Kindern anstrengend sein.",
+        kalabalik: "Sehr beliebt und voll; ein früher Besuch wird empfohlen.",
+        notlar: "Liegt zwischen Kaş und Kalkan; gilt als einer der meistfotografierten Strände der Türkei."
+      },
+      ru: {
+        parkNotu: "У дороги есть ограниченное количество бесплатных парковочных мест, но из-за высокого спроса они обычно заняты.",
+        tuvaletNotu: "Есть муниципальные кабинки для переодевания и туалеты; по некоторым данным, душ/туалет могут быть платными — это не подтверждено окончательно.",
+        yayaMesafe: "К пляжу ведёт лестница из 187 ступеней, спускающаяся от прибрежной дороги.",
+        sezlong: "Можно взять напрокат.",
+        dalgaDurumu: "Бухта, образовавшаяся в устье каньона; известна бирюзовой прозрачной водой.",
+        aliverisYemeIcme: "На пляже работает муниципальное кафе.",
+        cocukUygun: "Спуск по 187 ступеням может быть трудным для людей с ограниченной подвижностью и семей с маленькими детьми.",
+        kalabalik: "Очень популярное и людное место; рекомендуется приезжать пораньше.",
+        notlar: "Расположен между Кашем и Калканом; считается одним из самых фотографируемых пляжей Турции."
+      }
+    },
     fotograflar: [
       "fotoğraflar/kaputas/kaputas-1.jpg",
       "fotoğraflar/kaputas/kaputas-2.jpg",
@@ -2407,6 +2841,41 @@ const PLAJLAR = [
     kalabalik: "Herkesin tercih ettiği bir plaj olduğu için oldukça kalabalık olabiliyor.",
     temizlik: "Caretta caretta deniz kaplumbağalarının önemli bir yuvalama alanı; koruma amacıyla sezon boyunca gece saatlerinde plaja giriş kapatılıyor.",
     notlar: "Türkiye'nin en uzun kumsallarından biri olarak biliniyor; Patara antik kentine bitişik. Plaj, idari olarak Antalya (Kaş) ile Muğla (Fethiye) sınırına yakın bir konumda; bazı kaynaklar plajın bir kısmının Muğla tarafına sarktığını belirtiyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "There's a large car park shared with the Patara ancient city site; vehicles cannot go further from the entrance.",
+        tuvaletNotu: "Showers, toilets and parking for the shared ancient-city/beach area are generally free.",
+        yayaMesafe: "From the entrance in Gelemiş village to the actual beach there's a vehicle-free stretch of about 2 km that has to be walked.",
+        sezlong: "Available for rent; besides sunbeds/umbrellas, the beachside cafeteria also serves tea, coffee, hamburgers, gözleme and toast.",
+        dalgaDurumu: "Can get choppy during the day depending on the wind, especially around midday; it usually calms down toward the evening.",
+        aliverisYemeIcme: "There's a cafeteria on the beach plus a few small drink/snack stands.",
+        cocukUygun: "Generally considered good for families since the water stays shallow for a long stretch and the sand is fine and soft; caution is advised for wind/waves that can pick up in the afternoon.",
+        kalabalik: "As a beach everyone wants to visit, it can get quite crowded.",
+        notlar: "Known as one of Turkey's longest sandy beaches; adjacent to the ancient city of Patara. The beach sits close to the administrative border between Antalya (Kaş) and Muğla (Fethiye); some sources note that part of the beach extends into the Muğla side."
+      },
+      de: {
+        parkNotu: "Es gibt einen großen Parkplatz, der gemeinsam mit der antiken Stätte Patara genutzt wird; ab dem Eingang dürfen Fahrzeuge nicht weiterfahren.",
+        tuvaletNotu: "Duschen, Toiletten und Parkplätze im gemeinsamen Bereich von antiker Stadt und Strand sind in der Regel kostenlos.",
+        yayaMesafe: "Vom Eingang im Dorf Gelemiş bis zum eigentlichen Strand muss ein etwa 2 km langer, autofreier Abschnitt zu Fuß zurückgelegt werden.",
+        sezlong: "Kann gemietet werden; die Strandcafeteria bietet neben Liegen/Sonnenschirmen auch Tee, Kaffee, Hamburger, Gözleme und Toast an.",
+        dalgaDurumu: "Kann tagsüber je nach Wind welliger werden, besonders um die Mittagszeit; gegen Abend beruhigt es sich meist.",
+        aliverisYemeIcme: "Am Strand gibt es eine Cafeteria sowie einige kleine Getränke-/Imbissstände.",
+        cocukUygun: "Gilt allgemein als familienfreundlich, da das Wasser über eine lange Strecke flach bleibt und der Sand fein und weich ist; bei auffrischendem Wind/Wellen am Nachmittag ist Vorsicht geboten.",
+        kalabalik: "Als Strand, den fast jeder besuchen möchte, kann es hier recht voll werden.",
+        notlar: "Gilt als einer der längsten Sandstrände der Türkei; grenzt an die antike Stadt Patara. Der Strand liegt nahe der Verwaltungsgrenze zwischen Antalya (Kaş) und Muğla (Fethiye); einige Quellen weisen darauf hin, dass ein Teil des Strandes auf die Muğla-Seite reicht."
+      },
+      ru: {
+        parkNotu: "Есть большая парковка, общая с античным городом Патара; от входа дальше на машине проехать нельзя.",
+        tuvaletNotu: "Душ, туалет и парковка на общей территории античного города и пляжа обычно бесплатны.",
+        yayaMesafe: "От входа в деревне Гелемиш до самого пляжа нужно пройти пешком около 2 км по участку, закрытому для транспорта.",
+        sezlong: "Можно взять напрокат; пляжное кафе, помимо шезлонгов/зонтов, предлагает чай, кофе, гамбургеры, гёзлеме и тосты.",
+        dalgaDurumu: "В течение дня может быть неспокойно из-за ветра, особенно в полдень; к вечеру обычно успокаивается.",
+        aliverisYemeIcme: "На пляже есть кафе и несколько небольших киосков с напитками/закусками.",
+        cocukUygun: "В целом считается подходящим для семей, так как вода долго остаётся мелкой, а песок мелкий и мягкий; во второй половине дня стоит быть осторожнее из-за усиливающегося ветра/волн.",
+        kalabalik: "Поскольку это пляж, который хотят посетить все, здесь может быть довольно людно.",
+        notlar: "Считается одним из самых длинных песчаных пляжей Турции; примыкает к античному городу Патара. Пляж расположен недалеко от административной границы между Анталией (Каш) и Мугла (Фетхие); по некоторым данным, часть пляжа заходит на сторону Мугла."
+      }
+    },
     fotograflar: [
       "fotoğraflar/patara/patara-1.jpg",
       "fotoğraflar/patara/patara-2.jpg",
@@ -2439,6 +2908,38 @@ const PLAJLAR = [
     kalabalik: "Kemer merkezine göre daha sakin ve az gelişmiş.",
     temizlik: "",
     notlar: "Önemli bir Caretta caretta yuvalama plajı; Mayıs-Ağustos arası gece ışık/gürültü kısıtlaması uygulanıyor. Yanartaş (Chimera) ve Olympos antik kenti ile aynı bölgede, doğa+tarih rotasının bir parçası.",
+    ceviriler: {
+      en: {
+        parkNotu: "Parking is available at campgrounds and along the roadside; there's no single clear pricing policy for the whole beach.",
+        tuvaletNotu: "Both free and paid (business-run) options are available.",
+        yayaMesafe: "Several campgrounds, such as Engin Camping, line the area behind the beach.",
+        sezlong: "Rental sunbeds, partly paid, vary by operator.",
+        aliverisYemeIcme: "There are a few beach bars/cafés; the area is deliberately kept free of large hotel development.",
+        cocukUygun: "Generally suitable for families due to its calm, undeveloped character, though caution is advised near turtle-nesting areas.",
+        kalabalik: "Calmer and less developed than Kemer's centre.",
+        notlar: "An important Caretta caretta nesting beach; night-time lighting/noise restrictions apply from May to August. In the same area as the Chimera (Yanartaş) flames and the ancient city of Olympos, part of a nature-and-history route."
+      },
+      de: {
+        parkNotu: "Parkmöglichkeiten gibt es auf Campingplätzen und am Straßenrand; für den gesamten Strand gibt es keine einheitliche Preisregelung.",
+        tuvaletNotu: "Es gibt sowohl kostenlose als auch kostenpflichtige (von Betrieben angebotene) Optionen.",
+        yayaMesafe: "Hinter dem Strand reihen sich mehrere Campingplätze, etwa Engin Camping.",
+        sezlong: "Mietliegen, teilweise kostenpflichtig, je nach Anbieter unterschiedlich.",
+        aliverisYemeIcme: "Es gibt einige Strandbars/Cafés; die Gegend wird bewusst frei von großer Hotelbebauung gehalten.",
+        cocukUygun: "Aufgrund des ruhigen, unerschlossenen Charakters allgemein familienfreundlich, in der Nähe von Schildkröten-Nistgebieten ist jedoch Vorsicht geboten.",
+        kalabalik: "Ruhiger und weniger erschlossen als das Zentrum von Kemer.",
+        notlar: "Ein wichtiger Nistplatz der Caretta caretta; von Mai bis August gelten nächtliche Licht-/Lärmbeschränkungen. Liegt in derselben Region wie die Flammen von Chimera (Yanartaş) und die antike Stadt Olympos, Teil einer Natur- und Geschichtsroute."
+      },
+      ru: {
+        parkNotu: "Парковка есть на кемпингах и вдоль дороги; единой политики оплаты для всего пляжа нет.",
+        tuvaletNotu: "Есть как бесплатные, так и платные (от частных заведений) варианты.",
+        yayaMesafe: "За пляжем расположено несколько кемпингов, например Engin Camping.",
+        sezlong: "Прокат шезлонгов, частично платный, условия зависят от оператора.",
+        aliverisYemeIcme: "Есть несколько пляжных баров/кафе; территория намеренно не застраивается крупными отелями.",
+        cocukUygun: "В целом подходит для семей благодаря спокойной, малозастроенной обстановке, но вблизи мест гнездования черепах стоит быть осторожнее.",
+        kalabalik: "Спокойнее и менее застроен, чем центр Кемера.",
+        notlar: "Важный пляж гнездования Caretta caretta; с мая по август действуют ограничения на свет/шум в ночное время. Расположен в том же районе, что и огни Химеры (Янарташ) и античный город Олимпос — часть природно-исторического маршрута."
+      }
+    },
     fotograflar: [
       "fotoğraflar/cirali/cirali-1.jpg",
       "fotoğraflar/cirali/cirali-2.jpg",

@@ -1,6 +1,14 @@
 dilSeciciOlustur("dil-secici");
 applyI18n();
 
+function lc(plaj, alan) {
+  const lang = getLang();
+  if (lang !== "tr" && plaj.ceviriler && plaj.ceviriler[lang] && plaj.ceviriler[lang][alan]) {
+    return plaj.ceviriler[lang][alan];
+  }
+  return plaj[alan];
+}
+
 const params = new URLSearchParams(window.location.search);
 const id = Number(params.get("id"));
 const plaj = PLAJLAR.find(p => p.id === id);
@@ -26,7 +34,7 @@ if (!plaj) {
     ? `<div class="kaynak-uyari">${t("sourceDisclaimer")}</div>`
     : "";
 
-  const dilNotuHtml = getLang() !== "tr"
+  const dilNotuHtml = (getLang() !== "tr" && !(plaj.ceviriler && plaj.ceviriler[getLang()]))
     ? `<div class="kaynak-uyari">${t("contentTrOnlyNotice")}</div>`
     : "";
 
@@ -49,7 +57,7 @@ if (!plaj) {
     ${plaj.parkNotu ? `
     <div class="bilgi-karti">
       <h3>${t("parkingStatus")}</h3>
-      <p class="not-metni">${plaj.parkNotu}</p>
+      <p class="not-metni">${lc(plaj, "parkNotu")}</p>
     </div>` : ""}
 
     ${tesisKartiOlustur(plaj)}
@@ -59,7 +67,7 @@ if (!plaj) {
     ${plaj.notlar ? `
     <div class="bilgi-karti">
       <h3>${t("otherNotes")}</h3>
-      <p class="not-metni">${plaj.notlar}</p>
+      <p class="not-metni">${lc(plaj, "notlar")}</p>
     </div>` : ""}
 
     <a class="harita-buton" href="${plaj.haritaLinki}" target="_blank" rel="noopener">${t("directions")}</a>
@@ -87,19 +95,19 @@ function tesisKartiOlustur(plaj) {
       ${bilinenler.map(([etiket, deger]) => `
         <div class="bilgi-satir"><span class="etiket">${etiket}</span><span class="deger">${deger ? t("yes") : t("no")}</span></div>
       `).join("")}
-      ${plaj.tuvaletNotu ? `<p class="not-metni">${plaj.tuvaletNotu}</p>` : ""}
+      ${plaj.tuvaletNotu ? `<p class="not-metni">${lc(plaj, "tuvaletNotu")}</p>` : ""}
     </div>`;
 }
 
 function konforKartiOlustur(plaj) {
   const satirlar = [
-    [t("walkDistance"), plaj.yayaMesafe, "🚶"],
-    [t("sunbed"), plaj.sezlong, "⛱️"],
-    [t("waveCondition"), plaj.dalgaDurumu, "🌊"],
-    [t("shopping"), plaj.aliverisYemeIcme, "🛍️"],
-    [t("childFriendly"), plaj.cocukUygun, "🧒"],
-    [t("crowdLevel"), plaj.kalabalik, "👥"],
-    [t("cleanliness"), plaj.temizlik, "🧹"]
+    [t("walkDistance"), lc(plaj, "yayaMesafe"), "🚶"],
+    [t("sunbed"), lc(plaj, "sezlong"), "⛱️"],
+    [t("waveCondition"), lc(plaj, "dalgaDurumu"), "🌊"],
+    [t("shopping"), lc(plaj, "aliverisYemeIcme"), "🛍️"],
+    [t("childFriendly"), lc(plaj, "cocukUygun"), "🧒"],
+    [t("crowdLevel"), lc(plaj, "kalabalik"), "👥"],
+    [t("cleanliness"), lc(plaj, "temizlik"), "🧹"]
   ].filter(([, deger]) => deger);
 
   if (satirlar.length === 0) return "";
