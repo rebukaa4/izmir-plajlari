@@ -2,6 +2,7 @@ const DIL_ANAHTARI = "dilTercihi";
 const DESTEKLENEN_DILLER = ["tr", "en", "de", "ru"];
 const DIL_BAYRAK = { tr: "🇹🇷", en: "🇬🇧", de: "🇩🇪", ru: "🇷🇺" };
 const DIL_ETIKET = { tr: "TR", en: "EN", de: "DE", ru: "RU" };
+const DIL_ISIM = { tr: "Türkçe", en: "English", de: "Deutsch", ru: "Русский" };
 
 const I18N = {
   tr: {
@@ -347,7 +348,10 @@ function dilSeciciOlustur(containerId) {
   if (!kapsayici) return;
   const aktifDil = getLang();
   kapsayici.innerHTML = DESTEKLENEN_DILLER.map((lang) => `
-    <button type="button" class="dil-buton ${lang === aktifDil ? "aktif" : ""}" data-lang="${lang}" aria-label="${DIL_ETIKET[lang]}" title="${DIL_ETIKET[lang]}">${DIL_BAYRAK[lang]}</button>
+    <button type="button" class="dil-buton ${lang === aktifDil ? "aktif" : ""}" data-lang="${lang}" aria-label="${DIL_ISIM[lang]}" title="${DIL_ISIM[lang]}">
+      <span class="dil-bayrak">${DIL_BAYRAK[lang]}</span>
+      <span class="dil-isim">${DIL_ISIM[lang]}</span>
+    </button>
   `).join("");
   kapsayici.querySelectorAll(".dil-buton").forEach((btn) => {
     btn.addEventListener("click", () => setLang(btn.dataset.lang));
