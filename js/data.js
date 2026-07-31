@@ -442,7 +442,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "images/boyalik/boyalik-2.jpg"
+      "images/boyalik/boyalik-2.jpg",
+      "fotoğraflar/boyalik/boyalik-3.jpg",
+      "fotoğraflar/boyalik/boyalik-4.jpg",
+      "fotoğraflar/boyalik/boyalik-5.jpg",
+      "fotoğraflar/boyalik/boyalik-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com"],
@@ -705,10 +709,12 @@ const PLAJLAR = [
     },
     fotograflar: [
       "fotoğraflar/yenifoca/yenifoca-1.jpg",
-      "fotoğraflar/yenifoca/yenifoca-2.webp",
       "fotoğraflar/yenifoca/yenifoca-3.png",
       "fotoğraflar/yenifoca/yenifoca-4.jpg",
-      "fotoğraflar/yenifoca/yenifoca-5.jpg"
+      "fotoğraflar/yenifoca/yenifoca-5.jpg",
+      "fotoğraflar/yenifoca/yenifoca-6.webp",
+      "fotoğraflar/yenifoca/yenifoca-7.webp",
+      "fotoğraflar/yenifoca/yenifoca-8.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "gezinomi.com", "izmirhaberleri.com", "hadidenize.com"],
@@ -1833,64 +1839,6 @@ const PLAJLAR = [
     haritaLinki: "https://maps.google.com/?q=Ahmetbeyli+Claros+Plajı+Menderes+İzmir"
   },
   {
-    id: 33,
-    isim: "Voodoo Beach",
-    ilce: "Foça",
-    il: "İzmir",
-    zemin: "Kum-Çakıl",
-    derinlik: "Bilinmiyor",
-    park: "bilinmiyor",
-    parkNotu: "",
-    dus: true,
-    tuvalet: true,
-    tuvaletNotu: "Duş ve soyunma odaları mevcut.",
-    kabin: true,
-    yayaMesafe: "",
-    sezlong: "Plaja giriş ücretsiz, yalnızca şezlong kiralanmak istenirse ücret ödeniyor. Çim üzerinde büyük şemsiyeli ve kum üzerinde küçük şemsiyeli şezlong seçenekleri var.",
-    dalgaDurumu: "",
-    aliverisYemeIcme: "İçecek fiyatları uygun, personel güler yüzlü.",
-    cocukUygun: "",
-    kalabalik: "Pazar günleri çok kalabalıklaşıyor.",
-    temizlik: "Deniz temiz ama biraz soğuk.",
-    notlar: "Eski Foça'da, İsmetpaşa mahallesinde. Sahil-beach karışımı bir konsepti var; hem ücretsiz plaj kısmı hem ücretli şezlong alanı bir arada.",
-    ceviriler: {
-      en: {
-        tuvaletNotu: "Shower and changing rooms available.",
-        sezlong: "Beach entry is free; a fee is only charged if you want to rent a sunbed. There are large-umbrella sunbed options on the grass and small-umbrella ones on the sand.",
-        aliverisYemeIcme: "Drink prices are reasonable, staff are friendly.",
-        kalabalik: "Gets very crowded on Sundays.",
-        temizlik: "The sea is clean but a bit cold.",
-        notlar: "In Eski Foça, İsmetpaşa neighborhood. Has a mixed beach-and-beach-club concept; a free beach section alongside a paid sunbed area."
-      },
-      de: {
-        tuvaletNotu: "Dusche und Umkleideräume vorhanden.",
-        sezlong: "Der Strandeintritt ist kostenlos; eine Gebühr wird nur fällig, wenn man eine Liege mieten möchte. Es gibt Liegenoptionen mit großem Schirm auf dem Rasen und mit kleinem Schirm auf dem Sand.",
-        aliverisYemeIcme: "Die Getränkepreise sind angemessen, das Personal ist freundlich.",
-        kalabalik: "Wird sonntags sehr voll.",
-        temizlik: "Das Meer ist sauber, aber etwas kalt.",
-        notlar: "In Eski Foça, Stadtteil İsmetpaşa. Hat ein gemischtes Strand-/Beach-Club-Konzept; ein kostenloser Strandbereich neben einem kostenpflichtigen Liegenbereich."
-      },
-      ru: {
-        tuvaletNotu: "Есть душ и раздевалки.",
-        sezlong: "Вход на пляж бесплатный, плата взимается только за аренду шезлонга. Есть варианты с большим зонтиком на траве и с маленьким зонтиком на песке.",
-        aliverisYemeIcme: "Цены на напитки разумные, персонал приветливый.",
-        kalabalik: "По воскресеньям становится очень многолюдно.",
-        temizlik: "Море чистое, но немного холодное.",
-        notlar: "В Эски-Фоча, район Исметпаша. Смешанная концепция пляжа и пляжного клуба; бесплатная пляжная зона наряду с платной зоной шезлонгов."
-      }
-    },
-    fotograflar: [
-      "fotoğraflar/voodoobeach/voodoobeach-1.jpg",
-      "fotoğraflar/voodoobeach/voodoobeach-2.jpg",
-      "fotoğraflar/voodoobeach/voodoobeach-3.jpg",
-      "fotoğraflar/voodoobeach/voodoobeach-4.jpg",
-      "fotoğraflar/voodoobeach/voodoobeach-5.jpg"
-    ],
-    kaynak: "internet",
-    kaynaklar: ["tripadvisor.com.tr"],
-    haritaLinki: "https://maps.google.com/?q=Voodoo+Beach+Eski+Foça+İzmir"
-  },
-  {
     id: 34,
     isim: "Delikli Koyu",
     ilce: "Çeşme",
@@ -2120,8 +2068,7 @@ const PLAJLAR = [
       "fotoğraflar/kargacikkoyu/kargacikkoyu-1.jpg",
       "fotoğraflar/kargacikkoyu/kargacikkoyu-2.jpg",
       "fotoğraflar/kargacikkoyu/kargacikkoyu-3.jpg",
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-4.jpg",
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-5.jpg"
+      "fotoğraflar/kargacikkoyu/kargacikkoyu-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -2129,60 +2076,70 @@ const PLAJLAR = [
   },
   {
     id: 38,
-    isim: "Urla Kum Plajı",
+    isim: "Urla Kum Plajı (Urla Kum Denizi / Kum Deniz Plajı)",
     ilce: "Urla",
     il: "İzmir",
-    zemin: "Kum-Taşlık",
+    zemin: "Kumsal",
     derinlik: "Sığ",
-    park: "bilinmiyor",
-    parkNotu: "",
-    dus: false,
-    tuvalet: false,
-    tuvaletNotu: "",
-    kabin: false,
+    park: "kismi",
+    parkNotu: "Belediye tesisinin ücretli bir otoparkı var; biraz uzağında ücretsiz park yeri de bulunabiliyor.",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "WC, duş ve soyunma kabinleri mevcut; ziyaretçi yorumlarında sayıca yeterli ve düzenli olarak tanımlanıyor.",
+    kabin: true,
     yayaMesafe: "",
-    sezlong: "Urla Belediyesi'nin işlettiği bir plaj; giriş makul ücretli. Yanında bir özel işletme kısmı ve plajın diğer ucunda ücretsiz bir bölüm de bulunuyor.",
-    dalgaDurumu: "",
-    aliverisYemeIcme: "Su sporları parkı, çocuk oyun alanları, yürüyüş ve bisiklet yolları mevcut.",
-    cocukUygun: "Su ne çok sıcak ne çok soğuk, sığ ve kumlu — çocuklar için uygun ama aktif yüzücüler için sınırlı.",
-    kalabalik: "Ziyaretçi yorumları çelişkili: bazıları temiz ve bakımlı bulurken bazıları yoğun saatlerde bakımsızlık ve kalabalıktan şikayet ediyor.",
-    temizlik: "Mavi Bayraklı bölümü var; ziyaretçi yorumları arasında hem 'ideal deniz sıcaklığı ve temizliği' hem de geçmişte 'çöp dolu' olduğuna dair şikayetler bulunuyor.",
-    notlar: "Belediyenin işlettiği plaj, giriş kayalık ama kumu saf. Beach/özel işletme, belediye plajı ve ücretsiz halk plajı olmak üzere üç bölümden oluşuyor.",
+    sezlong: "Urla Belediyesi'nin işlettiği bir plaj; giriş makul ücretli, şezlong/şemsiye kiralanabiliyor ya da kendi getirilebiliyor. Yanında bir özel işletme kısmı ve plajın diğer ucunda ücretsiz bir bölüm de bulunuyor.",
+    dalgaDurumu: "Sakin ve dalgasız.",
+    aliverisYemeIcme: "Su sporları parkı, çocuk oyun alanları, yürüyüş ve bisiklet yolları mevcut. Plaj içinde ve girişte yeme-içme seçenekleri var; dışarıdan yiyecek/içecek sokulması genelde istenmiyor.",
+    cocukUygun: "Su ne çok sıcak ne çok soğuk, uzun mesafe boyunca sığ ve kumlu — çocuklar ve yüzme bilmeyenler için oldukça uygun.",
+    kalabalik: "Özellikle hafta sonları oldukça kalabalıklaşıyor; sakin bir ziyaret için hafta içi önerilir.",
+    temizlik: "Mavi Bayraklı bölümü var; ziyaretçi yorumları arasında hem 'ideal deniz sıcaklığı ve temizliği' hem de temizliğin daha iyi olabileceğine dair yorumlar bulunuyor.",
+    notlar: "Belediyenin işlettiği plaj; zemin baştan sona kumdur (kayalık giriş iddiası hatalıydı, düzeltildi), yer yer kumun içinde küçük çakıl taşlarına rastlanabiliyor. 'Urla Kum Denizi' veya 'Kum Deniz Plajı' adlarıyla da anılıyor. Beach/özel işletme, belediye plajı ve ücretsiz halk plajı olmak üzere üç bölümden oluşuyor.",
     ceviriler: {
       en: {
-        sezlong: "A beach run by Urla Municipality; entry has a reasonable fee. There's a private business section next to it, and a free section at the other end of the beach.",
-        aliverisYemeIcme: "A water sports park, children's playgrounds, and walking/cycling paths are available.",
-        cocukUygun: "The water is neither too warm nor too cold, shallow and sandy — suitable for children but limited for active swimmers.",
-        kalabalik: "Visitor reviews are mixed: some find it clean and well-maintained, while others complain about lack of upkeep and crowding at peak times.",
-        temizlik: "There's a Blue Flag section; visitor reviews range from 'ideal sea temperature and cleanliness' to past complaints of it being 'full of litter'.",
-        notlar: "A municipality-run beach, rocky entry but pure sand. Consists of three sections: a beach club/private business, a municipal beach, and a free public beach."
+        parkNotu: "The municipal facility has paid parking; free parking can also be found a bit further away.",
+        tuvaletNotu: "Toilet, shower and changing cabins are available; visitor reviews describe them as numerous and well-maintained.",
+        sezlong: "A beach run by Urla Municipality; entry has a reasonable fee, sunbeds/umbrellas can be rented or brought yourself. There's a private business section next to it, and a free section at the other end of the beach.",
+        dalgaDurumu: "Calm and wave-free.",
+        aliverisYemeIcme: "A water sports park, children's playgrounds, and walking/cycling paths are available. There are food/drink options inside and at the entrance; bringing outside food/drink is generally not allowed.",
+        cocukUygun: "The water is neither too warm nor too cold, shallow and sandy for a long stretch — quite suitable for children and non-swimmers.",
+        kalabalik: "Gets quite crowded especially on weekends; visiting on weekdays is recommended for a calmer experience.",
+        temizlik: "There's a Blue Flag section; visitor reviews range from 'ideal sea temperature and cleanliness' to comments that cleanliness could be improved.",
+        notlar: "A municipality-run beach; the ground is sandy from end to end (the earlier claim of a rocky entry was incorrect and has been fixed), though small pebbles can occasionally be found mixed into the sand. Also known as 'Urla Kum Denizi' or 'Kum Deniz Plajı'. Consists of three sections: a beach club/private business, a municipal beach, and a free public beach."
       },
       de: {
-        sezlong: "Ein von der Gemeinde Urla betriebener Strand; angemessener Eintrittspreis. Daneben gibt es einen privaten Betriebsbereich, und am anderen Ende des Strandes einen kostenlosen Bereich.",
-        aliverisYemeIcme: "Ein Wassersportpark, Kinderspielplätze sowie Rad- und Wanderwege vorhanden.",
-        cocukUygun: "Das Wasser ist weder zu warm noch zu kalt, flach und sandig — geeignet für Kinder, aber eingeschränkt für aktive Schwimmer.",
-        kalabalik: "Besucherbewertungen sind gemischt: manche finden ihn sauber und gepflegt, andere beschweren sich über mangelnde Pflege und Andrang zu Stoßzeiten.",
-        temizlik: "Es gibt einen Bereich mit Blauer Flagge; Besucherbewertungen reichen von 'idealer Wassertemperatur und Sauberkeit' bis zu früheren Beschwerden, er sei 'voller Müll'.",
-        notlar: "Ein von der Gemeinde betriebener Strand, felsiger Zugang, aber reiner Sand. Besteht aus drei Bereichen: ein Beach-Club/privater Betrieb, ein Gemeindestrand und ein kostenloser öffentlicher Strand."
+        parkNotu: "Die Gemeindeeinrichtung hat einen kostenpflichtigen Parkplatz; etwas weiter entfernt lässt sich auch kostenloses Parken finden.",
+        tuvaletNotu: "Toilette, Dusche und Umkleidekabinen vorhanden; Besucherbewertungen beschreiben sie als zahlreich und gut gepflegt.",
+        sezlong: "Ein von der Gemeinde Urla betriebener Strand; angemessener Eintrittspreis, Liegen/Sonnenschirme können gemietet oder selbst mitgebracht werden. Daneben gibt es einen privaten Betriebsbereich, und am anderen Ende des Strandes einen kostenlosen Bereich.",
+        dalgaDurumu: "Ruhig und wellenfrei.",
+        aliverisYemeIcme: "Ein Wassersportpark, Kinderspielplätze sowie Rad- und Wanderwege vorhanden. Es gibt Verpflegungsmöglichkeiten innen und am Eingang; mitgebrachtes Essen/Trinken ist meist nicht erlaubt.",
+        cocukUygun: "Das Wasser ist weder zu warm noch zu kalt, über eine lange Strecke flach und sandig — sehr geeignet für Kinder und Nichtschwimmer.",
+        kalabalik: "Wird besonders an Wochenenden ziemlich voll; für ein ruhigeres Erlebnis wird ein Besuch unter der Woche empfohlen.",
+        temizlik: "Es gibt einen Bereich mit Blauer Flagge; Besucherbewertungen reichen von 'idealer Wassertemperatur und Sauberkeit' bis zu Hinweisen, dass die Sauberkeit verbessert werden könnte.",
+        notlar: "Ein von der Gemeinde betriebener Strand; der Untergrund ist durchgehend sandig (die frühere Behauptung eines felsigen Zugangs war falsch und wurde korrigiert), gelegentlich können jedoch kleine Kieselsteine im Sand vorkommen. Auch bekannt als 'Urla Kum Denizi' oder 'Kum Deniz Plajı'. Besteht aus drei Bereichen: ein Beach-Club/privater Betrieb, ein Gemeindestrand und ein kostenloser öffentlicher Strand."
       },
       ru: {
-        sezlong: "Пляж, управляемый муниципалитетом Урлы; вход за разумную плату. Рядом есть секция частного заведения, а на другом конце пляжа — бесплатная зона.",
-        aliverisYemeIcme: "Есть парк водных видов спорта, детские площадки, пешеходные и велосипедные дорожки.",
-        cocukUygun: "Вода не слишком тёплая и не слишком холодная, мелкая и песчаная — подходит для детей, но ограничена для активных пловцов.",
-        kalabalik: "Отзывы посетителей неоднозначны: одни находят его чистым и ухоженным, другие жалуются на отсутствие ухода и толчею в пиковые часы.",
-        temizlik: "Есть зона с «Голубым флагом»; отзывы посетителей варьируются от «идеальная температура и чистота моря» до прошлых жалоб на то, что он был «завален мусором».",
-        notlar: "Пляж, управляемый муниципалитетом, вход каменистый, но песок чистый. Состоит из трёх частей: пляжный клуб/частное заведение, муниципальный пляж и бесплатный общественный пляж."
+        parkNotu: "У муниципального заведения есть платная парковка; чуть дальше можно найти и бесплатную.",
+        tuvaletNotu: "Есть туалет, душ и кабинки для переодевания; в отзывах посетителей описываются как многочисленные и хорошо ухоженные.",
+        sezlong: "Пляж, управляемый муниципалитетом Урлы; вход за разумную плату, шезлонги/зонтики можно арендовать или принести свои. Рядом есть секция частного заведения, а на другом конце пляжа — бесплатная зона.",
+        dalgaDurumu: "Спокойно, без волн.",
+        aliverisYemeIcme: "Есть парк водных видов спорта, детские площадки, пешеходные и велосипедные дорожки. Внутри и у входа есть варианты еды/напитков; проносить еду/напитки с собой обычно не разрешается.",
+        cocukUygun: "Вода не слишком тёплая и не слишком холодная, мелкая и песчаная на большом расстоянии — вполне подходит для детей и не умеющих плавать.",
+        kalabalik: "Особенно многолюдно по выходным; для более спокойного отдыха рекомендуется посещение в будни.",
+        temizlik: "Есть зона с «Голубым флагом»; отзывы посетителей варьируются от «идеальная температура и чистота моря» до замечаний, что чистоту можно улучшить.",
+        notlar: "Пляж, управляемый муниципалитетом; дно полностью песчаное (более ранее утверждение о каменистом входе было ошибочным и исправлено), хотя изредка в песке могут попадаться мелкие камешки. Также известен как «Urla Kum Denizi» или «Kum Deniz Plajı». Состоит из трёх частей: пляжный клуб/частное заведение, муниципальный пляж и бесплатный общественный пляж."
       }
     },
     fotograflar: [
       "fotoğraflar/urlakum/urlakum-1.jpg",
-      "fotoğraflar/urlakum/urlakum-2.jpg",
       "fotoğraflar/urlakum/urlakum-3.jpg",
       "fotoğraflar/urlakum/urlakum-4.jpg",
-      "fotoğraflar/urlakum/urlakum-5.jpg"
+      "fotoğraflar/urlakum/urlakum-5.jpg",
+      "fotoğraflar/urlakum/urlakum-6.jpg",
+      "fotoğraflar/urlakum/urlakum-7.jpg"
     ],
     kaynak: "internet",
-    kaynaklar: ["tripadvisor.com.tr", "gezinomi.com"],
+    kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "hadidenize.com"],
     haritaLinki: "https://maps.google.com/?q=Urla+Kum+Plajı+İzmir"
   },
   {
@@ -2235,7 +2192,6 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/selcukhalk/selcukhalk-1.jpg",
       "fotoğraflar/selcukhalk/selcukhalk-2.jpg",
-      "fotoğraflar/selcukhalk/selcukhalk-3.png",
       "fotoğraflar/selcukhalk/selcukhalk-4.jpg"
     ],
     kaynak: "internet",
@@ -2356,7 +2312,8 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/sakizlikoy/sakizlikoy-1.jpg",
       "fotoğraflar/sakizlikoy/sakizlikoy-2.webp",
-      "fotoğraflar/sakizlikoy/sakizlikoy-3.webp"
+      "fotoğraflar/sakizlikoy/sakizlikoy-3.webp",
+      "fotoğraflar/sakizlikoy/sakizlikoy-4.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com"],
@@ -2620,9 +2577,7 @@ const PLAJLAR = [
     },
     fotograflar: [
       "fotoğraflar/kusturplaji/kusturplaji-1.jpg",
-      "fotoğraflar/kusturplaji/kusturplaji-2.webp",
       "fotoğraflar/kusturplaji/kusturplaji-3.webp",
-      "fotoğraflar/kusturplaji/kusturplaji-4.png",
       "fotoğraflar/kusturplaji/kusturplaji-5.webp",
       "fotoğraflar/kusturplaji/kusturplaji-6.webp"
     ],
@@ -3230,10 +3185,11 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/calis/calis-1.png",
       "fotoğraflar/calis/calis-2.webp",
-      "fotoğraflar/calis/calis-3.jpg",
       "fotoğraflar/calis/calis-4.jpg",
-      "fotoğraflar/calis/calis-5.jpg",
-      "fotoğraflar/calis/calis-6.jpg"
+      "fotoğraflar/calis/calis-6.jpg",
+      "fotoğraflar/calis/calis-7.jpg",
+      "fotoğraflar/calis/calis-8.jpg",
+      "fotoğraflar/calis/calis-9.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["yoldaolmak.com", "fethiye.bel.tr"],
@@ -3374,7 +3330,10 @@ const PLAJLAR = [
       "fotoğraflar/kabakkoyu/kabakkoyu-3.webp",
       "fotoğraflar/kabakkoyu/kabakkoyu-4.webp",
       "fotoğraflar/kabakkoyu/kabakkoyu-5.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-6.jpg"
+      "fotoğraflar/kabakkoyu/kabakkoyu-6.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-7.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-8.jpg",
+      "fotoğraflar/kabakkoyu/kabakkoyu-9.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["cnnturk.com", "kampyerleri.org", "wanderlustchloe.com (uluslararası kaynak)"],
@@ -3438,7 +3397,6 @@ const PLAJLAR = [
       "fotoğraflar/sarigerme/sarigerme-1.jpg",
       "fotoğraflar/sarigerme/sarigerme-2.jpg",
       "fotoğraflar/sarigerme/sarigerme-3.jpg",
-      "fotoğraflar/sarigerme/sarigerme-4.webp",
       "fotoğraflar/sarigerme/sarigerme-5.jpg",
       "fotoğraflar/sarigerme/sarigerme-6.jpg"
     ],
@@ -3449,7 +3407,7 @@ const PLAJLAR = [
 
   {
     id: 58,
-    isim: "Ortakent Halk Plajı",
+    isim: "Ortakent Halk Plajı (Yahşi Plajı)",
     ilce: "Bodrum",
     il: "Muğla",
     zemin: "Kum-Çakıl",
@@ -3507,12 +3465,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/ortakent/ortakent-1.jpg",
-      "fotoğraflar/ortakent/ortakent-2.png",
       "fotoğraflar/ortakent/ortakent-3.jpg",
       "fotoğraflar/ortakent/ortakent-4.jpg",
       "fotoğraflar/ortakent/ortakent-5.webp",
-      "fotoğraflar/ortakent/ortakent-6.webp"
+      "fotoğraflar/ortakent/ortakent-6.webp",
+      "fotoğraflar/ortakent/ortakent-7.jpg",
+      "fotoğraflar/ortakent/ortakent-8.jpg",
+      "fotoğraflar/ortakent/ortakent-9.jpg",
+      "fotoğraflar/ortakent/ortakent-10.jpg",
+      "fotoğraflar/ortakent/ortakent-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "gezilmesigerekenyerler.com"],
@@ -3715,7 +3676,6 @@ const PLAJLAR = [
       "fotoğraflar/karaincir/karaincir-2.jpg",
       "fotoğraflar/karaincir/karaincir-3.jpg",
       "fotoğraflar/karaincir/karaincir-4.jpg",
-      "fotoğraflar/karaincir/karaincir-5.webp",
       "fotoğraflar/karaincir/karaincir-6.webp"
     ],
     kaynak: "internet",
@@ -3777,12 +3737,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/torba/torba-1.jpg",
       "fotoğraflar/torba/torba-2.jpg",
       "fotoğraflar/torba/torba-3.webp",
       "fotoğraflar/torba/torba-4.jpg",
       "fotoğraflar/torba/torba-5.jpg",
-      "fotoğraflar/torba/torba-6.jpg"
+      "fotoğraflar/torba/torba-6.jpg",
+      "fotoğraflar/torba/torba-7.jpg",
+      "fotoğraflar/torba/torba-8.jpg",
+      "fotoğraflar/torba/torba-9.jpg",
+      "fotoğraflar/torba/torba-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["turas.com.tr", "otuzbeslik.com", "neredekal.com"],
@@ -3850,8 +3813,11 @@ const PLAJLAR = [
       "fotoğraflar/yalikavak/yalikavak-2.jpg",
       "fotoğraflar/yalikavak/yalikavak-3.webp",
       "fotoğraflar/yalikavak/yalikavak-4.jpg",
-      "fotoğraflar/yalikavak/yalikavak-5.jpg",
-      "fotoğraflar/yalikavak/yalikavak-6.jpg"
+      "fotoğraflar/yalikavak/yalikavak-6.jpg",
+      "fotoğraflar/yalikavak/yalikavak-7.jpg",
+      "fotoğraflar/yalikavak/yalikavak-8.jpg",
+      "fotoğraflar/yalikavak/yalikavak-9.jpg",
+      "fotoğraflar/yalikavak/yalikavak-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["otuzbeslik.com", "hadidenize.com", "hurriyet.de"],
@@ -4046,7 +4012,6 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/bencik/bencik-1.jpg",
       "fotoğraflar/bencik/bencik-2.jpg",
-      "fotoğraflar/bencik/bencik-3.jpg",
       "fotoğraflar/bencik/bencik-4.jpg",
       "fotoğraflar/bencik/bencik-5.jpg",
       "fotoğraflar/bencik/bencik-6.jpg"
@@ -4115,7 +4080,9 @@ const PLAJLAR = [
       "fotoğraflar/kizkumu/kizkumu-3.jpg",
       "fotoğraflar/kizkumu/kizkumu-4.webp",
       "fotoğraflar/kizkumu/kizkumu-5.jpg",
-      "fotoğraflar/kizkumu/kizkumu-6.jpg"
+      "fotoğraflar/kizkumu/kizkumu-6.jpg",
+      "fotoğraflar/kizkumu/kizkumu-7.jpg",
+      "fotoğraflar/kizkumu/kizkumu-8.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "bujuyollarda.com", "teknekirala.com"],
@@ -4254,9 +4221,9 @@ const PLAJLAR = [
       "fotoğraflar/karaot/karaot-1.jpg",
       "fotoğraflar/karaot/karaot-2.jpg",
       "fotoğraflar/karaot/karaot-3.jpg",
-      "fotoğraflar/karaot/karaot-4.jpg",
-      "fotoğraflar/karaot/karaot-5.jpg",
-      "fotoğraflar/karaot/karaot-6.webp"
+      "fotoğraflar/karaot/karaot-6.webp",
+      "fotoğraflar/karaot/karaot-7.jpg",
+      "fotoğraflar/karaot/karaot-8.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["kampyerleri.org", "seyyahdefteri.com", "gezilmesigerekenyerler.com"],
@@ -4417,61 +4384,70 @@ const PLAJLAR = [
     zemin: "Çakıl",
     derinlik: "Bilinmiyor",
     park: "kismi",
-    parkNotu: "Yol kenarında sınırlı sayıda ücretsiz otopark alanı var, talep yüksek olduğu için genelde dolu oluyor.",
+    parkNotu: "Resmi bir otopark yok; yol kenarında sınırlı sayıda park alanı var, talep yüksek olduğu için genelde dolu oluyor. Yoğun günlerde yüzlerce araç dar yol kenarına park ediyor, bu da yayalar için tehlikeli olabiliyor.",
     dus: true,
     tuvalet: true,
     tuvaletNotu: "Belediyeye ait kabin ve tuvalet var; bazı kaynaklara göre duş/tuvalet kullanımı ücretli olabiliyor, bu konu kesinleşmemiş.",
     kabin: true,
     yayaMesafe: "Sahil yolundan plaja inen 187 basamaklı merdivenle ulaşılıyor.",
-    sezlong: "Kiralanabiliyor.",
-    dalgaDurumu: "Bir kanyonun deniz çıkışında oluşmuş bir koy; turkuaz ve berrak suyuyla tanınıyor.",
+    sezlong: "Sahildeki işletmeden kiralanabiliyor.",
+    dalgaDurumu: "Bir kanyonun deniz çıkışında oluşmuş bir koy; turkuaz ve berrak suyuyla tanınıyor. Ancak ziyaretçi yorumlarında zaman zaman oldukça dalgalı olduğu da belirtiliyor — durum güne/rüzgara göre değişebiliyor.",
     aliverisYemeIcme: "Belediyeye ait bir kafe plajda hizmet veriyor.",
-    cocukUygun: "187 basamaklı merdiven inişi, hareket kısıtlılığı olanlar ve küçük çocuklu aileler için zorlayıcı olabilir.",
-    kalabalik: "Çok popüler ve kalabalık; erken saatte gidilmesi öneriliyor.",
-    temizlik: "",
-    notlar: "Kaş ile Kalkan arasında; Türkiye'nin en çok fotoğraflanan plajlarından biri olarak biliniyor.",
+    cocukUygun: "187 basamaklı merdiven inişi, hareket kısıtlılığı olanlar ve küçük çocuklu aileler için zorlayıcı olabilir. Deniz de sığ değil, hızla derinleşiyor.",
+    kalabalik: "Çok popüler ve kalabalık; dar bir plaj olduğu için yoğun saatlerde sıkışıklık oluyor, erken saatte gidilmesi öneriliyor.",
+    temizlik: "Ziyaretçi yorumlarında genel olarak temiz bir plaj olarak tanımlanıyor.",
+    notlar: "Kaş ile Kalkan arasında; Türkiye'nin en çok fotoğraflanan plajlarından biri ve zaman zaman uluslararası \"dünyanın en iyi plajları\" listelerinde yer alıyor. TripAdvisor'da 4,4/5 puanla (3.966 yorum) değerlendiriliyor.",
     ceviriler: {
       en: {
-        parkNotu: "There is limited free roadside parking, but it tends to fill up due to high demand.",
+        parkNotu: "There's no official parking lot; limited roadside parking exists but tends to fill up due to high demand. On busy days hundreds of cars park along the narrow road, which can be dangerous for pedestrians.",
         tuvaletNotu: "There are municipal changing cabins and toilets; some sources say the shower/toilet use may be paid, this is not fully confirmed.",
         yayaMesafe: "Reached via a 187-step staircase down from the coastal road to the beach.",
-        sezlong: "Available for rent.",
-        dalgaDurumu: "A cove formed at the mouth of a canyon reaching the sea; known for its turquoise, clear water.",
+        sezlong: "Can be rented from the business on the beach.",
+        dalgaDurumu: "A cove formed at the mouth of a canyon reaching the sea; known for its turquoise, clear water. However, visitor reviews sometimes mention it being quite wavy — conditions can vary by day/wind.",
         aliverisYemeIcme: "A municipal café serves visitors on the beach.",
-        cocukUygun: "The 187-step descent can be challenging for people with mobility issues and families with small children.",
-        kalabalik: "Very popular and crowded; arriving early is recommended.",
-        notlar: "Located between Kaş and Kalkan; known as one of Turkey's most photographed beaches."
+        cocukUygun: "The 187-step descent can be challenging for people with mobility issues and families with small children. The sea isn't shallow either — it deepens quickly.",
+        kalabalik: "Very popular and crowded; being a narrow beach, it gets congested at peak hours, arriving early is recommended.",
+        temizlik: "Generally described as a clean beach in visitor reviews.",
+        notlar: "Located between Kaş and Kalkan; known as one of Turkey's most photographed beaches and occasionally featured on international 'world's best beaches' lists. Rated 4.4/5 on TripAdvisor (3,966 reviews)."
       },
       de: {
-        parkNotu: "Es gibt eine begrenzte Anzahl kostenloser Parkplätze am Straßenrand, die wegen hoher Nachfrage meist belegt sind.",
+        parkNotu: "Es gibt keinen offiziellen Parkplatz; begrenztes Parken am Straßenrand ist möglich, füllt sich aber wegen hoher Nachfrage meist. An belebten Tagen parken Hunderte Autos am schmalen Straßenrand, was für Fußgänger gefährlich sein kann.",
         tuvaletNotu: "Es gibt städtische Umkleidekabinen und Toiletten; einige Quellen berichten, dass Dusche/Toilette kostenpflichtig sein könnten, dies ist nicht endgültig bestätigt.",
         yayaMesafe: "Erreichbar über eine Treppe mit 187 Stufen von der Küstenstraße hinunter zum Strand.",
-        sezlong: "Kann gemietet werden.",
-        dalgaDurumu: "Eine Bucht, die an der Mündung einer Schlucht ins Meer entstanden ist; bekannt für ihr türkisfarbenes, klares Wasser.",
+        sezlong: "Beim Betrieb am Strand mietbar.",
+        dalgaDurumu: "Eine Bucht, die an der Mündung einer Schlucht ins Meer entstanden ist; bekannt für ihr türkisfarbenes, klares Wasser. Besucherbewertungen erwähnen jedoch manchmal recht starken Wellengang — die Bedingungen können je nach Tag/Wind variieren.",
         aliverisYemeIcme: "Ein städtisches Café versorgt die Besucher am Strand.",
-        cocukUygun: "Der Abstieg über 187 Stufen kann für Menschen mit eingeschränkter Mobilität und Familien mit kleinen Kindern anstrengend sein.",
-        kalabalik: "Sehr beliebt und voll; ein früher Besuch wird empfohlen.",
-        notlar: "Liegt zwischen Kaş und Kalkan; gilt als einer der meistfotografierten Strände der Türkei."
+        cocukUygun: "Der Abstieg über 187 Stufen kann für Menschen mit eingeschränkter Mobilität und Familien mit kleinen Kindern anstrengend sein. Auch das Meer ist nicht flach — es wird schnell tief.",
+        kalabalik: "Sehr beliebt und voll; da es ein schmaler Strand ist, wird es zu Stoßzeiten eng, ein früher Besuch wird empfohlen.",
+        temizlik: "Wird in Besucherbewertungen im Allgemeinen als sauberer Strand beschrieben.",
+        notlar: "Liegt zwischen Kaş und Kalkan; gilt als einer der meistfotografierten Strände der Türkei und wird gelegentlich in internationalen Listen der 'besten Strände der Welt' geführt. Auf TripAdvisor mit 4,4/5 bewertet (3.966 Bewertungen)."
       },
       ru: {
-        parkNotu: "У дороги есть ограниченное количество бесплатных парковочных мест, но из-за высокого спроса они обычно заняты.",
+        parkNotu: "Официальной парковки нет; есть ограниченное количество мест у дороги, но они обычно заняты из-за высокого спроса. В загруженные дни сотни машин паркуются вдоль узкой дороги, что может быть опасно для пешеходов.",
         tuvaletNotu: "Есть муниципальные кабинки для переодевания и туалеты; по некоторым данным, душ/туалет могут быть платными — это не подтверждено окончательно.",
         yayaMesafe: "К пляжу ведёт лестница из 187 ступеней, спускающаяся от прибрежной дороги.",
-        sezlong: "Можно взять напрокат.",
-        dalgaDurumu: "Бухта, образовавшаяся в устье каньона; известна бирюзовой прозрачной водой.",
+        sezlong: "Можно арендовать в заведении на пляже.",
+        dalgaDurumu: "Бухта, образовавшаяся в устье каньона; известна бирюзовой прозрачной водой. Однако в отзывах посетителей иногда упоминается довольно сильное волнение — условия могут меняться в зависимости от дня/ветра.",
         aliverisYemeIcme: "На пляже работает муниципальное кафе.",
-        cocukUygun: "Спуск по 187 ступеням может быть трудным для людей с ограниченной подвижностью и семей с маленькими детьми.",
-        kalabalik: "Очень популярное и людное место; рекомендуется приезжать пораньше.",
-        notlar: "Расположен между Кашем и Калканом; считается одним из самых фотографируемых пляжей Турции."
+        cocukUygun: "Спуск по 187 ступеням может быть трудным для людей с ограниченной подвижностью и семей с маленькими детьми. Море тоже не мелкое — быстро углубляется.",
+        kalabalik: "Очень популярное и людное место; поскольку пляж узкий, в пиковые часы возникает теснота, рекомендуется приезжать пораньше.",
+        temizlik: "В отзывах посетителей в целом описывается как чистый пляж.",
+        notlar: "Расположен между Кашем и Калканом; считается одним из самых фотографируемых пляжей Турции и иногда попадает в международные списки «лучших пляжей мира». Оценка на TripAdvisor 4,4/5 (3966 отзывов)."
       }
     },
     fotograflar: [
       "fotoğraflar/kaputas/kaputas-1.jpg",
       "fotoğraflar/kaputas/kaputas-2.jpg",
-      "fotoğraflar/kaputas/kaputas-3.jpg"
+      "fotoğraflar/kaputas/kaputas-3.jpg",
+      "fotoğraflar/kaputas/kaputas-4.jpg",
+      "fotoğraflar/kaputas/kaputas-5.jpg",
+      "fotoğraflar/kaputas/kaputas-6.jpg",
+      "fotoğraflar/kaputas/kaputas-7.jpg",
+      "fotoğraflar/kaputas/kaputas-8.jpg",
+      "fotoğraflar/kaputas/kaputas-9.jpg"
     ],
     kaynak: "internet",
-    kaynaklar: ["bizevdeyokuz.com", "urlaubsguru.de", "gezire.com"],
+    kaynaklar: ["bizevdeyokuz.com", "urlaubsguru.de", "gezire.com", "tripadvisor.com.tr"],
     haritaLinki: "https://maps.google.com/?q=Kaputaş+Plajı+Kaş+Antalya"
   },
 
@@ -4525,7 +4501,14 @@ const PLAJLAR = [
         notlar: "Ближайший к центру города Каш пляж; вдоль того же берега сгруппированы ещё 7-8 небольших пляжей."
       }
     },
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/kucukcakil/kucukcakil-1.jpg",
+      "fotoğraflar/kucukcakil/kucukcakil-2.jpg",
+      "fotoğraflar/kucukcakil/kucukcakil-3.jpg",
+      "fotoğraflar/kucukcakil/kucukcakil-4.jpg",
+      "fotoğraflar/kucukcakil/kucukcakil-5.jpg",
+      "fotoğraflar/kucukcakil/kucukcakil-6.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "tripadvisor.com", "lonelyplanet.com"],
     haritaLinki: "https://maps.google.com/?q=Küçükçakıl+Plajı+Kaş+Antalya"
@@ -4533,7 +4516,7 @@ const PLAJLAR = [
 
   {
     id: 74,
-    isim: "Büyükçakıl Plajı",
+    isim: "Büyükçakıl Plajı (Big Pebble Beach)",
     ilce: "Kaş",
     il: "Antalya",
     zemin: "Çakıl",
@@ -4542,45 +4525,65 @@ const PLAJLAR = [
     parkNotu: "Küçükçakıl'a göre daha kolay ve daha fazla ücretsiz park imkanı var.",
     dus: true,
     tuvalet: true,
-    tuvaletNotu: "",
+    tuvaletNotu: "Sahildeki özel plaj barı/işletmelerin (Ömür Beach, Kuytu Beach gibi) kendi duş ve soyunma alanları var.",
     kabin: true,
-    yayaMesafe: "Kaş merkezden yaklaşık 3 dakika araçla veya 15 dakika yürüyüşle; Küçükçakıl'a ~500 m mesafede.",
-    sezlong: "Kiralanabiliyor; Küçükçakıl'a göre daha uygun fiyatlı olduğu belirtiliyor.",
-    dalgaDurumu: "",
-    aliverisYemeIcme: "Sahilde özel restoran/kafe işletmeleri var.",
-    cocukUygun: "",
-    kalabalik: "Küçükçakıl'a göre daha sakin ve sessiz; akşam atmosferiyle biliniyor.",
-    temizlik: "",
-    notlar: "Yeşil tepelerle çevrili bir koy; Kaş merkezinin diğer ucunda, Küçükçakıl'ın tam tersi yönde.",
+    yayaMesafe: "Kaş merkezden yaklaşık 3 dakika araçla veya 15 dakika yürüyüşle (bazı ziyaretçiler ~20 dakika belirtiyor); Küçükçakıl'a ~500 m mesafede, merkeze ~700 metre.",
+    sezlong: "Sahildeki çok sayıda küçük işletmeden kiralanabiliyor; Küçükçakıl'a göre daha uygun fiyatlı olduğu belirtiliyor, ancak ziyaretçi yorumlarında fiyatların işletmeden işletmeye çok değiştiği ve bazılarının pahalı bulunduğu da belirtiliyor.",
+    dalgaDurumu: "Kıyıdan çıkan soğuk su kaynakları nedeniyle deniz suyu yer yer soğuk olabiliyor. Zemin çakıllı/kayalık ve hızla derinleşiyor; deniz ayakkabısı şiddetle öneriliyor.",
+    aliverisYemeIcme: "Sahil boyunca Ömür Beach, Kuytu Beach gibi çok sayıda küçük plaj barı/restoran işletmesi var, fiyatlar genelde makul.",
+    cocukUygun: "Zemin kayalık/çakıllı ve deniz hızla derinleştiği için küçük çocukların tek başına yüzmesi için pek uygun değil.",
+    kalabalik: "Küçükçakıl'a göre daha sakin ve sessiz; akşam atmosferiyle ve gün batımı manzarasıyla biliniyor.",
+    temizlik: "TripAdvisor'da 4,0/5 puanla (767 yorum) değerlendiriliyor. Kıyıya yakın kesimlerde bazı ziyaretçiler kirlilik bildirse de, açılınca suyun temizleştiği belirtiliyor.",
+    notlar: "Yeşil tepelerle çevrili bir koy; Kaş merkezinin diğer ucunda, Küçükçakıl'ın tam tersi yönde. Kaş'ın en tanınmış plajlarından biri, özellikle gün batımı manzarasıyla övülüyor.",
     ceviriler: {
       en: {
         parkNotu: "Easier access and more free parking options compared to Küçükçakıl.",
-        yayaMesafe: "About 3 minutes by car or 15 minutes on foot from central Kaş; about 500 m from Küçükçakıl.",
-        sezlong: "Can be rented; reported to be more affordably priced than at Küçükçakıl.",
-        aliverisYemeIcme: "There are private restaurant/cafe businesses on the shore.",
-        kalabalik: "Calmer and quieter than Küçükçakıl; known for its evening atmosphere.",
-        notlar: "A cove surrounded by green hills; at the other end of central Kaş, in the opposite direction from Küçükçakıl."
+        tuvaletNotu: "The private beach bars/businesses along the shore (like Ömür Beach, Kuytu Beach) have their own shower and changing areas.",
+        yayaMesafe: "About 3 minutes by car or 15 minutes on foot from central Kaş (some visitors say ~20 minutes); about 500 m from Küçükçakıl, ~700 meters from the center.",
+        sezlong: "Can be rented from numerous small businesses along the shore; reported to be more affordably priced than at Küçükçakıl, though visitor reviews note prices vary a lot between businesses and some are considered expensive.",
+        dalgaDurumu: "Cold springs emerging from the shore can make the sea water cold in places. The ground is pebbly/rocky and deepens quickly; water shoes are strongly recommended.",
+        aliverisYemeIcme: "There are numerous small beach bars/restaurants along the shore, like Ömür Beach and Kuytu Beach, generally reasonably priced.",
+        cocukUygun: "Since the ground is rocky/pebbly and the sea deepens quickly, it's not very suitable for small children to swim unsupervised.",
+        kalabalik: "Calmer and quieter than Küçükçakıl; known for its evening atmosphere and sunset views.",
+        temizlik: "Rated 4.0/5 on TripAdvisor (767 reviews). Some visitors report pollution close to shore, but the water is said to get cleaner further out.",
+        notlar: "A cove surrounded by green hills; at the other end of central Kaş, in the opposite direction from Küçükçakıl. One of Kaş's most well-known beaches, especially praised for its sunset views."
       },
       de: {
         parkNotu: "Einfacherer Zugang und mehr kostenlose Parkmöglichkeiten im Vergleich zu Küçükçakıl.",
-        yayaMesafe: "Etwa 3 Minuten mit dem Auto oder 15 Minuten zu Fuß vom Zentrum von Kaş; etwa 500 m von Küçükçakıl entfernt.",
-        sezlong: "Mietbar; soll erschwinglicher sein als in Küçükçakıl.",
-        aliverisYemeIcme: "An der Küste gibt es private Restaurant-/Café-Betriebe.",
-        kalabalik: "Ruhiger und stiller als Küçükçakıl; bekannt für seine Abendatmosphäre.",
-        notlar: "Eine von grünen Hügeln umgebene Bucht; am anderen Ende des Zentrums von Kaş, in entgegengesetzter Richtung zu Küçükçakıl."
+        tuvaletNotu: "Die privaten Strandbars/Betriebe an der Küste (wie Ömür Beach, Kuytu Beach) haben eigene Dusch- und Umkleidebereiche.",
+        yayaMesafe: "Etwa 3 Minuten mit dem Auto oder 15 Minuten zu Fuß vom Zentrum von Kaş (manche Besucher sprechen von ~20 Minuten); etwa 500 m von Küçükçakıl, ~700 Meter vom Zentrum entfernt.",
+        sezlong: "Bei zahlreichen kleinen Betrieben entlang der Küste mietbar; soll erschwinglicher sein als in Küçükçakıl, wobei Besucherbewertungen darauf hinweisen, dass die Preise stark zwischen den Betrieben variieren und manche als teuer gelten.",
+        dalgaDurumu: "Kalte Quellen, die aus dem Ufer austreten, können das Meerwasser stellenweise kalt machen. Der Untergrund ist kiesig/felsig und wird schnell tief; Badeschuhe werden dringend empfohlen.",
+        aliverisYemeIcme: "Entlang der Küste gibt es zahlreiche kleine Strandbars/Restaurants wie Ömür Beach und Kuytu Beach, meist zu angemessenen Preisen.",
+        cocukUygun: "Da der Untergrund felsig/kiesig ist und das Meer schnell tief wird, ist er für kleine Kinder zum unbeaufsichtigten Schwimmen nicht sehr geeignet.",
+        kalabalik: "Ruhiger und stiller als Küçükçakıl; bekannt für seine Abendatmosphäre und Sonnenuntergänge.",
+        temizlik: "Auf TripAdvisor mit 4,0/5 bewertet (767 Bewertungen). Manche Besucher berichten von Verschmutzung nahe der Küste, weiter draußen soll das Wasser aber sauberer sein.",
+        notlar: "Eine von grünen Hügeln umgebene Bucht; am anderen Ende des Zentrums von Kaş, in entgegengesetzter Richtung zu Küçükçakıl. Einer der bekanntesten Strände von Kaş, besonders gelobt für seine Sonnenuntergänge."
       },
       ru: {
         parkNotu: "Более лёгкий доступ и больше бесплатных парковочных мест по сравнению с Кючюкчакыл.",
-        yayaMesafe: "Около 3 минут на машине или 15 минут пешком от центра Каша; около 500 м от Кючюкчакыл.",
-        sezlong: "Можно арендовать; сообщается, что цены доступнее, чем в Кючюкчакыл.",
-        aliverisYemeIcme: "На берегу есть частные рестораны/кафе.",
-        kalabalik: "Спокойнее и тише, чем Кючюкчакыл; известен вечерней атмосферой.",
-        notlar: "Бухта, окружённая зелёными холмами; на другом конце центра Каша, в противоположном от Кючюкчакыл направлении."
+        tuvaletNotu: "У частных пляжных баров/заведений вдоль берега (таких как Ömür Beach, Kuytu Beach) есть собственные душевые и раздевалки.",
+        yayaMesafe: "Около 3 минут на машине или 15 минут пешком от центра Каша (некоторые посетители говорят о ~20 минутах); около 500 м от Кючюкчакыл, ~700 метров от центра.",
+        sezlong: "Можно арендовать у многочисленных небольших заведений вдоль берега; сообщается, что цены доступнее, чем в Кючюкчакыл, хотя в отзывах отмечается, что цены сильно различаются между заведениями и некоторые считаются дорогими.",
+        dalgaDurumu: "Холодные источники, выходящие из берега, местами делают морскую воду холодной. Дно галечное/каменистое и быстро углубляется; настоятельно рекомендуется обувь для воды.",
+        aliverisYemeIcme: "Вдоль берега много небольших пляжных баров/ресторанов, таких как Ömür Beach и Kuytu Beach, в целом по разумным ценам.",
+        cocukUygun: "Поскольку дно каменистое/галечное, а море быстро углубляется, пляж не очень подходит для того, чтобы маленькие дети плавали без присмотра.",
+        kalabalik: "Спокойнее и тише, чем Кючюкчакыл; известен вечерней атмосферой и видами на закат.",
+        temizlik: "Оценка 4,0/5 на TripAdvisor (767 отзывов). Некоторые посетители сообщают о загрязнении у берега, но дальше от берега вода, по отзывам, чище.",
+        notlar: "Бухта, окружённая зелёными холмами; на другом конце центра Каша, в противоположном от Кючюкчакыл направлении. Один из самых известных пляжей Каша, особенно ценится за виды на закат."
       }
     },
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/buyukcakil/buyukcakil-1.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-2.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-3.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-4.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-5.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-6.jpg",
+      "fotoğraflar/buyukcakil/buyukcakil-7.jpg"
+    ],
     kaynak: "internet",
-    kaynaklar: ["yerelrehber.com", "gezilmesigerekenyerler.com", "tripadvisor.com", "beachsearcher.com.tr"],
+    kaynaklar: ["yerelrehber.com", "gezilmesigerekenyerler.com", "tripadvisor.com", "beachsearcher.com.tr", "tripadvisor.com.tr"],
     haritaLinki: "https://maps.google.com/?q=Büyükçakıl+Plajı+Kaş+Antalya"
   },
 
@@ -4767,7 +4770,13 @@ const PLAJLAR = [
       "fotoğraflar/patara/patara-1.jpg",
       "fotoğraflar/patara/patara-2.jpg",
       "fotoğraflar/patara/patara-3.jpg",
-      "fotoğraflar/patara/patara-4.jpg"
+      "fotoğraflar/patara/patara-4.jpg",
+      "fotoğraflar/patara/patara-5.jpg",
+      "fotoğraflar/patara/patara-6.jpg",
+      "fotoğraflar/patara/patara-7.jpg",
+      "fotoğraflar/patara/patara-8.jpg",
+      "fotoğraflar/patara/patara-9.jpg",
+      "fotoğraflar/patara/patara-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["en.wikipedia.org", "antalyatouristinformation.com", "bizevdeyokuz.com", "villacim.com.tr", "villavillam.com.tr"],
@@ -4831,7 +4840,13 @@ const PLAJLAR = [
       "fotoğraflar/cirali/cirali-1.jpg",
       "fotoğraflar/cirali/cirali-2.jpg",
       "fotoğraflar/cirali/cirali-3.jpg",
-      "fotoğraflar/cirali/cirali-4.jpg"
+      "fotoğraflar/cirali/cirali-4.jpg",
+      "fotoğraflar/cirali/cirali-5.jpg",
+      "fotoğraflar/cirali/cirali-6.jpg",
+      "fotoğraflar/cirali/cirali-7.jpg",
+      "fotoğraflar/cirali/cirali-8.jpg",
+      "fotoğraflar/cirali/cirali-9.jpg",
+      "fotoğraflar/cirali/cirali-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["urlaubsguru.de", "antalyakorfez.com", "cirali.org", "etstur.com"],
@@ -4851,54 +4866,60 @@ const PLAJLAR = [
     tuvalet: false,
     tuvaletNotu: "Plajın kendisinde tesis yok; en yakın duş/tuvalet antik kent giriş kapılarında, plaja ~10-15 dakika yürüyüş mesafesinde.",
     kabin: false,
-    yayaMesafe: "Antik kent giriş/tesis alanından plaja yaklaşık 10-15 dakika yürüyüş; sahil şeridi ~3 km.",
-    sezlong: "Büyük ölçüde gelişmemiş; organize kiralama sınırlı.",
+    yayaMesafe: "Antik kent giriş/tesis alanından plaja yaklaşık 10-15 dakika yürüyüş; sahil şeridi ~3 km. Çıralı Plajı'nın devamı niteliğinde ama iki plaj arasında doğrudan araç bağlantısı yok; en pratik yol Çıralı'ya araçla gidip aradaki ince dereyi geçerek Olympos tarafına ulaşmak.",
+    sezlong: "Büyük ölçüde gelişmemiş; organize kiralama sınırlı. Şezlong/şemsiye yok, suda güvenlik ipi de bulunmuyor.",
     dalgaDurumu: "",
     aliverisYemeIcme: "Plajın kendisinde yok; en yakın seçenekler antik kent giriş bölgesinde.",
-    cocukUygun: "Plaj üzerinde tesis bulunmaması aileler için pratik bir dezavantaj olabilir.",
-    kalabalik: "",
+    cocukUygun: "Plaj üzerinde tesis bulunmaması, güvenlik ipi olmaması ve denize uzun yürüyüş mesafesi aileler için pratik bir dezavantaj olabilir.",
+    kalabalik: "Geçmişte yoğun kampçılık kültürü ve hareketli gençlik atmosferiyle tanınıyordu; son yıllarda gözle görülür şekilde sakinleşti, artık kalabalıktan kaçanlar için daha uygun.",
     temizlik: "Birinci derece doğal sit alanı olarak koruma altında.",
-    notlar: "Önemli bir Caretta caretta yuvalama plajı; Olympos antik kenti kalıntılarıyla iç içe, gece aydınlatma ve gürültü yasağı var. Kemer-Kumluca sınırına yakın bir konumda.",
+    notlar: "Önemli bir Caretta caretta yuvalama plajı; Olympos antik kenti kalıntılarıyla iç içe, gece aydınlatma ve gürültü yasağı var. Kemer-Kumluca sınırına yakın bir konumda. TripAdvisor'da 3,8/5 puanla (20 yorum) değerlendiriliyor — az sayıda yorum olduğu için puan değişken olabilir.",
     ceviriler: {
       en: {
         parkNotu: "Reached via the entrance gate of the ancient city of Olympos; parking arrangements aren't clearly defined.",
         tuvaletNotu: "No facilities on the beach itself; the nearest shower/toilet is at the ancient city's entrance gates, about a 10-15 minute walk from the beach.",
-        yayaMesafe: "About a 10-15 minute walk from the ancient city's entrance/facility area to the beach; the shoreline is about 3 km.",
-        sezlong: "Largely undeveloped; organized rental is limited.",
+        yayaMesafe: "About a 10-15 minute walk from the ancient city's entrance/facility area to the beach; the shoreline is about 3 km. It's effectively a continuation of Çıralı Beach, but there's no direct vehicle route between the two; the most practical way is to drive to Çıralı and cross the narrow stream between them to reach the Olympos side.",
+        sezlong: "Largely undeveloped; organized rental is limited. No sunbeds/umbrellas, and no safety rope in the water.",
         aliverisYemeIcme: "None on the beach itself; the nearest options are in the ancient city's entrance area.",
-        cocukUygun: "The lack of facilities on the beach can be a practical drawback for families.",
+        cocukUygun: "The lack of facilities, absence of a safety rope, and the long walk to the sea can be a practical drawback for families.",
+        kalabalik: "Historically known for its intense camping culture and lively youth atmosphere; has noticeably calmed down in recent years, now more suitable for those escaping crowds.",
         temizlik: "Protected as a first-degree natural conservation site.",
-        notlar: "An important Caretta caretta (loggerhead sea turtle) nesting beach; intertwined with the ruins of the ancient city of Olympos, with a night lighting and noise ban in place. Located near the Kemer-Kumluca border."
+        notlar: "An important Caretta caretta (loggerhead sea turtle) nesting beach; intertwined with the ruins of the ancient city of Olympos, with a night lighting and noise ban in place. Located near the Kemer-Kumluca border. Rated 3.8/5 on TripAdvisor (20 reviews) — with so few reviews, the rating may fluctuate."
       },
       de: {
         parkNotu: "Erreichbar über das Eingangstor der antiken Stadt Olympos; die Parkregelung ist nicht klar definiert.",
         tuvaletNotu: "Keine Einrichtungen am Strand selbst; die nächste Dusche/Toilette befindet sich an den Eingangstoren der antiken Stadt, etwa 10-15 Gehminuten vom Strand entfernt.",
-        yayaMesafe: "Etwa 10-15 Gehminuten vom Eingangs-/Einrichtungsbereich der antiken Stadt zum Strand; die Küstenlinie ist etwa 3 km lang.",
-        sezlong: "Weitgehend unerschlossen; organisierte Vermietung begrenzt.",
+        yayaMesafe: "Etwa 10-15 Gehminuten vom Eingangs-/Einrichtungsbereich der antiken Stadt zum Strand; die Küstenlinie ist etwa 3 km lang. Er ist praktisch eine Fortsetzung des Strandes von Çıralı, es gibt jedoch keine direkte Fahrzeugverbindung zwischen beiden; am praktischsten ist es, mit dem Auto nach Çıralı zu fahren und den schmalen Bach dazwischen zu überqueren, um zur Olympos-Seite zu gelangen.",
+        sezlong: "Weitgehend unerschlossen; organisierte Vermietung begrenzt. Keine Liegen/Sonnenschirme, und kein Sicherheitsseil im Wasser.",
         aliverisYemeIcme: "Keine am Strand selbst; die nächsten Optionen befinden sich im Eingangsbereich der antiken Stadt.",
-        cocukUygun: "Das Fehlen von Einrichtungen am Strand kann für Familien ein praktischer Nachteil sein.",
+        cocukUygun: "Das Fehlen von Einrichtungen, eines Sicherheitsseils und der lange Weg zum Meer können für Familien ein praktischer Nachteil sein.",
+        kalabalik: "Historisch bekannt für seine intensive Campingkultur und lebendige Jugendatmosphäre; hat sich in den letzten Jahren merklich beruhigt, jetzt eher geeignet für alle, die dem Trubel entfliehen wollen.",
         temizlik: "Als Naturschutzgebiet ersten Grades geschützt.",
-        notlar: "Ein wichtiger Nistplatzstrand für Caretta caretta (Unechte Karettschildkröte); verwoben mit den Ruinen der antiken Stadt Olympos, mit nächtlichem Beleuchtungs- und Lärmverbot. In der Nähe der Grenze Kemer-Kumluca gelegen."
+        notlar: "Ein wichtiger Nistplatzstrand für Caretta caretta (Unechte Karettschildkröte); verwoben mit den Ruinen der antiken Stadt Olympos, mit nächtlichem Beleuchtungs- und Lärmverbot. In der Nähe der Grenze Kemer-Kumluca gelegen. Auf TripAdvisor mit 3,8/5 bewertet (20 Bewertungen) — bei so wenigen Bewertungen kann sich der Wert noch ändern."
       },
       ru: {
         parkNotu: "Добраться можно через входные ворота древнего города Олимпос; парковка чётко не организована.",
         tuvaletNotu: "На самом пляже удобств нет; ближайший душ/туалет находится у входных ворот древнего города, примерно в 10-15 минутах ходьбы от пляжа.",
-        yayaMesafe: "Около 10-15 минут пешком от входа/зоны обслуживания древнего города до пляжа; береговая линия около 3 км.",
-        sezlong: "В основном неразвита; организованная аренда ограничена.",
+        yayaMesafe: "Около 10-15 минут пешком от входа/зоны обслуживания древнего города до пляжа; береговая линия около 3 км. По сути, это продолжение пляжа Чыралы, но прямого автомобильного сообщения между ними нет; самый практичный способ — доехать до Чыралы и перейти узкий ручей между ними, чтобы попасть на сторону Олимпоса.",
+        sezlong: "В основном неразвита; организованная аренда ограничена. Нет шезлонгов/зонтиков и страховочного троса в воде.",
         aliverisYemeIcme: "На самом пляже отсутствует; ближайшие варианты в зоне входа в древний город.",
-        cocukUygun: "Отсутствие удобств на пляже может быть практическим недостатком для семей.",
+        cocukUygun: "Отсутствие удобств, страховочного троса и долгий путь к морю может быть практическим недостатком для семей.",
+        kalabalik: "Исторически известен интенсивной кемпинговой культурой и оживлённой молодёжной атмосферой; в последние годы заметно успокоился, теперь больше подходит тем, кто хочет уйти от толп.",
         temizlik: "Охраняется как природный заповедник первой категории.",
-        notlar: "Важный пляж для гнездования логгерхедовых черепах (Caretta caretta); переплетён с руинами древнего города Олимпос, действует запрет на ночное освещение и шум. Расположен недалеко от границы Кемер-Кумлуджа."
+        notlar: "Важный пляж для гнездования логгерхедовых черепах (Caretta caretta); переплетён с руинами древнего города Олимпос, действует запрет на ночное освещение и шум. Расположен недалеко от границы Кемер-Кумлуджа. Оценка на TripAdvisor 3,8/5 (20 отзывов) — при таком малом числе отзывов оценка может меняться."
       }
     },
     fotograflar: [
       "fotoğraflar/olympos/olympos-1.jpg",
       "fotoğraflar/olympos/olympos-2.jpg",
       "fotoğraflar/olympos/olympos-3.jpg",
-      "fotoğraflar/olympos/olympos-4.jpg"
+      "fotoğraflar/olympos/olympos-4.jpg",
+      "fotoğraflar/olympos/olympos-5.jpg",
+      "fotoğraflar/olympos/olympos-6.jpg",
+      "fotoğraflar/olympos/olympos-7.jpg"
     ],
     kaynak: "internet",
-    kaynaklar: ["villacim.com.tr", "gezinomi.com", "rotasenin.com", "rehbername.com"],
+    kaynaklar: ["villacim.com.tr", "gezinomi.com", "rotasenin.com", "rehbername.com", "tripadvisor.com.tr"],
     haritaLinki: "https://maps.google.com/?q=Olympos+Plajı+Kemer+Antalya"
   },
 
@@ -4956,7 +4977,10 @@ const PLAJLAR = [
       "fotoğraflar/phaselis/phaselis-1.jpg",
       "fotoğraflar/phaselis/phaselis-2.jpg",
       "fotoğraflar/phaselis/phaselis-3.jpg",
-      "fotoğraflar/phaselis/phaselis-4.jpg"
+      "fotoğraflar/phaselis/phaselis-4.jpg",
+      "fotoğraflar/phaselis/phaselis-5.jpg",
+      "fotoğraflar/phaselis/phaselis-6.jpg",
+      "fotoğraflar/phaselis/phaselis-7.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezenanne.com", "gezipgordum.com", "kesfetsek.com", "limancepte.com"],
