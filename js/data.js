@@ -890,7 +890,6 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/mordogankocakum/mordogankocakum-1.webp",
       "fotoğraflar/mordogankocakum/mordogankocakum-2.jpg",
-      "fotoğraflar/mordogankocakum/mordogankocakum-3.jpg",
       "fotoğraflar/mordogankocakum/mordogankocakum-4.jpg",
       "fotoğraflar/mordogankocakum/mordogankocakum-5.jpg"
     ],
@@ -969,44 +968,50 @@ const PLAJLAR = [
     il: "İzmir",
     zemin: "Kumsal",
     derinlik: "Çok Sığ",
-    park: "bilinmiyor",
-    parkNotu: "",
+    park: "ucretsiz",
+    parkNotu: "Otopark mevcut (ücretsiz belirtilmiş, saha doğrulaması önerilir).",
     dus: true,
     tuvalet: true,
     tuvaletNotu: "Belediyeye ait ücretsiz duş, tuvalet ve soyunma kabini var.",
     kabin: true,
     yayaMesafe: "",
     sezlong: "Belediyeden sadece şemsiye veya şezlong+şemsiye paketi kiralanabiliyor, ikisi de ücretli. Özel işletmelerden de kiralanabilir.",
-    dalgaDurumu: "",
+    dalgaDurumu: "Bazı ziyaretçi yorumlarında dalgalı günler olduğu belirtiliyor.",
     aliverisYemeIcme: "Çevrede küçük kafe ve restoranlar taze deniz ürünleri ve Ege mutfağından örnekler sunuyor. Belediyenin işlettiği Arkadaş adlı kafe makul fiyatlı.",
     cocukUygun: "Kayalık alan yok, deniz hemen derinleşmiyor — çocuklu aileler için ideal.",
     kalabalik: "",
     temizlik: "Mavi Bayrak sertifikası. Günlük belediye temizlemesi yapılıyor. İnce altın renginde kumsal, tertemiz deniz.",
-    notlar: "İlk 30 metre belinize kadar sığ su. Çocuklu aileler için ideal. Kumlu denize giriş. Plaj uzunluğu ~250 metre.",
+    notlar: "Özdere/Menderes bölgesinde, yaklaşık 1800 metre uzunluğunda geniş bir kumsal (önceki kayıtlarda 'Özdere Plajı' adıyla ayrı girilmişti, aynı plaj olduğu anlaşıldığı için birleştirildi). İlk 30 metre belinize kadar sığ su. Çocuklu aileler için ideal. Kumlu denize giriş.",
     ceviriler: {
       en: {
+        parkNotu: "Parking available (reported as free, field verification recommended).",
         tuvaletNotu: "Free municipal shower, toilet and changing cabin available.",
         sezlong: "Only umbrellas, or a sunbed+umbrella package, can be rented from the municipality, both paid. Also rentable from private businesses.",
+        dalgaDurumu: "Some visitor reviews mention days with waves.",
         aliverisYemeIcme: "Nearby small cafes and restaurants offer fresh seafood and Aegean cuisine samples. The municipality-run cafe called Arkadaş is reasonably priced.",
         cocukUygun: "No rocky areas, the sea doesn't deepen immediately — ideal for families with children.",
         temizlik: "Blue Flag certified. Cleaned daily by the municipality. Fine golden sand, spotlessly clean sea.",
-        notlar: "The first 30 meters are shallow, waist-deep water. Ideal for families with children. Sandy sea entry. Beach length is about 250 meters."
+        notlar: "In the Özdere/Menderes area, a wide beach about 1800 meters long (previously entered separately as 'Özdere Plajı', merged since it turned out to be the same beach). The first 30 meters are shallow, waist-deep water. Ideal for families with children. Sandy sea entry."
       },
       de: {
+        parkNotu: "Parkplatz vorhanden (als kostenlos angegeben, Vor-Ort-Überprüfung empfohlen).",
         tuvaletNotu: "Kostenlose Gemeindedusche, Toilette und Umkleidekabine vorhanden.",
         sezlong: "Von der Gemeinde können nur Sonnenschirme oder ein Liege+Schirm-Paket gemietet werden, beide kostenpflichtig. Auch bei privaten Betrieben mietbar.",
+        dalgaDurumu: "Einige Besucherbewertungen erwähnen Tage mit Wellengang.",
         aliverisYemeIcme: "Kleine Cafés und Restaurants in der Nähe bieten frische Meeresfrüchte und ägäische Küche. Das von der Gemeinde betriebene Café namens Arkadaş ist preiswert.",
         cocukUygun: "Keine felsigen Bereiche, das Meer wird nicht sofort tief — ideal für Familien mit Kindern.",
         temizlik: "Mit Blauer Flagge zertifiziert. Wird täglich von der Gemeinde gereinigt. Feiner goldener Sand, blitzsauberes Meer.",
-        notlar: "Die ersten 30 Meter sind flaches, hüfttiefes Wasser. Ideal für Familien mit Kindern. Sandiger Zugang zum Meer. Strandlänge etwa 250 Meter."
+        notlar: "Im Gebiet Özdere/Menderes, ein etwa 1800 Meter langer, breiter Strand (früher separat als 'Özdere Plajı' erfasst, zusammengeführt, da es sich um denselben Strand handelt). Die ersten 30 Meter sind flaches, hüfttiefes Wasser. Ideal für Familien mit Kindern. Sandiger Zugang zum Meer."
       },
       ru: {
+        parkNotu: "Есть парковка (указана как бесплатная, рекомендуется проверка на месте).",
         tuvaletNotu: "Есть бесплатный муниципальный душ, туалет и кабинка для переодевания.",
         sezlong: "У муниципалитета можно арендовать только зонтики или комплект шезлонг+зонтик, оба платные. Также можно арендовать у частных заведений.",
+        dalgaDurumu: "В некоторых отзывах посетителей упоминаются дни с волнами.",
         aliverisYemeIcme: "Соседние небольшие кафе и рестораны предлагают свежие морепродукты и блюда эгейской кухни. Муниципальное кафе Arkadaş — по разумным ценам.",
         cocukUygun: "Нет каменистых участков, море не углубляется резко — идеально для семей с детьми.",
         temizlik: "Сертификат «Голубой флаг». Ежедневная уборка муниципалитетом. Мелкий золотистый песок, безупречно чистое море.",
-        notlar: "Первые 30 метров — мелкая вода по пояс. Идеально для семей с детьми. Песчаный вход в море. Длина пляжа около 250 метров."
+        notlar: "В районе Оздере/Мендерес, широкий пляж длиной около 1800 метров (ранее был отдельной записью «Özdere Plajı», объединён, так как оказался тем же пляжем). Первые 30 метров — мелкая вода по пояс. Идеально для семей с детьми. Песчаный вход в море."
       }
     },
     fotograflar: [
@@ -1014,9 +1019,15 @@ const PLAJLAR = [
       "images/cukuralti/cukuralti-2.jpg",
       "images/cukuralti/cukuralti-3.jpg",
       "images/cukuralti/cukuralti-4.jpg",
-      "images/cukuralti/cukuralti-5.jpg"
+      "images/cukuralti/cukuralti-5.jpg",
+      "fotoğraflar/ozdere/ozdere-1.webp",
+      "fotoğraflar/ozdere/ozdere-2.jpg",
+      "fotoğraflar/ozdere/ozdere-3.jpg",
+      "fotoğraflar/ozdere/ozdere-4.jpg",
+      "fotoğraflar/ozdere/ozdere-5.jpg"
     ],
     kaynak: "internet",
+    kaynaklar: ["gezinomi.com"],
     haritaLinki: "https://maps.google.com/?q=Çukuraltı+Halk+Plajı+Menderes+İzmir"
   },
   {
@@ -1208,67 +1219,6 @@ const PLAJLAR = [
     haritaLinki: "https://maps.google.com/?q=Pissa+Koyu+Dikili+İzmir"
   },
   {
-    id: 21,
-    isim: "Özdere Plajı",
-    ilce: "Menderes",
-    il: "İzmir",
-    zemin: "Kumsal",
-    derinlik: "Bilinmiyor",
-    park: "ucretsiz",
-    parkNotu: "Otopark mevcut (ücretsiz belirtilmiş, saha doğrulaması önerilir).",
-    dus: true,
-    tuvalet: true,
-    tuvaletNotu: "Duş ve tuvalet mevcut.",
-    kabin: true,
-    yayaMesafe: "",
-    sezlong: "Şezlong/şemsiye ücretli, ortalama uygun fiyatlı.",
-    dalgaDurumu: "Bazı ziyaretçi yorumlarında dalgalı günler olduğu belirtiliyor.",
-    aliverisYemeIcme: "Yeme-içme tesisleri, dinlenme alanları mevcut. Çevrede restoran ve kafeler var.",
-    cocukUygun: "",
-    kalabalik: "",
-    temizlik: "Mavi Bayrak sertifikası.",
-    notlar: "1800 metre uzunluğunda, 20 metre genişliğinde geniş kumsal. Çukuraltı Halk Plajı'ndan farklı bir nokta - aynı Menderes/Özdere bölgesinde ama ayrı plaj. Girişi ücretsiz.",
-    ceviriler: {
-      en: {
-        parkNotu: "Parking available (reported as free, field verification recommended).",
-        tuvaletNotu: "Shower and toilet available.",
-        sezlong: "Sunbeds/umbrellas paid, average reasonable price.",
-        dalgaDurumu: "Some visitor reviews mention days with waves.",
-        aliverisYemeIcme: "Food/drink facilities and rest areas available. Restaurants and cafes nearby.",
-        temizlik: "Blue Flag certified.",
-        notlar: "A wide beach, 1800 meters long and 20 meters wide. A separate spot from Çukuraltı Public Beach — same Menderes/Özdere area but a different beach. Free entry."
-      },
-      de: {
-        parkNotu: "Parkplatz vorhanden (als kostenlos angegeben, Vor-Ort-Überprüfung empfohlen).",
-        tuvaletNotu: "Dusche und Toilette vorhanden.",
-        sezlong: "Liegen/Sonnenschirme kostenpflichtig, im Schnitt angemessener Preis.",
-        dalgaDurumu: "Einige Besucherbewertungen erwähnen Tage mit Wellengang.",
-        aliverisYemeIcme: "Verpflegungseinrichtungen und Ruhezonen vorhanden. Restaurants und Cafés in der Nähe.",
-        temizlik: "Mit Blauer Flagge zertifiziert.",
-        notlar: "Ein breiter Strand, 1800 Meter lang und 20 Meter breit. Ein separater Ort vom Çukuraltı Halk Plajı — gleiche Region Menderes/Özdere, aber ein anderer Strand. Kostenloser Eintritt."
-      },
-      ru: {
-        parkNotu: "Есть парковка (указана как бесплатная, рекомендуется проверка на месте).",
-        tuvaletNotu: "Есть душ и туалет.",
-        sezlong: "Шезлонги/зонтики платные, в среднем по разумной цене.",
-        dalgaDurumu: "В некоторых отзывах посетителей упоминаются дни с волнами.",
-        aliverisYemeIcme: "Есть места с едой/напитками и зоны отдыха. Поблизости рестораны и кафе.",
-        temizlik: "Сертификат «Голубой флаг».",
-        notlar: "Широкий пляж длиной 1800 метров и шириной 20 метров. Отдельное место от Чукуралты Халк Плажи — тот же район Мендерес/Оздере, но другой пляж. Вход бесплатный."
-      }
-    },
-    fotograflar: [
-      "fotoğraflar/ozdere/ozdere-1.webp",
-      "fotoğraflar/ozdere/ozdere-2.jpg",
-      "fotoğraflar/ozdere/ozdere-3.jpg",
-      "fotoğraflar/ozdere/ozdere-4.jpg",
-      "fotoğraflar/ozdere/ozdere-5.jpg"
-    ],
-    kaynak: "internet",
-    kaynaklar: ["gezinomi.com"],
-    haritaLinki: "https://maps.google.com/?q=Özdere+Plajı+Menderes+İzmir"
-  },
-  {
     id: 22,
     isim: "Altınkum Plajı",
     ilce: "Çeşme",
@@ -1397,7 +1347,6 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/sazlica/sazlica-1.jpg",
       "fotoğraflar/sazlica/sazlica-2.jpg",
-      "fotoğraflar/sazlica/sazlica-3.webp",
       "fotoğraflar/sazlica/sazlica-4.jpg",
       "fotoğraflar/sazlica/sazlica-5.jpg"
     ],
@@ -1703,8 +1652,7 @@ const PLAJLAR = [
       "fotoğraflar/doganbey/doganbey-1.jpg",
       "fotoğraflar/doganbey/doganbey-2.jpg",
       "fotoğraflar/doganbey/doganbey-3.jpg",
-      "fotoğraflar/doganbey/doganbey-4.jpg",
-      "fotoğraflar/doganbey/doganbey-5.jpg"
+      "fotoğraflar/doganbey/doganbey-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["visitizmir.org"],
@@ -2108,7 +2056,8 @@ const PLAJLAR = [
     fotograflar: [
       "fotoğraflar/bademli/bademli-1.jpg",
       "fotoğraflar/bademli/bademli-2.jpg",
-      "fotoğraflar/bademli/bademli-3.jpg"
+      "fotoğraflar/bademli/bademli-3.jpg",
+      "fotoğraflar/bademli/bademli-4.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "gezinomi.com", "rotasenin.com"],
@@ -2888,7 +2837,13 @@ const PLAJLAR = [
       "fotoğraflar/akbukkoyu/akbukkoyu-3.jpg",
       "fotoğraflar/akbukkoyu/akbukkoyu-4.jpg",
       "fotoğraflar/akbukkoyu/akbukkoyu-5.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-6.jpg"
+      "fotoğraflar/akbukkoyu/akbukkoyu-6.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-7.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-8.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-9.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-10.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-11.jpg",
+      "fotoğraflar/akbukkoyu/akbukkoyu-12.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "yerelrehber.com", "neredekal.com"],
@@ -3006,7 +2961,14 @@ const PLAJLAR = [
       "fotoğraflar/oludeniz/oludeniz-3.jpg",
       "fotoğraflar/oludeniz/oludeniz-4.jpg",
       "fotoğraflar/oludeniz/oludeniz-5.jpg",
-      "fotoğraflar/oludeniz/oludeniz-6.jpg"
+      "fotoğraflar/oludeniz/oludeniz-6.jpg",
+      "fotoğraflar/oludeniz/oludeniz-7.jpg",
+      "fotoğraflar/oludeniz/oludeniz-8.jpg",
+      "fotoğraflar/oludeniz/oludeniz-9.jpg",
+      "fotoğraflar/oludeniz/oludeniz-10.jpg",
+      "fotoğraflar/oludeniz/oludeniz-11.jpg",
+      "fotoğraflar/oludeniz/oludeniz-12.jpg",
+      "fotoğraflar/oludeniz/oludeniz-13.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["rotasenin.com", "bujuyollarda.com", "lonelyplanet.com (uluslararası kaynak)"],
@@ -3069,7 +3031,12 @@ const PLAJLAR = [
       "fotoğraflar/iztuzu/iztuzu-3.jpg",
       "fotoğraflar/iztuzu/iztuzu-4.jpg",
       "fotoğraflar/iztuzu/iztuzu-5.jpg",
-      "fotoğraflar/iztuzu/iztuzu-6.jpg"
+      "fotoğraflar/iztuzu/iztuzu-6.jpg",
+      "fotoğraflar/iztuzu/iztuzu-7.jpg",
+      "fotoğraflar/iztuzu/iztuzu-8.jpg",
+      "fotoğraflar/iztuzu/iztuzu-9.jpg",
+      "fotoğraflar/iztuzu/iztuzu-10.jpg",
+      "fotoğraflar/iztuzu/iztuzu-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "rotasenin.com", "lonelyplanet.com (uluslararası kaynak)"],
@@ -4360,7 +4327,13 @@ const PLAJLAR = [
       "fotoğraflar/konyaalti/konyaalti-2.jpg",
       "fotoğraflar/konyaalti/konyaalti-3.jpg",
       "fotoğraflar/konyaalti/konyaalti-4.jpg",
-      "fotoğraflar/konyaalti/konyaalti-5.jpg"
+      "fotoğraflar/konyaalti/konyaalti-5.jpg",
+      "fotoğraflar/konyaalti/konyaalti-6.jpg",
+      "fotoğraflar/konyaalti/konyaalti-7.jpg",
+      "fotoğraflar/konyaalti/konyaalti-8.jpg",
+      "fotoğraflar/konyaalti/konyaalti-9.jpg",
+      "fotoğraflar/konyaalti/konyaalti-10.jpg",
+      "fotoğraflar/konyaalti/konyaalti-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "urlaubsguru.de"],
@@ -4424,7 +4397,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/lara/lara-1.jpg"
+      "fotoğraflar/lara/lara-1.jpg",
+      "fotoğraflar/lara/lara-2.jpg",
+      "fotoğraflar/lara/lara-3.webp",
+      "fotoğraflar/lara/lara-4.jpg",
+      "fotoğraflar/lara/lara-5.jpg",
+      "fotoğraflar/lara/lara-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "rotasenin.com", "advantour.com", "turkeytravelplanner.com"],
@@ -4659,7 +4637,11 @@ const PLAJLAR = [
         notlar: "Бухта к западу от гавани Каша, в сторону Кекова, без дороги по суше; добраться можно только на лодке. Примечание: не найдено источника, подтверждающего утверждение, что это «один из двух пляжей Каша с «Голубым флагом» вместе с Акчагерме» — вероятно, это путали с Хидает-Койю, отдельной бухтой на полуострове Чукурбаг с дорожным доступом и пляжным клубом; запись исправлена в соответствии с реальной бухтой Инёню."
       }
     },
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/inonukoyu/inonukoyu-1.jpg",
+      "fotoğraflar/inonukoyu/inonukoyu-2.jpg",
+      "fotoğraflar/inonukoyu/inonukoyu-3.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["bayaiyi.com", "adayachtsailing.com", "gocekyachting.com", "kekovatekneturu.com"],
     haritaLinki: "https://maps.google.com/?q=İnönü+Koyu+Kaş+Antalya"
@@ -4718,7 +4700,11 @@ const PLAJLAR = [
         notlar: "Рядом с галечным участком длиной около 200 метров есть также песчаная подзона, которую местные жители называют «золотым пляжем»."
       }
     },
-    fotograflar: [],
+    fotograflar: [
+      "fotoğraflar/akcagerme/akcagerme-1.jpg",
+      "fotoğraflar/akcagerme/akcagerme-2.jpg",
+      "fotoğraflar/akcagerme/akcagerme-3.jpg"
+    ],
     kaynak: "internet",
     kaynaklar: ["localcappadocia.com", "teknekirala.com", "gezilmesigerekenyerler.com", "obilet.com"],
     haritaLinki: "https://maps.google.com/?q=Akçagerme+Plajı+Kaş+Antalya"
@@ -4997,7 +4983,7 @@ const PLAJLAR = [
     cocukUygun: "",
     kalabalik: "Otel şeridi boyunca popüler bir plaj.",
     temizlik: "Mavi Bayrak ödüllü.",
-    notlar: "2,9 km uzunluğunda; lüks otellerin önünden geçmesine rağmen belirli bölümleri halka açık tutuluyor. Zemin tanımında kaynaklar arasında küçük bir tutarsızlık var (kimi kaynak kumsal, kimi kaynak girişte küçük çakıl diyor) — bu yüzden karışık zemin olarak kaydedildi.",
+    notlar: "2,9 km uzunluğunda; lüks otellerin önünden geçmesine rağmen belirli bölümleri halka açık tutuluyor. Zemin tanımında kaynaklar arasında küçük bir tutarsızlık var (kimi kaynak kumsal, kimi kaynak girişte küçük çakıl diyor) — bu yüzden karışık zemin olarak kaydedildi. Çam ormanlarıyla çevrili; birkaç kilometre mesafede yürüyüş rotalarıyla bilinen Göynük Kanyonu var. Su altı görüşü özellikle sabah saatlerinde iyi.",
     ceviriler: {
       en: {
         parkNotu: "There's a paid parking fee per vehicle.",
@@ -5007,7 +4993,7 @@ const PLAJLAR = [
         aliverisYemeIcme: "There's stand service on the beach; water sports like parasailing, jet-ski, banana boat and scuba diving are offered.",
         kalabalik: "A popular beach along the hotel strip.",
         temizlik: "Blue Flag awarded.",
-        notlar: "2.9 km long; despite passing in front of luxury hotels, certain sections are kept open to the public. There's a minor inconsistency among sources regarding the ground description (some say sandy, others say small pebbles at the entrance) — hence recorded as mixed ground."
+        notlar: "2.9 km long; despite passing in front of luxury hotels, certain sections are kept open to the public. There's a minor inconsistency among sources regarding the ground description (some say sandy, others say small pebbles at the entrance) — hence recorded as mixed ground. Surrounded by pine forests; a few kilometers away is Göynük Canyon, known for its hiking routes. Underwater visibility is especially good in the morning hours."
       },
       de: {
         parkNotu: "Es gibt eine kostenpflichtige Parkgebühr pro Fahrzeug.",
@@ -5017,7 +5003,7 @@ const PLAJLAR = [
         aliverisYemeIcme: "Am Strand gibt es Kioskservice; Wassersportarten wie Parasailing, Jetski, Bananenboot und Gerätetauchen werden angeboten.",
         kalabalik: "Ein beliebter Strand entlang des Hotelstreifens.",
         temizlik: "Mit Blauer Flagge ausgezeichnet.",
-        notlar: "2,9 km lang; obwohl er vor Luxushotels verläuft, bleiben bestimmte Abschnitte öffentlich zugänglich. Es gibt eine kleinere Unstimmigkeit zwischen den Quellen bezüglich der Untergrundbeschreibung (manche sagen sandig, andere kleine Kiesel am Eingang) — daher als gemischter Untergrund erfasst."
+        notlar: "2,9 km lang; obwohl er vor Luxushotels verläuft, bleiben bestimmte Abschnitte öffentlich zugänglich. Es gibt eine kleinere Unstimmigkeit zwischen den Quellen bezüglich der Untergrundbeschreibung (manche sagen sandig, andere kleine Kiesel am Eingang) — daher als gemischter Untergrund erfasst. Von Pinienwäldern umgeben; wenige Kilometer entfernt liegt die für ihre Wanderwege bekannte Göynük-Schlucht. Die Sicht unter Wasser ist besonders am Morgen gut."
       },
       ru: {
         parkNotu: "Есть платная парковка за автомобиль.",
@@ -5027,16 +5013,18 @@ const PLAJLAR = [
         aliverisYemeIcme: "На пляже есть киоски; предлагаются водные виды спорта, такие как параcейлинг, гидроцикл, банан и дайвинг.",
         kalabalik: "Популярный пляж вдоль отельной полосы.",
         temizlik: "Награждён «Голубым флагом».",
-        notlar: "Длина 2,9 км; несмотря на прохождение перед роскошными отелями, определённые участки остаются открытыми для публики. Есть небольшое расхождение между источниками в описании дна (одни говорят песчаный, другие — мелкая галька у входа) — поэтому записано как смешанное дно."
+        notlar: "Длина 2,9 км; несмотря на прохождение перед роскошными отелями, определённые участки остаются открытыми для публики. Есть небольшое расхождение между источниками в описании дна (одни говорят песчаный, другие — мелкая галька у входа) — поэтому записано как смешанное дно. Окружён сосновыми лесами; в нескольких километрах находится каньон Гёйнюк, известный пешеходными маршрутами. Видимость под водой особенно хороша по утрам."
       }
     },
     fotograflar: [
       "fotoğraflar/goynuk/goynuk-1.jpg",
       "fotoğraflar/goynuk/goynuk-2.jpg",
-      "fotoğraflar/goynuk/goynuk-3.jpg"
+      "fotoğraflar/goynuk/goynuk-3.jpg",
+      "fotoğraflar/goynuk/goynuk-4.jpg",
+      "fotoğraflar/goynuk/goynuk-5.jpg"
     ],
     kaynak: "internet",
-    kaynaklar: ["turkeyoutdoor.org", "gezinomi.com", "beachsearcher.com.tr"],
+    kaynaklar: ["turkeyoutdoor.org", "gezinomi.com", "beachsearcher.com.tr", "herantalya.com"],
     haritaLinki: "https://maps.google.com/?q=Göynük+Plajı+Kemer+Antalya"
   },
 
@@ -5098,7 +5086,11 @@ const PLAJLAR = [
     },
     fotograflar: [
       "fotoğraflar/ayisigi/ayisigi-1.jpg",
-      "fotoğraflar/ayisigi/ayisigi-2.jpg"
+      "fotoğraflar/ayisigi/ayisigi-2.jpg",
+      "fotoğraflar/ayisigi/ayisigi-3.jpg",
+      "fotoğraflar/ayisigi/ayisigi-4.jpg",
+      "fotoğraflar/ayisigi/ayisigi-5.jpg",
+      "fotoğraflar/ayisigi/ayisigi-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["mekan360.com", "tripadvisor.com", "1001beach.com", "ayisigipark.com.tr"],
@@ -5159,10 +5151,6 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/adrasan/adrasan-1.jpg",
-      "fotoğraflar/adrasan/adrasan-2.jpg",
-      "fotoğraflar/adrasan/adrasan-3.jpg",
-      "fotoğraflar/adrasan/adrasan-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["beachsearcher.com.tr", "localcappadocia.com", "antalyayikesfediyoruz.com", "rotasenin.com"],
