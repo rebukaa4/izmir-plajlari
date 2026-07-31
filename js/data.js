@@ -253,7 +253,7 @@ const PLAJLAR = [
       "images/ekmeksiz/ekmeksiz-3.jpg",
       "images/ekmeksiz/ekmeksiz-4.jpg",
       "images/ekmeksiz/ekmeksiz-5.jpg",
-      "images/ekmeksiz/ekmeksiz-6.webp",
+      "images/ekmeksiz/ekmeksiz-6.jpg",
       "images/ekmeksiz/ekmeksiz-7.webp",
       "images/ekmeksiz/ekmeksiz-8.webp"
     ],
@@ -443,10 +443,10 @@ const PLAJLAR = [
     },
     fotograflar: [
       "images/boyalik/boyalik-2.jpg",
-      "fotoğraflar/boyalik/boyalik-3.jpg",
-      "fotoğraflar/boyalik/boyalik-4.jpg",
-      "fotoğraflar/boyalik/boyalik-5.jpg",
-      "fotoğraflar/boyalik/boyalik-6.jpg"
+      "images/boyalik/boyalik-3.jpg",
+      "images/boyalik/boyalik-4.jpg",
+      "images/boyalik/boyalik-5.jpg",
+      "images/boyalik/boyalik-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com"],
@@ -644,11 +644,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/eskifoca/eskifoca-1.webp",
-      "fotoğraflar/eskifoca/eskifoca-2.jpg",
-      "fotoğraflar/eskifoca/eskifoca-3.jpg",
-      "fotoğraflar/eskifoca/eskifoca-4.jpg",
-      "fotoğraflar/eskifoca/eskifoca-5.webp"
+      "images/eskifoca/eskifoca-1.webp",
+      "images/eskifoca/eskifoca-2.jpg",
+      "images/eskifoca/eskifoca-3.jpg",
+      "images/eskifoca/eskifoca-4.jpg",
+      "images/eskifoca/eskifoca-5.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -708,13 +708,13 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/yenifoca/yenifoca-1.jpg",
-      "fotoğraflar/yenifoca/yenifoca-3.png",
-      "fotoğraflar/yenifoca/yenifoca-4.jpg",
-      "fotoğraflar/yenifoca/yenifoca-5.jpg",
-      "fotoğraflar/yenifoca/yenifoca-6.webp",
-      "fotoğraflar/yenifoca/yenifoca-7.webp",
-      "fotoğraflar/yenifoca/yenifoca-8.webp"
+      "images/yenifoca/yenifoca-1.jpg",
+      "images/yenifoca/yenifoca-3.jpg",
+      "images/yenifoca/yenifoca-4.jpg",
+      "images/yenifoca/yenifoca-5.jpg",
+      "images/yenifoca/yenifoca-6.webp",
+      "images/yenifoca/yenifoca-7.webp",
+      "images/yenifoca/yenifoca-8.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "gezinomi.com", "izmirhaberleri.com", "hadidenize.com"],
@@ -777,11 +777,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/gulbahce/gulbahce-1.jpg",
-      "fotoğraflar/gulbahce/gulbahce-2.jpg",
-      "fotoğraflar/gulbahce/gulbahce-3.jpg",
-      "fotoğraflar/gulbahce/gulbahce-4.jpg",
-      "fotoğraflar/gulbahce/gulbahce-5.jpg"
+      "images/gulbahce/gulbahce-1.jpg",
+      "images/gulbahce/gulbahce-2.jpg",
+      "images/gulbahce/gulbahce-3.jpg",
+      "images/gulbahce/gulbahce-4.jpg",
+      "images/gulbahce/gulbahce-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "bizevdeyokuz.com", "onedio.com"],
@@ -837,11 +837,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/dikilihalk/dikilihalk-1.jpg",
-      "fotoğraflar/dikilihalk/dikilihalk-2.jpg",
-      "fotoğraflar/dikilihalk/dikilihalk-3.jpg",
-      "fotoğraflar/dikilihalk/dikilihalk-4.jpg",
-      "fotoğraflar/dikilihalk/dikilihalk-5.jpg"
+      "images/dikilihalk/dikilihalk-1.jpg",
+      "images/dikilihalk/dikilihalk-2.jpg",
+      "images/dikilihalk/dikilihalk-3.jpg",
+      "images/dikilihalk/dikilihalk-4.jpg",
+      "images/dikilihalk/dikilihalk-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "bizevdeyokuz.com", "plajrehber.com"],
@@ -894,10 +894,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/mordogankocakum/mordogankocakum-1.webp",
-      "fotoğraflar/mordogankocakum/mordogankocakum-2.jpg",
-      "fotoğraflar/mordogankocakum/mordogankocakum-4.jpg",
-      "fotoğraflar/mordogankocakum/mordogankocakum-5.jpg"
+      "images/mordogankocakum/mordogankocakum-1.webp",
+      "images/mordogankocakum/mordogankocakum-2.jpg",
+      "images/mordogankocakum/mordogankocakum-4.jpg",
+      "images/mordogankocakum/mordogankocakum-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "tripadvisor.com.tr"],
@@ -1026,11 +1026,11 @@ const PLAJLAR = [
       "images/cukuralti/cukuralti-3.jpg",
       "images/cukuralti/cukuralti-4.jpg",
       "images/cukuralti/cukuralti-5.jpg",
-      "fotoğraflar/ozdere/ozdere-1.webp",
-      "fotoğraflar/ozdere/ozdere-2.jpg",
-      "fotoğraflar/ozdere/ozdere-3.jpg",
-      "fotoğraflar/ozdere/ozdere-4.jpg",
-      "fotoğraflar/ozdere/ozdere-5.jpg"
+      "images/ozdere/ozdere-1.webp",
+      "images/ozdere/ozdere-2.jpg",
+      "images/ozdere/ozdere-3.jpg",
+      "images/ozdere/ozdere-4.jpg",
+      "images/ozdere/ozdere-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com"],
@@ -1093,11 +1093,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/pamucak/pamucak-1.jpg",
-      "fotoğraflar/pamucak/pamucak-2.png",
-      "fotoğraflar/pamucak/pamucak-3.jpg",
-      "fotoğraflar/pamucak/pamucak-4.jpg",
-      "fotoğraflar/pamucak/pamucak-5.webp"
+      "images/pamucak/pamucak-1.jpg",
+      "images/pamucak/pamucak-2.png",
+      "images/pamucak/pamucak-3.jpg",
+      "images/pamucak/pamucak-4.jpg",
+      "images/pamucak/pamucak-5.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com"],
@@ -1154,10 +1154,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/akarca/akarca-1.jpg",
-      "fotoğraflar/akarca/akarca-2.jpg",
-      "fotoğraflar/akarca/akarca-3.jpg",
-      "fotoğraflar/akarca/akarca-4.jpg"
+      "images/akarca/akarca-1.jpg",
+      "images/akarca/akarca-2.jpg",
+      "images/akarca/akarca-3.jpg",
+      "images/akarca/akarca-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -1214,11 +1214,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/pissakoyu/pissakoyu-1.jpg",
-      "fotoğraflar/pissakoyu/pissakoyu-2.jpg",
-      "fotoğraflar/pissakoyu/pissakoyu-3.jpg",
-      "fotoğraflar/pissakoyu/pissakoyu-4.jpg",
-      "fotoğraflar/pissakoyu/pissakoyu-5.jpg"
+      "images/pissakoyu/pissakoyu-1.jpg",
+      "images/pissakoyu/pissakoyu-2.jpg",
+      "images/pissakoyu/pissakoyu-3.jpg",
+      "images/pissakoyu/pissakoyu-4.jpg",
+      "images/pissakoyu/pissakoyu-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "tripadvisor.com.tr"],
@@ -1351,10 +1351,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/sazlica/sazlica-1.jpg",
-      "fotoğraflar/sazlica/sazlica-2.jpg",
-      "fotoğraflar/sazlica/sazlica-4.jpg",
-      "fotoğraflar/sazlica/sazlica-5.jpg"
+      "images/sazlica/sazlica-1.jpg",
+      "images/sazlica/sazlica-2.jpg",
+      "images/sazlica/sazlica-4.jpg",
+      "images/sazlica/sazlica-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "bizevdeyokuz.com", "tripadvisor.com.tr"],
@@ -1414,11 +1414,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kaleburnu/kaleburnu-1.webp",
-      "fotoğraflar/kaleburnu/kaleburnu-2.jpg",
-      "fotoğraflar/kaleburnu/kaleburnu-3.jpg",
-      "fotoğraflar/kaleburnu/kaleburnu-4.jpg",
-      "fotoğraflar/kaleburnu/kaleburnu-5.jpg"
+      "images/kaleburnu/kaleburnu-1.webp",
+      "images/kaleburnu/kaleburnu-2.jpg",
+      "images/kaleburnu/kaleburnu-3.jpg",
+      "images/kaleburnu/kaleburnu-4.jpg",
+      "images/kaleburnu/kaleburnu-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "egetelgraf.com"],
@@ -1472,11 +1472,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/canakkoyu/canakkoyu-1.webp",
-      "fotoğraflar/canakkoyu/canakkoyu-2.jpg",
-      "fotoğraflar/canakkoyu/canakkoyu-3.jpg",
-      "fotoğraflar/canakkoyu/canakkoyu-4.jpg",
-      "fotoğraflar/canakkoyu/canakkoyu-5.jpg"
+      "images/canakkoyu/canakkoyu-1.webp",
+      "images/canakkoyu/canakkoyu-2.jpg",
+      "images/canakkoyu/canakkoyu-3.jpg",
+      "images/canakkoyu/canakkoyu-4.jpg",
+      "images/canakkoyu/canakkoyu-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezicini.com", "haberekspres.com.tr"],
@@ -1533,11 +1533,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/zeytineli/zeytineli-1.jpg",
-      "fotoğraflar/zeytineli/zeytineli-2.jpg",
-      "fotoğraflar/zeytineli/zeytineli-3.jpg",
-      "fotoğraflar/zeytineli/zeytineli-4.jpg",
-      "fotoğraflar/zeytineli/zeytineli-5.jpg"
+      "images/zeytineli/zeytineli-1.jpg",
+      "images/zeytineli/zeytineli-2.jpg",
+      "images/zeytineli/zeytineli-3.jpg",
+      "images/zeytineli/zeytineli-4.jpg",
+      "images/zeytineli/zeytineli-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "visitizmir.org"],
@@ -1655,10 +1655,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/doganbey/doganbey-1.jpg",
-      "fotoğraflar/doganbey/doganbey-2.jpg",
-      "fotoğraflar/doganbey/doganbey-3.jpg",
-      "fotoğraflar/doganbey/doganbey-4.jpg"
+      "images/doganbey/doganbey-1.jpg",
+      "images/doganbey/doganbey-2.jpg",
+      "images/doganbey/doganbey-3.jpg",
+      "images/doganbey/doganbey-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["visitizmir.org"],
@@ -1712,11 +1712,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/ardic/ardic-1.jpg",
-      "fotoğraflar/ardic/ardic-2.webp",
-      "fotoğraflar/ardic/ardic-3.jpg",
-      "fotoğraflar/ardic/ardic-4.jpg",
-      "fotoğraflar/ardic/ardic-5.jpg"
+      "images/ardic/ardic-1.jpg",
+      "images/ardic/ardic-2.webp",
+      "images/ardic/ardic-3.jpg",
+      "images/ardic/ardic-4.jpg",
+      "images/ardic/ardic-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com"],
@@ -1770,11 +1770,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/candarli/candarli-1.jpg",
-      "fotoğraflar/candarli/candarli-2.jpg",
-      "fotoğraflar/candarli/candarli-3.jpg",
-      "fotoğraflar/candarli/candarli-4.jpg",
-      "fotoğraflar/candarli/candarli-5.jpg"
+      "images/candarli/candarli-1.jpg",
+      "images/candarli/candarli-2.jpg",
+      "images/candarli/candarli-3.jpg",
+      "images/candarli/candarli-4.jpg",
+      "images/candarli/candarli-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "tripadvisor.com.tr", "visitizmir.org"],
@@ -1828,11 +1828,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/ahmetbeyli/ahmetbeyli-1.jpg",
-      "fotoğraflar/ahmetbeyli/ahmetbeyli-2.jpg",
-      "fotoğraflar/ahmetbeyli/ahmetbeyli-3.jpg",
-      "fotoğraflar/ahmetbeyli/ahmetbeyli-4.jpg",
-      "fotoğraflar/ahmetbeyli/ahmetbeyli-5.jpg"
+      "images/ahmetbeyli/ahmetbeyli-1.jpg",
+      "images/ahmetbeyli/ahmetbeyli-2.jpg",
+      "images/ahmetbeyli/ahmetbeyli-3.jpg",
+      "images/ahmetbeyli/ahmetbeyli-4.jpg",
+      "images/ahmetbeyli/ahmetbeyli-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -1886,11 +1886,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/deliklikoyu/deliklikoyu-1.jpg",
-      "fotoğraflar/deliklikoyu/deliklikoyu-2.jpg",
-      "fotoğraflar/deliklikoyu/deliklikoyu-3.jpg",
-      "fotoğraflar/deliklikoyu/deliklikoyu-4.jpg",
-      "fotoğraflar/deliklikoyu/deliklikoyu-5.webp"
+      "images/deliklikoyu/deliklikoyu-1.jpg",
+      "images/deliklikoyu/deliklikoyu-2.jpg",
+      "images/deliklikoyu/deliklikoyu-3.jpg",
+      "images/deliklikoyu/deliklikoyu-4.jpg",
+      "images/deliklikoyu/deliklikoyu-5.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "bizevdeyokuz.com"],
@@ -1947,11 +1947,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/mimozakoyu/mimozakoyu-1.webp",
-      "fotoğraflar/mimozakoyu/mimozakoyu-2.jpg",
-      "fotoğraflar/mimozakoyu/mimozakoyu-3.jpg",
-      "fotoğraflar/mimozakoyu/mimozakoyu-4.jpg",
-      "fotoğraflar/mimozakoyu/mimozakoyu-5.jpg"
+      "images/mimozakoyu/mimozakoyu-1.webp",
+      "images/mimozakoyu/mimozakoyu-2.jpg",
+      "images/mimozakoyu/mimozakoyu-3.jpg",
+      "images/mimozakoyu/mimozakoyu-4.jpg",
+      "images/mimozakoyu/mimozakoyu-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "beachsearcher.com.tr"],
@@ -2002,10 +2002,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/bademli/bademli-1.jpg",
-      "fotoğraflar/bademli/bademli-2.jpg",
-      "fotoğraflar/bademli/bademli-3.jpg",
-      "fotoğraflar/bademli/bademli-4.webp"
+      "images/bademli/bademli-1.jpg",
+      "images/bademli/bademli-2.jpg",
+      "images/bademli/bademli-3.jpg",
+      "images/bademli/bademli-4.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "gezinomi.com", "rotasenin.com"],
@@ -2065,10 +2065,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-1.jpg",
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-2.jpg",
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-3.jpg",
-      "fotoğraflar/kargacikkoyu/kargacikkoyu-4.jpg"
+      "images/kargacikkoyu/kargacikkoyu-1.jpg",
+      "images/kargacikkoyu/kargacikkoyu-2.jpg",
+      "images/kargacikkoyu/kargacikkoyu-3.jpg",
+      "images/kargacikkoyu/kargacikkoyu-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -2131,12 +2131,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/urlakum/urlakum-1.jpg",
-      "fotoğraflar/urlakum/urlakum-3.jpg",
-      "fotoğraflar/urlakum/urlakum-4.jpg",
-      "fotoğraflar/urlakum/urlakum-5.jpg",
-      "fotoğraflar/urlakum/urlakum-6.jpg",
-      "fotoğraflar/urlakum/urlakum-7.jpg"
+      "images/urlakum/urlakum-1.jpg",
+      "images/urlakum/urlakum-3.jpg",
+      "images/urlakum/urlakum-4.jpg",
+      "images/urlakum/urlakum-5.jpg",
+      "images/urlakum/urlakum-6.jpg",
+      "images/urlakum/urlakum-7.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "hadidenize.com"],
@@ -2190,9 +2190,9 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/selcukhalk/selcukhalk-1.jpg",
-      "fotoğraflar/selcukhalk/selcukhalk-2.jpg",
-      "fotoğraflar/selcukhalk/selcukhalk-4.jpg"
+      "images/selcukhalk/selcukhalk-1.jpg",
+      "images/selcukhalk/selcukhalk-2.jpg",
+      "images/selcukhalk/selcukhalk-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "selcuk.bel.tr", "sikayetvar.com"],
@@ -2249,11 +2249,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/badembuku/badembuku-1.webp",
-      "fotoğraflar/badembuku/badembuku-2.webp",
-      "fotoğraflar/badembuku/badembuku-3.jpg",
-      "fotoğraflar/badembuku/badembuku-4.jpg",
-      "fotoğraflar/badembuku/badembuku-5.jpg"
+      "images/badembuku/badembuku-1.webp",
+      "images/badembuku/badembuku-2.webp",
+      "images/badembuku/badembuku-3.jpg",
+      "images/badembuku/badembuku-4.jpg",
+      "images/badembuku/badembuku-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com"],
@@ -2310,10 +2310,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/sakizlikoy/sakizlikoy-1.jpg",
-      "fotoğraflar/sakizlikoy/sakizlikoy-2.webp",
-      "fotoğraflar/sakizlikoy/sakizlikoy-3.webp",
-      "fotoğraflar/sakizlikoy/sakizlikoy-4.webp"
+      "images/sakizlikoy/sakizlikoy-1.jpg",
+      "images/sakizlikoy/sakizlikoy-2.webp",
+      "images/sakizlikoy/sakizlikoy-3.webp",
+      "images/sakizlikoy/sakizlikoy-4.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com"],
@@ -2364,11 +2364,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/demircili/demircili-1.webp",
-      "fotoğraflar/demircili/demircili-2.jpg",
-      "fotoğraflar/demircili/demircili-3.jpg",
-      "fotoğraflar/demircili/demircili-4.jpg",
-      "fotoğraflar/demircili/demircili-5.jpg"
+      "images/demircili/demircili-1.webp",
+      "images/demircili/demircili-2.jpg",
+      "images/demircili/demircili-3.jpg",
+      "images/demircili/demircili-4.jpg",
+      "images/demircili/demircili-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "muglam.com.tr"],
@@ -2432,12 +2432,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-1.jpg",
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-2.jpg",
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-3.jpg",
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-4.jpg",
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-5.webp",
-      "fotoğraflar/kadinlardenizi/kadinlardenizi-6.jpg"
+      "images/kadinlardenizi/kadinlardenizi-1.jpg",
+      "images/kadinlardenizi/kadinlardenizi-2.jpg",
+      "images/kadinlardenizi/kadinlardenizi-3.jpg",
+      "images/kadinlardenizi/kadinlardenizi-4.jpg",
+      "images/kadinlardenizi/kadinlardenizi-5.webp",
+      "images/kadinlardenizi/kadinlardenizi-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "kusadasi.com.tr"],
@@ -2504,12 +2504,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/sevgiplaji/sevgiplaji-1.jpg",
-      "fotoğraflar/sevgiplaji/sevgiplaji-2.jpg",
-      "fotoğraflar/sevgiplaji/sevgiplaji-3.jpg",
-      "fotoğraflar/sevgiplaji/sevgiplaji-4.jpg",
-      "fotoğraflar/sevgiplaji/sevgiplaji-5.webp",
-      "fotoğraflar/sevgiplaji/sevgiplaji-6.jpg"
+      "images/sevgiplaji/sevgiplaji-1.jpg",
+      "images/sevgiplaji/sevgiplaji-2.jpg",
+      "images/sevgiplaji/sevgiplaji-3.jpg",
+      "images/sevgiplaji/sevgiplaji-4.jpg",
+      "images/sevgiplaji/sevgiplaji-5.webp",
+      "images/sevgiplaji/sevgiplaji-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "kusadasi.com.tr", "hurriyet.com.tr"],
@@ -2576,10 +2576,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kusturplaji/kusturplaji-1.jpg",
-      "fotoğraflar/kusturplaji/kusturplaji-3.webp",
-      "fotoğraflar/kusturplaji/kusturplaji-5.webp",
-      "fotoğraflar/kusturplaji/kusturplaji-6.webp"
+      "images/kusturplaji/kusturplaji-1.jpg",
+      "images/kusturplaji/kusturplaji-3.webp",
+      "images/kusturplaji/kusturplaji-5.webp",
+      "images/kusturplaji/kusturplaji-6.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "rotasenin.com", "kusadasi.com.tr"],
@@ -2643,12 +2643,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/longbeach/longbeach-1.png",
-      "fotoğraflar/longbeach/longbeach-2.jpg",
-      "fotoğraflar/longbeach/longbeach-3.jpg",
-      "fotoğraflar/longbeach/longbeach-4.jpg",
-      "fotoğraflar/longbeach/longbeach-5.jpg",
-      "fotoğraflar/longbeach/longbeach-6.jpg"
+      "images/longbeach/longbeach-1.png",
+      "images/longbeach/longbeach-2.jpg",
+      "images/longbeach/longbeach-3.jpg",
+      "images/longbeach/longbeach-4.jpg",
+      "images/longbeach/longbeach-5.jpg",
+      "images/longbeach/longbeach-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "kusadasi.com.tr"],
@@ -2715,12 +2715,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/altinkum/altinkum-1.jpg",
-      "fotoğraflar/altinkum/altinkum-2.jpg",
-      "fotoğraflar/altinkum/altinkum-3.jpg",
-      "fotoğraflar/altinkum/altinkum-4.jpg",
-      "fotoğraflar/altinkum/altinkum-5.jpg",
-      "fotoğraflar/altinkum/altinkum-6.webp"
+      "images/altinkum/altinkum-12.jpg",
+      "images/altinkum/altinkum-13.jpg",
+      "images/altinkum/altinkum-14.jpg",
+      "images/altinkum/altinkum-15.jpg",
+      "images/altinkum/altinkum-16.jpg",
+      "images/altinkum/altinkum-17.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "tripadvisor.com.tr", "cnnturk.com"],
@@ -2787,18 +2787,18 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/akbukkoyu/akbukkoyu-1.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-2.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-3.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-4.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-5.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-6.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-7.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-8.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-9.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-10.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-11.jpg",
-      "fotoğraflar/akbukkoyu/akbukkoyu-12.jpg"
+      "images/akbukkoyu/akbukkoyu-1.jpg",
+      "images/akbukkoyu/akbukkoyu-2.jpg",
+      "images/akbukkoyu/akbukkoyu-3.jpg",
+      "images/akbukkoyu/akbukkoyu-4.jpg",
+      "images/akbukkoyu/akbukkoyu-5.jpg",
+      "images/akbukkoyu/akbukkoyu-6.jpg",
+      "images/akbukkoyu/akbukkoyu-7.jpg",
+      "images/akbukkoyu/akbukkoyu-8.jpg",
+      "images/akbukkoyu/akbukkoyu-9.jpg",
+      "images/akbukkoyu/akbukkoyu-10.jpg",
+      "images/akbukkoyu/akbukkoyu-11.jpg",
+      "images/akbukkoyu/akbukkoyu-12.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "yerelrehber.com", "neredekal.com"],
@@ -2853,10 +2853,10 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/beyazkum/beyazkum-1.jpg",
-      "fotoğraflar/beyazkum/beyazkum-2.jpg",
-      "fotoğraflar/beyazkum/beyazkum-3.jpg",
-      "fotoğraflar/beyazkum/beyazkum-4.jpg"
+      "images/beyazkum/beyazkum-1.jpg",
+      "images/beyazkum/beyazkum-2.jpg",
+      "images/beyazkum/beyazkum-3.jpg",
+      "images/beyazkum/beyazkum-4.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr"],
@@ -2911,19 +2911,19 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/oludeniz/oludeniz-1.jpg",
-      "fotoğraflar/oludeniz/oludeniz-2.jpg",
-      "fotoğraflar/oludeniz/oludeniz-3.jpg",
-      "fotoğraflar/oludeniz/oludeniz-4.jpg",
-      "fotoğraflar/oludeniz/oludeniz-5.jpg",
-      "fotoğraflar/oludeniz/oludeniz-6.jpg",
-      "fotoğraflar/oludeniz/oludeniz-7.jpg",
-      "fotoğraflar/oludeniz/oludeniz-8.jpg",
-      "fotoğraflar/oludeniz/oludeniz-9.jpg",
-      "fotoğraflar/oludeniz/oludeniz-10.jpg",
-      "fotoğraflar/oludeniz/oludeniz-11.jpg",
-      "fotoğraflar/oludeniz/oludeniz-12.jpg",
-      "fotoğraflar/oludeniz/oludeniz-13.jpg"
+      "images/oludeniz/oludeniz-1.jpg",
+      "images/oludeniz/oludeniz-2.jpg",
+      "images/oludeniz/oludeniz-3.jpg",
+      "images/oludeniz/oludeniz-4.jpg",
+      "images/oludeniz/oludeniz-5.jpg",
+      "images/oludeniz/oludeniz-6.jpg",
+      "images/oludeniz/oludeniz-7.jpg",
+      "images/oludeniz/oludeniz-8.jpg",
+      "images/oludeniz/oludeniz-9.jpg",
+      "images/oludeniz/oludeniz-10.jpg",
+      "images/oludeniz/oludeniz-11.jpg",
+      "images/oludeniz/oludeniz-12.jpg",
+      "images/oludeniz/oludeniz-13.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["rotasenin.com", "bujuyollarda.com", "lonelyplanet.com (uluslararası kaynak)"],
@@ -2981,17 +2981,17 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/iztuzu/iztuzu-1.jpg",
-      "fotoğraflar/iztuzu/iztuzu-2.jpg",
-      "fotoğraflar/iztuzu/iztuzu-3.jpg",
-      "fotoğraflar/iztuzu/iztuzu-4.jpg",
-      "fotoğraflar/iztuzu/iztuzu-5.jpg",
-      "fotoğraflar/iztuzu/iztuzu-6.jpg",
-      "fotoğraflar/iztuzu/iztuzu-7.jpg",
-      "fotoğraflar/iztuzu/iztuzu-8.jpg",
-      "fotoğraflar/iztuzu/iztuzu-9.jpg",
-      "fotoğraflar/iztuzu/iztuzu-10.jpg",
-      "fotoğraflar/iztuzu/iztuzu-11.jpg"
+      "images/iztuzu/iztuzu-1.jpg",
+      "images/iztuzu/iztuzu-2.jpg",
+      "images/iztuzu/iztuzu-3.jpg",
+      "images/iztuzu/iztuzu-4.jpg",
+      "images/iztuzu/iztuzu-5.jpg",
+      "images/iztuzu/iztuzu-6.jpg",
+      "images/iztuzu/iztuzu-7.jpg",
+      "images/iztuzu/iztuzu-8.jpg",
+      "images/iztuzu/iztuzu-9.jpg",
+      "images/iztuzu/iztuzu-10.jpg",
+      "images/iztuzu/iztuzu-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "rotasenin.com", "lonelyplanet.com (uluslararası kaynak)"],
@@ -3052,12 +3052,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/icmeler/icmeler-1.jpg",
-      "fotoğraflar/icmeler/icmeler-2.jpg",
-      "fotoğraflar/icmeler/icmeler-3.jpg",
-      "fotoğraflar/icmeler/icmeler-4.jpg",
-      "fotoğraflar/icmeler/icmeler-5.jpg",
-      "fotoğraflar/icmeler/icmeler-6.webp"
+      "images/icmeler/icmeler-1.jpg",
+      "images/icmeler/icmeler-2.jpg",
+      "images/icmeler/icmeler-3.jpg",
+      "images/icmeler/icmeler-4.jpg",
+      "images/icmeler/icmeler-5.jpg",
+      "images/icmeler/icmeler-6.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "adacreisen.de (uluslararası kaynak)", "tourister.ru (uluslararası kaynak)"],
@@ -3118,11 +3118,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/akyarlar/akyarlar-1.jpg",
-      "fotoğraflar/akyarlar/akyarlar-2.jpg",
-      "fotoğraflar/akyarlar/akyarlar-3.jpg",
-      "fotoğraflar/akyarlar/akyarlar-4.jpg",
-      "fotoğraflar/akyarlar/akyarlar-5.jpg"
+      "images/akyarlar/akyarlar-1.jpg",
+      "images/akyarlar/akyarlar-2.jpg",
+      "images/akyarlar/akyarlar-3.jpg",
+      "images/akyarlar/akyarlar-4.jpg",
+      "images/akyarlar/akyarlar-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["otuzbeslik.com", "bodrumdabugun.com", "urlaubsguru.at (uluslararası kaynak)"],
@@ -3183,13 +3183,13 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/calis/calis-1.png",
-      "fotoğraflar/calis/calis-2.webp",
-      "fotoğraflar/calis/calis-4.jpg",
-      "fotoğraflar/calis/calis-6.jpg",
-      "fotoğraflar/calis/calis-7.jpg",
-      "fotoğraflar/calis/calis-8.jpg",
-      "fotoğraflar/calis/calis-9.jpg"
+      "images/calis/calis-1.jpg",
+      "images/calis/calis-2.webp",
+      "images/calis/calis-4.jpg",
+      "images/calis/calis-6.jpg",
+      "images/calis/calis-7.jpg",
+      "images/calis/calis-8.jpg",
+      "images/calis/calis-9.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["yoldaolmak.com", "fethiye.bel.tr"],
@@ -3256,12 +3256,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/bitez/bitez-1.webp",
-      "fotoğraflar/bitez/bitez-2.jpg",
-      "fotoğraflar/bitez/bitez-3.jpg",
-      "fotoğraflar/bitez/bitez-4.jpg",
-      "fotoğraflar/bitez/bitez-5.jpg",
-      "fotoğraflar/bitez/bitez-6.jpg"
+      "images/bitez/bitez-1.webp",
+      "images/bitez/bitez-2.jpg",
+      "images/bitez/bitez-3.jpg",
+      "images/bitez/bitez-4.jpg",
+      "images/bitez/bitez-5.jpg",
+      "images/bitez/bitez-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["neredekal.com", "hellovillam.com", "adacreisen.de (uluslararası kaynak)"],
@@ -3325,15 +3325,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kabakkoyu/kabakkoyu-1.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-2.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-3.webp",
-      "fotoğraflar/kabakkoyu/kabakkoyu-4.webp",
-      "fotoğraflar/kabakkoyu/kabakkoyu-5.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-6.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-7.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-8.jpg",
-      "fotoğraflar/kabakkoyu/kabakkoyu-9.jpg"
+      "images/kabakkoyu/kabakkoyu-1.jpg",
+      "images/kabakkoyu/kabakkoyu-2.jpg",
+      "images/kabakkoyu/kabakkoyu-3.webp",
+      "images/kabakkoyu/kabakkoyu-4.webp",
+      "images/kabakkoyu/kabakkoyu-5.jpg",
+      "images/kabakkoyu/kabakkoyu-6.jpg",
+      "images/kabakkoyu/kabakkoyu-7.jpg",
+      "images/kabakkoyu/kabakkoyu-8.jpg",
+      "images/kabakkoyu/kabakkoyu-9.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["cnnturk.com", "kampyerleri.org", "wanderlustchloe.com (uluslararası kaynak)"],
@@ -3394,11 +3394,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/sarigerme/sarigerme-1.jpg",
-      "fotoğraflar/sarigerme/sarigerme-2.jpg",
-      "fotoğraflar/sarigerme/sarigerme-3.jpg",
-      "fotoğraflar/sarigerme/sarigerme-5.jpg",
-      "fotoğraflar/sarigerme/sarigerme-6.jpg"
+      "images/sarigerme/sarigerme-1.jpg",
+      "images/sarigerme/sarigerme-2.jpg",
+      "images/sarigerme/sarigerme-3.jpg",
+      "images/sarigerme/sarigerme-5.jpg",
+      "images/sarigerme/sarigerme-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "teknekirala.com"],
@@ -3465,15 +3465,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/ortakent/ortakent-3.jpg",
-      "fotoğraflar/ortakent/ortakent-4.jpg",
-      "fotoğraflar/ortakent/ortakent-5.webp",
-      "fotoğraflar/ortakent/ortakent-6.webp",
-      "fotoğraflar/ortakent/ortakent-7.jpg",
-      "fotoğraflar/ortakent/ortakent-8.jpg",
-      "fotoğraflar/ortakent/ortakent-9.jpg",
-      "fotoğraflar/ortakent/ortakent-10.jpg",
-      "fotoğraflar/ortakent/ortakent-11.jpg"
+      "images/ortakent/ortakent-3.jpg",
+      "images/ortakent/ortakent-4.jpg",
+      "images/ortakent/ortakent-5.webp",
+      "images/ortakent/ortakent-6.webp",
+      "images/ortakent/ortakent-7.jpg",
+      "images/ortakent/ortakent-8.jpg",
+      "images/ortakent/ortakent-9.jpg",
+      "images/ortakent/ortakent-10.jpg",
+      "images/ortakent/ortakent-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["enuygun.com", "gezilmesigerekenyerler.com"],
@@ -3537,12 +3537,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/turunc/turunc-1.jpg",
-      "fotoğraflar/turunc/turunc-2.jpg",
-      "fotoğraflar/turunc/turunc-3.jpg",
-      "fotoğraflar/turunc/turunc-4.jpg",
-      "fotoğraflar/turunc/turunc-5.jpg",
-      "fotoğraflar/turunc/turunc-6.webp"
+      "images/turunc/turunc-1.jpg",
+      "images/turunc/turunc-2.jpg",
+      "images/turunc/turunc-3.jpg",
+      "images/turunc/turunc-4.jpg",
+      "images/turunc/turunc-5.jpg",
+      "images/turunc/turunc-6.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["gezire.com", "bujuyollarda.com"],
@@ -3606,12 +3606,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/gumbet/gumbet-1.jpg",
-      "fotoğraflar/gumbet/gumbet-2.jpg",
-      "fotoğraflar/gumbet/gumbet-3.jpg",
-      "fotoğraflar/gumbet/gumbet-4.webp",
-      "fotoğraflar/gumbet/gumbet-5.jpg",
-      "fotoğraflar/gumbet/gumbet-6.jpg"
+      "images/gumbet/gumbet-1.jpg",
+      "images/gumbet/gumbet-2.jpg",
+      "images/gumbet/gumbet-3.jpg",
+      "images/gumbet/gumbet-4.webp",
+      "images/gumbet/gumbet-5.jpg",
+      "images/gumbet/gumbet-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["neredekal.com", "teknevia.com", "enuygun.com"],
@@ -3672,11 +3672,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/karaincir/karaincir-1.jpg",
-      "fotoğraflar/karaincir/karaincir-2.jpg",
-      "fotoğraflar/karaincir/karaincir-3.jpg",
-      "fotoğraflar/karaincir/karaincir-4.jpg",
-      "fotoğraflar/karaincir/karaincir-6.webp"
+      "images/karaincir/karaincir-1.jpg",
+      "images/karaincir/karaincir-2.jpg",
+      "images/karaincir/karaincir-3.jpg",
+      "images/karaincir/karaincir-4.jpg",
+      "images/karaincir/karaincir-6.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["yerelrehber.com", "turnkeybodrum.com", "otuzbeslik.com"],
@@ -3737,15 +3737,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/torba/torba-2.jpg",
-      "fotoğraflar/torba/torba-3.webp",
-      "fotoğraflar/torba/torba-4.jpg",
-      "fotoğraflar/torba/torba-5.jpg",
-      "fotoğraflar/torba/torba-6.jpg",
-      "fotoğraflar/torba/torba-7.jpg",
-      "fotoğraflar/torba/torba-8.jpg",
-      "fotoğraflar/torba/torba-9.jpg",
-      "fotoğraflar/torba/torba-10.jpg"
+      "images/torba/torba-2.jpg",
+      "images/torba/torba-3.webp",
+      "images/torba/torba-4.jpg",
+      "images/torba/torba-5.jpg",
+      "images/torba/torba-6.jpg",
+      "images/torba/torba-7.jpg",
+      "images/torba/torba-8.jpg",
+      "images/torba/torba-9.jpg",
+      "images/torba/torba-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["turas.com.tr", "otuzbeslik.com", "neredekal.com"],
@@ -3809,15 +3809,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/yalikavak/yalikavak-1.jpg",
-      "fotoğraflar/yalikavak/yalikavak-2.jpg",
-      "fotoğraflar/yalikavak/yalikavak-3.webp",
-      "fotoğraflar/yalikavak/yalikavak-4.jpg",
-      "fotoğraflar/yalikavak/yalikavak-6.jpg",
-      "fotoğraflar/yalikavak/yalikavak-7.jpg",
-      "fotoğraflar/yalikavak/yalikavak-8.jpg",
-      "fotoğraflar/yalikavak/yalikavak-9.jpg",
-      "fotoğraflar/yalikavak/yalikavak-10.jpg"
+      "images/yalikavak/yalikavak-1.jpg",
+      "images/yalikavak/yalikavak-2.jpg",
+      "images/yalikavak/yalikavak-3.webp",
+      "images/yalikavak/yalikavak-4.jpg",
+      "images/yalikavak/yalikavak-6.jpg",
+      "images/yalikavak/yalikavak-7.jpg",
+      "images/yalikavak/yalikavak-8.jpg",
+      "images/yalikavak/yalikavak-9.jpg",
+      "images/yalikavak/yalikavak-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["otuzbeslik.com", "hadidenize.com", "hurriyet.de"],
@@ -3875,12 +3875,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/gundogan/gundogan-1.jpg",
-      "fotoğraflar/gundogan/gundogan-2.jpg",
-      "fotoğraflar/gundogan/gundogan-3.jpg",
-      "fotoğraflar/gundogan/gundogan-4.jpg",
-      "fotoğraflar/gundogan/gundogan-5.jpg",
-      "fotoğraflar/gundogan/gundogan-6.jpg"
+      "images/gundogan/gundogan-1.jpg",
+      "images/gundogan/gundogan-2.jpg",
+      "images/gundogan/gundogan-3.jpg",
+      "images/gundogan/gundogan-4.jpg",
+      "images/gundogan/gundogan-5.jpg",
+      "images/gundogan/gundogan-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezilmesigerekenyerler.com", "bodrumguru.com", "neredekal.com"],
@@ -3947,12 +3947,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kumlubuk/kumlubuk-1.jpg",
-      "fotoğraflar/kumlubuk/kumlubuk-2.jpg",
-      "fotoğraflar/kumlubuk/kumlubuk-3.webp",
-      "fotoğraflar/kumlubuk/kumlubuk-4.jpg",
-      "fotoğraflar/kumlubuk/kumlubuk-5.jpg",
-      "fotoğraflar/kumlubuk/kumlubuk-6.jpg"
+      "images/kumlubuk/kumlubuk-1.jpg",
+      "images/kumlubuk/kumlubuk-2.jpg",
+      "images/kumlubuk/kumlubuk-3.webp",
+      "images/kumlubuk/kumlubuk-4.jpg",
+      "images/kumlubuk/kumlubuk-5.jpg",
+      "images/kumlubuk/kumlubuk-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["kulturportali.gov.tr", "marmarisavantaj.com", "marmarisim.com"],
@@ -4010,11 +4010,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/bencik/bencik-1.jpg",
-      "fotoğraflar/bencik/bencik-2.jpg",
-      "fotoğraflar/bencik/bencik-4.jpg",
-      "fotoğraflar/bencik/bencik-5.jpg",
-      "fotoğraflar/bencik/bencik-6.jpg"
+      "images/bencik/bencik-1.jpg",
+      "images/bencik/bencik-2.jpg",
+      "images/bencik/bencik-4.jpg",
+      "images/bencik/bencik-5.jpg",
+      "images/bencik/bencik-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hamlegazetesi.com.tr", "kolaykal.com", "viagoyachting.com"],
@@ -4075,14 +4075,14 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kizkumu/kizkumu-1.jpg",
-      "fotoğraflar/kizkumu/kizkumu-2.jpg",
-      "fotoğraflar/kizkumu/kizkumu-3.jpg",
-      "fotoğraflar/kizkumu/kizkumu-4.webp",
-      "fotoğraflar/kizkumu/kizkumu-5.jpg",
-      "fotoğraflar/kizkumu/kizkumu-6.jpg",
-      "fotoğraflar/kizkumu/kizkumu-7.jpg",
-      "fotoğraflar/kizkumu/kizkumu-8.jpg"
+      "images/kizkumu/kizkumu-1.jpg",
+      "images/kizkumu/kizkumu-2.jpg",
+      "images/kizkumu/kizkumu-3.jpg",
+      "images/kizkumu/kizkumu-4.webp",
+      "images/kizkumu/kizkumu-5.jpg",
+      "images/kizkumu/kizkumu-6.jpg",
+      "images/kizkumu/kizkumu-7.jpg",
+      "images/kizkumu/kizkumu-8.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["hurriyet.com.tr", "bujuyollarda.com", "teknekirala.com"],
@@ -4149,12 +4149,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/amos/amos-1.jpg",
-      "fotoğraflar/amos/amos-2.jpg",
-      "fotoğraflar/amos/amos-3.jpg",
-      "fotoğraflar/amos/amos-4.webp",
-      "fotoğraflar/amos/amos-5.jpg",
-      "fotoğraflar/amos/amos-6.webp"
+      "images/amos/amos-1.jpg",
+      "images/amos/amos-2.jpg",
+      "images/amos/amos-3.jpg",
+      "images/amos/amos-4.webp",
+      "images/amos/amos-5.jpg",
+      "images/amos/amos-6.webp"
     ],
     kaynak: "internet",
     kaynaklar: ["bujuyollarda.com", "marmarisim.com", "otelz.com"],
@@ -4218,12 +4218,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/karaot/karaot-1.jpg",
-      "fotoğraflar/karaot/karaot-2.jpg",
-      "fotoğraflar/karaot/karaot-3.jpg",
-      "fotoğraflar/karaot/karaot-6.webp",
-      "fotoğraflar/karaot/karaot-7.jpg",
-      "fotoğraflar/karaot/karaot-8.jpg"
+      "images/karaot/karaot-1.jpg",
+      "images/karaot/karaot-2.jpg",
+      "images/karaot/karaot-3.jpg",
+      "images/karaot/karaot-6.webp",
+      "images/karaot/karaot-7.jpg",
+      "images/karaot/karaot-8.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["kampyerleri.org", "seyyahdefteri.com", "gezilmesigerekenyerler.com"],
@@ -4290,17 +4290,17 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/konyaalti/konyaalti-1.jpg",
-      "fotoğraflar/konyaalti/konyaalti-2.jpg",
-      "fotoğraflar/konyaalti/konyaalti-3.jpg",
-      "fotoğraflar/konyaalti/konyaalti-4.jpg",
-      "fotoğraflar/konyaalti/konyaalti-5.jpg",
-      "fotoğraflar/konyaalti/konyaalti-6.jpg",
-      "fotoğraflar/konyaalti/konyaalti-7.jpg",
-      "fotoğraflar/konyaalti/konyaalti-8.jpg",
-      "fotoğraflar/konyaalti/konyaalti-9.jpg",
-      "fotoğraflar/konyaalti/konyaalti-10.jpg",
-      "fotoğraflar/konyaalti/konyaalti-11.jpg"
+      "images/konyaalti/konyaalti-1.jpg",
+      "images/konyaalti/konyaalti-2.jpg",
+      "images/konyaalti/konyaalti-3.jpg",
+      "images/konyaalti/konyaalti-4.jpg",
+      "images/konyaalti/konyaalti-5.jpg",
+      "images/konyaalti/konyaalti-6.jpg",
+      "images/konyaalti/konyaalti-7.jpg",
+      "images/konyaalti/konyaalti-8.jpg",
+      "images/konyaalti/konyaalti-9.jpg",
+      "images/konyaalti/konyaalti-10.jpg",
+      "images/konyaalti/konyaalti-11.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["tripadvisor.com.tr", "gezinomi.com", "urlaubsguru.de"],
@@ -4364,12 +4364,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/lara/lara-1.jpg",
-      "fotoğraflar/lara/lara-2.jpg",
-      "fotoğraflar/lara/lara-3.webp",
-      "fotoğraflar/lara/lara-4.jpg",
-      "fotoğraflar/lara/lara-5.jpg",
-      "fotoğraflar/lara/lara-6.jpg"
+      "images/lara/lara-1.jpg",
+      "images/lara/lara-2.jpg",
+      "images/lara/lara-3.webp",
+      "images/lara/lara-4.jpg",
+      "images/lara/lara-5.jpg",
+      "images/lara/lara-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezinomi.com", "rotasenin.com", "advantour.com", "turkeytravelplanner.com"],
@@ -4436,15 +4436,15 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kaputas/kaputas-1.jpg",
-      "fotoğraflar/kaputas/kaputas-2.jpg",
-      "fotoğraflar/kaputas/kaputas-3.jpg",
-      "fotoğraflar/kaputas/kaputas-4.jpg",
-      "fotoğraflar/kaputas/kaputas-5.jpg",
-      "fotoğraflar/kaputas/kaputas-6.jpg",
-      "fotoğraflar/kaputas/kaputas-7.jpg",
-      "fotoğraflar/kaputas/kaputas-8.jpg",
-      "fotoğraflar/kaputas/kaputas-9.jpg"
+      "images/kaputas/kaputas-1.jpg",
+      "images/kaputas/kaputas-2.jpg",
+      "images/kaputas/kaputas-3.jpg",
+      "images/kaputas/kaputas-4.jpg",
+      "images/kaputas/kaputas-5.jpg",
+      "images/kaputas/kaputas-6.jpg",
+      "images/kaputas/kaputas-7.jpg",
+      "images/kaputas/kaputas-8.jpg",
+      "images/kaputas/kaputas-9.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "urlaubsguru.de", "gezire.com", "tripadvisor.com.tr"],
@@ -4502,12 +4502,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/kucukcakil/kucukcakil-1.jpg",
-      "fotoğraflar/kucukcakil/kucukcakil-2.jpg",
-      "fotoğraflar/kucukcakil/kucukcakil-3.jpg",
-      "fotoğraflar/kucukcakil/kucukcakil-4.jpg",
-      "fotoğraflar/kucukcakil/kucukcakil-5.jpg",
-      "fotoğraflar/kucukcakil/kucukcakil-6.jpg"
+      "images/kucukcakil/kucukcakil-1.jpg",
+      "images/kucukcakil/kucukcakil-2.jpg",
+      "images/kucukcakil/kucukcakil-3.jpg",
+      "images/kucukcakil/kucukcakil-4.jpg",
+      "images/kucukcakil/kucukcakil-5.jpg",
+      "images/kucukcakil/kucukcakil-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["bizevdeyokuz.com", "tripadvisor.com", "lonelyplanet.com"],
@@ -4574,13 +4574,13 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/buyukcakil/buyukcakil-1.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-2.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-3.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-4.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-5.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-6.jpg",
-      "fotoğraflar/buyukcakil/buyukcakil-7.jpg"
+      "images/buyukcakil/buyukcakil-1.jpg",
+      "images/buyukcakil/buyukcakil-2.jpg",
+      "images/buyukcakil/buyukcakil-3.jpg",
+      "images/buyukcakil/buyukcakil-4.jpg",
+      "images/buyukcakil/buyukcakil-5.jpg",
+      "images/buyukcakil/buyukcakil-6.jpg",
+      "images/buyukcakil/buyukcakil-7.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["yerelrehber.com", "gezilmesigerekenyerler.com", "tripadvisor.com", "beachsearcher.com.tr", "tripadvisor.com.tr"],
@@ -4641,9 +4641,9 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/inonukoyu/inonukoyu-1.jpg",
-      "fotoğraflar/inonukoyu/inonukoyu-2.jpg",
-      "fotoğraflar/inonukoyu/inonukoyu-3.jpg"
+      "images/inonukoyu/inonukoyu-1.jpg",
+      "images/inonukoyu/inonukoyu-2.jpg",
+      "images/inonukoyu/inonukoyu-3.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["bayaiyi.com", "adayachtsailing.com", "gocekyachting.com", "kekovatekneturu.com"],
@@ -4704,9 +4704,9 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/akcagerme/akcagerme-1.jpg",
-      "fotoğraflar/akcagerme/akcagerme-2.jpg",
-      "fotoğraflar/akcagerme/akcagerme-3.jpg"
+      "images/akcagerme/akcagerme-1.jpg",
+      "images/akcagerme/akcagerme-2.jpg",
+      "images/akcagerme/akcagerme-3.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["localcappadocia.com", "teknekirala.com", "gezilmesigerekenyerler.com", "obilet.com"],
@@ -4767,16 +4767,16 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/patara/patara-1.jpg",
-      "fotoğraflar/patara/patara-2.jpg",
-      "fotoğraflar/patara/patara-3.jpg",
-      "fotoğraflar/patara/patara-4.jpg",
-      "fotoğraflar/patara/patara-5.jpg",
-      "fotoğraflar/patara/patara-6.jpg",
-      "fotoğraflar/patara/patara-7.jpg",
-      "fotoğraflar/patara/patara-8.jpg",
-      "fotoğraflar/patara/patara-9.jpg",
-      "fotoğraflar/patara/patara-10.jpg"
+      "images/patara/patara-1.jpg",
+      "images/patara/patara-2.jpg",
+      "images/patara/patara-3.jpg",
+      "images/patara/patara-4.jpg",
+      "images/patara/patara-5.jpg",
+      "images/patara/patara-6.jpg",
+      "images/patara/patara-7.jpg",
+      "images/patara/patara-8.jpg",
+      "images/patara/patara-9.jpg",
+      "images/patara/patara-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["en.wikipedia.org", "antalyatouristinformation.com", "bizevdeyokuz.com", "villacim.com.tr", "villavillam.com.tr"],
@@ -4837,16 +4837,16 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/cirali/cirali-1.jpg",
-      "fotoğraflar/cirali/cirali-2.jpg",
-      "fotoğraflar/cirali/cirali-3.jpg",
-      "fotoğraflar/cirali/cirali-4.jpg",
-      "fotoğraflar/cirali/cirali-5.jpg",
-      "fotoğraflar/cirali/cirali-6.jpg",
-      "fotoğraflar/cirali/cirali-7.jpg",
-      "fotoğraflar/cirali/cirali-8.jpg",
-      "fotoğraflar/cirali/cirali-9.jpg",
-      "fotoğraflar/cirali/cirali-10.jpg"
+      "images/cirali/cirali-1.jpg",
+      "images/cirali/cirali-2.jpg",
+      "images/cirali/cirali-3.jpg",
+      "images/cirali/cirali-4.jpg",
+      "images/cirali/cirali-5.jpg",
+      "images/cirali/cirali-6.jpg",
+      "images/cirali/cirali-7.jpg",
+      "images/cirali/cirali-8.jpg",
+      "images/cirali/cirali-9.jpg",
+      "images/cirali/cirali-10.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["urlaubsguru.de", "antalyakorfez.com", "cirali.org", "etstur.com"],
@@ -4910,13 +4910,13 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/olympos/olympos-1.jpg",
-      "fotoğraflar/olympos/olympos-2.jpg",
-      "fotoğraflar/olympos/olympos-3.jpg",
-      "fotoğraflar/olympos/olympos-4.jpg",
-      "fotoğraflar/olympos/olympos-5.jpg",
-      "fotoğraflar/olympos/olympos-6.jpg",
-      "fotoğraflar/olympos/olympos-7.jpg"
+      "images/olympos/olympos-1.jpg",
+      "images/olympos/olympos-2.jpg",
+      "images/olympos/olympos-3.jpg",
+      "images/olympos/olympos-4.jpg",
+      "images/olympos/olympos-5.jpg",
+      "images/olympos/olympos-6.jpg",
+      "images/olympos/olympos-7.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["villacim.com.tr", "gezinomi.com", "rotasenin.com", "rehbername.com", "tripadvisor.com.tr"],
@@ -4974,13 +4974,13 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/phaselis/phaselis-1.jpg",
-      "fotoğraflar/phaselis/phaselis-2.jpg",
-      "fotoğraflar/phaselis/phaselis-3.jpg",
-      "fotoğraflar/phaselis/phaselis-4.jpg",
-      "fotoğraflar/phaselis/phaselis-5.jpg",
-      "fotoğraflar/phaselis/phaselis-6.jpg",
-      "fotoğraflar/phaselis/phaselis-7.jpg"
+      "images/phaselis/phaselis-1.jpg",
+      "images/phaselis/phaselis-2.jpg",
+      "images/phaselis/phaselis-3.jpg",
+      "images/phaselis/phaselis-4.jpg",
+      "images/phaselis/phaselis-5.jpg",
+      "images/phaselis/phaselis-6.jpg",
+      "images/phaselis/phaselis-7.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["gezenanne.com", "gezipgordum.com", "kesfetsek.com", "limancepte.com"],
@@ -5041,11 +5041,11 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/goynuk/goynuk-1.jpg",
-      "fotoğraflar/goynuk/goynuk-2.jpg",
-      "fotoğraflar/goynuk/goynuk-3.jpg",
-      "fotoğraflar/goynuk/goynuk-4.jpg",
-      "fotoğraflar/goynuk/goynuk-5.jpg"
+      "images/goynuk/goynuk-1.jpg",
+      "images/goynuk/goynuk-2.jpg",
+      "images/goynuk/goynuk-3.jpg",
+      "images/goynuk/goynuk-4.jpg",
+      "images/goynuk/goynuk-5.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["turkeyoutdoor.org", "gezinomi.com", "beachsearcher.com.tr", "herantalya.com"],
@@ -5109,12 +5109,12 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
-      "fotoğraflar/ayisigi/ayisigi-1.jpg",
-      "fotoğraflar/ayisigi/ayisigi-2.jpg",
-      "fotoğraflar/ayisigi/ayisigi-3.jpg",
-      "fotoğraflar/ayisigi/ayisigi-4.jpg",
-      "fotoğraflar/ayisigi/ayisigi-5.jpg",
-      "fotoğraflar/ayisigi/ayisigi-6.jpg"
+      "images/ayisigi/ayisigi-1.jpg",
+      "images/ayisigi/ayisigi-2.jpg",
+      "images/ayisigi/ayisigi-3.jpg",
+      "images/ayisigi/ayisigi-4.jpg",
+      "images/ayisigi/ayisigi-5.jpg",
+      "images/ayisigi/ayisigi-6.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["mekan360.com", "tripadvisor.com", "1001beach.com", "ayisigipark.com.tr"],
@@ -5175,6 +5175,9 @@ const PLAJLAR = [
       }
     },
     fotograflar: [
+      "images/adrasan/adrasan-1.jpg",
+      "images/adrasan/adrasan-2.jpg",
+      "images/adrasan/adrasan-3.jpg"
     ],
     kaynak: "internet",
     kaynaklar: ["beachsearcher.com.tr", "localcappadocia.com", "antalyayikesfediyoruz.com", "rotasenin.com"],

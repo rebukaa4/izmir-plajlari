@@ -1,7 +1,7 @@
 {
   "name": "Ücretsiz Halk Plajları Rehberi",
   "short_name": "Halk Plajları",
-  "description": "İzmir ve Aydın'daki ücretsiz halk plajlarını bul — park, duş, tuvalet ve zemin bilgileriyle.",
+  "description": "İzmir, Aydın, Muğla ve Antalya'daki ücretsiz halk plajlarını bul — park, duş, tuvalet ve zemin bilgileriyle.",
   "start_url": "./index.html",
   "scope": "./",
   "id": "./index.html",
