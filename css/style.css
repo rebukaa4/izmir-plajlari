@@ -465,27 +465,77 @@ header.app-header p {
   opacity: 0.9;
 }
 
-/* Filtreler */
-.filtreler {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-  padding: 12px 16px;
+/* Liste sayfası arama kutusu */
+.liste-arama {
+  padding: 12px 16px 4px;
   background: linear-gradient(135deg, #eafaf6, #eaf6fb);
-  border-bottom: 1px solid #d8f0ea;
-  position: sticky;
-  top: 68px;
-  z-index: 9;
 }
 
-.filtreler select {
-  width: 100%;
-  padding: 10px 8px;
-  border-radius: 10px;
+.liste-arama .arama-kutu {
+  background: white;
+  border: 1px solid #bfe6da;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.liste-arama .arama-kutu:focus-within {
+  background: white;
+  border-color: var(--deniz);
+}
+
+.liste-arama .arama-input {
+  color: var(--metin);
+}
+
+.liste-arama .arama-input::placeholder {
+  color: #8aa8a0;
+}
+
+/* Filtreler (chip grupları) */
+.filtreler {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0 12px;
+  background: linear-gradient(135deg, #eafaf6, #eaf6fb);
+  border-bottom: 1px solid #d8f0ea;
+}
+
+.filtre-grup {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 0 16px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filtre-grup::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: 0 0 auto;
+  padding: 7px 14px;
+  border-radius: 999px;
   border: 1px solid #bfe6da;
   background: white;
-  font-size: 0.9rem;
   color: var(--metin);
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+  font-size: 0.84rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.chip.secili {
+  background: var(--deniz);
+  border-color: var(--deniz);
+  color: white;
+}
+
+.chip:active {
+  transform: scale(0.96);
 }
 
 .sonuc-sayisi {

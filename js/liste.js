@@ -1,17 +1,18 @@
 const listeEl = document.getElementById("plaj-liste");
 const sonucSayisiEl = document.getElementById("sonuc-sayisi");
-const filtreIl = document.getElementById("filtre-il");
-const filtreIlce = document.getElementById("filtre-ilce");
-const filtreZemin = document.getElementById("filtre-zemin");
-const filtreDerinlik = document.getElementById("filtre-derinlik");
-const filtrePark = document.getElementById("filtre-park");
+const filtrelerEl = document.getElementById("filtreler");
+const aramaInput = document.getElementById("liste-arama-input");
 
 dilSeciciOlustur("dil-secici");
 applyI18n();
 
-const KART_RENKLERI = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"];
+// Şehir → kart rengi eşlemesi (ana sayfadaki şehir kartlarıyla aynı)
+const SEHIR_RENK = { "İzmir": "r5", "Aydın": "r2", "Muğla": "r7", "Antalya": "r8" };
 
 const PARK_SIRASI = ["ucretsiz", "kismi", "ucretli", "bilinmiyor"];
+
+// Seçili filtre durumu
+const secili = { il: "", ilce: "", zemin: "", derinlik: "", park: "" };
 
 function parkRozetSinifi(park) {
   if (park === "ucretsiz") return "ucretsiz";
@@ -29,9 +30,9 @@ function parkRozetMetni(park) {
   return t("parkNone");
 }
 
-function kartOlustur(p, index) {
+function kartOlustur(p) {
   const a = document.createElement("a");
-  a.className = `plaj-kart ${KART_RENKLERI[index % KART_RENKLERI.length]}`;
+  a.className = `plaj-kart ${SEHIR_RENK[p.il] || "r1"}`;
   a.href = `plaj.html?id=${p.id}`;
   a.innerHTML = `
     <div class="plaj-kart-baslik">
@@ -52,11 +53,11 @@ function kartOlustur(p, index) {
 
 function aktifFiltreler(haric) {
   return {
-    il: haric === "il" ? "" : filtreIl.value,
-    ilce: haric === "ilce" ? "" : filtreIlce.value,
-    zemin: haric === "zemin" ? "" : filtreZemin.value,
-    derinlik: haric === "derinlik" ? "" : filtreDerinlik.value,
-    park: haric === "park" ? "" : filtrePark.value
+    il: haric === "il" ? "" : secili.il,
+    ilce: haric === "ilce" ? "" : secili.ilce,
+    zemin: haric === "zemin" ? "" : secili.zemin,
+    derinlik: haric === "derinlik" ? "" : secili.derinlik,
+    park: haric === "park" ? "" : secili.park
   };
 }
 
@@ -71,10 +72,8 @@ function eslesenler(f) {
   });
 }
 
-function secenekleriGuncelle(selectEl, alanAdi, haric, varsayilanAnahtar, etiketFn, siraliDeger) {
-  const oncekiDeger = selectEl.dataset.beklenenDeger || selectEl.value;
-  delete selectEl.dataset.beklenenDeger;
-  const adaylar = eslesenler(aktifFiltreler(haric));
+function chipGrubuOlustur(alanAdi, tumAnahtar, etiketFn, siraliDeger) {
+  const adaylar = eslesenler(aktifFiltreler(alanAdi));
 
   let degerler;
   if (siraliDeger) {
@@ -88,34 +87,57 @@ function secenekleriGuncelle(selectEl, alanAdi, haric, varsayilanAnahtar, etiket
     });
   }
 
-  selectEl.innerHTML = "";
-  const varsayilanOpt = document.createElement("option");
-  varsayilanOpt.value = "";
-  varsayilanOpt.textContent = t(varsayilanAnahtar);
-  selectEl.appendChild(varsayilanOpt);
+  // Seçili değer artık mevcut değilse sıfırla
+  if (secili[alanAdi] && !degerler.includes(secili[alanAdi])) secili[alanAdi] = "";
+
+  const grup = document.createElement("div");
+  grup.className = "filtre-grup";
+
+  const tumChip = document.createElement("button");
+  tumChip.type = "button";
+  tumChip.className = "chip" + (secili[alanAdi] === "" ? " secili" : "");
+  tumChip.textContent = t(tumAnahtar);
+  tumChip.addEventListener("click", () => {
+    secili[alanAdi] = "";
+    filtreleVeCiz();
+  });
+  grup.appendChild(tumChip);
 
   degerler.forEach(d => {
-    const opt = document.createElement("option");
-    opt.value = d;
-    opt.textContent = etiketFn ? etiketFn(d) : trValue(alanAdi, d);
-    selectEl.appendChild(opt);
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip" + (secili[alanAdi] === d ? " secili" : "");
+    chip.textContent = etiketFn ? etiketFn(d) : trValue(alanAdi, d);
+    chip.addEventListener("click", () => {
+      secili[alanAdi] = secili[alanAdi] === d ? "" : d;
+      filtreleVeCiz();
+    });
+    grup.appendChild(chip);
   });
 
-  selectEl.value = degerler.includes(oncekiDeger) ? oncekiDeger : "";
+  return grup;
 }
 
-function tumSecenekleriGuncelle() {
-  secenekleriGuncelle(filtreIl, "il", "il", "allCities");
-  secenekleriGuncelle(filtreIlce, "ilce", "ilce", "allDistricts");
-  secenekleriGuncelle(filtreZemin, "zemin", "zemin", "allGrounds");
-  secenekleriGuncelle(filtreDerinlik, "derinlik", "derinlik", "allDepths");
-  secenekleriGuncelle(filtrePark, "park", "park", "allParking", parkRozetMetni, PARK_SIRASI);
+function filtreleriCiz() {
+  filtrelerEl.innerHTML = "";
+  filtrelerEl.appendChild(chipGrubuOlustur("il", "allCities", v => v));
+  filtrelerEl.appendChild(chipGrubuOlustur("ilce", "allDistricts", v => v));
+  filtrelerEl.appendChild(chipGrubuOlustur("zemin", "allGrounds"));
+  filtrelerEl.appendChild(chipGrubuOlustur("derinlik", "allDepths"));
+  filtrelerEl.appendChild(chipGrubuOlustur("park", "allParking", parkRozetMetni, PARK_SIRASI));
+}
+
+function turkceKucuk(s) {
+  return s.toLocaleLowerCase("tr-TR");
 }
 
 function filtreleVeCiz() {
-  tumSecenekleriGuncelle();
+  filtreleriCiz();
+
+  const q = turkceKucuk((aramaInput.value || "").trim());
 
   const sonuclar = eslesenler(aktifFiltreler(null))
+    .filter(p => !q || turkceKucuk(p.isim).includes(q) || turkceKucuk(p.ilce).includes(q) || turkceKucuk(p.il).includes(q))
     .sort((a, b) => plajYildizHesapla(b) - plajYildizHesapla(a) || a.isim.localeCompare(b.isim, "tr"));
 
   listeEl.innerHTML = "";
@@ -123,24 +145,16 @@ function filtreleVeCiz() {
   if (sonuclar.length === 0) {
     listeEl.innerHTML = `<div class="bos-durum">${t("noMatch")}</div>`;
   } else {
-    sonuclar.forEach((p, i) => listeEl.appendChild(kartOlustur(p, i)));
+    sonuclar.forEach(p => listeEl.appendChild(kartOlustur(p)));
   }
 
   sonucSayisiEl.textContent = t("resultsCount", sonuclar.length);
 }
 
-[filtreIl, filtreIlce, filtreZemin, filtreDerinlik, filtrePark].forEach(el => {
-  el.addEventListener("change", filtreleVeCiz);
-});
+aramaInput.addEventListener("input", filtreleVeCiz);
 
 const urlParams = new URLSearchParams(window.location.search);
-const secilenIl = urlParams.get("il");
-if (secilenIl) {
-  filtreIl.dataset.beklenenDeger = secilenIl;
-}
-const secilenIlce = urlParams.get("ilce");
-if (secilenIlce) {
-  filtreIlce.dataset.beklenenDeger = secilenIlce;
-}
+if (urlParams.get("il")) secili.il = urlParams.get("il");
+if (urlParams.get("ilce")) secili.ilce = urlParams.get("ilce");
 
 filtreleVeCiz();

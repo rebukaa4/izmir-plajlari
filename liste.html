@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0f7ea3">
 <meta name="color-scheme" content="light only">
 <link rel="stylesheet" href="css/fonts.css?v=1">
-<link rel="stylesheet" href="css/style.css?v=36">
+<link rel="stylesheet" href="css/style.css?v=37">
 </head>
 <body>
 
@@ -23,26 +23,14 @@
 
 <div class="fiyat-politikasi" data-i18n="priceNoticeList">💡 Enflasyon ve hızlı fiyat değişimleri sebebiyle şezlong/tuvalet gibi hizmetlerde fiyat bilgisi verilmemektedir. Sadece "ücretli/ücretsiz" olduğu belirtilir.</div>
 
-<div class="filtreler">
-  <select id="filtre-il">
-    <option value="" data-i18n="allCities">Tüm Şehirler</option>
-  </select>
-  <select id="filtre-ilce">
-    <option value="" data-i18n="allDistricts">Tüm İlçeler</option>
-  </select>
-  <select id="filtre-zemin">
-    <option value="" data-i18n="allGrounds">Tüm Zeminler</option>
-  </select>
-  <select id="filtre-derinlik">
-    <option value="" data-i18n="allDepths">Tüm Derinlikler</option>
-  </select>
-  <select id="filtre-park">
-    <option value="" data-i18n="allParking">Tüm Park Durumları</option>
-    <option value="ucretsiz" data-i18n="parkFreeOption">Ücretsiz Park</option>
-    <option value="kismi" data-i18n="parkPartialOption">Kısmi/Kısıtlı</option>
-    <option value="ucretli" data-i18n="parkPaidOption">Ücretli Park</option>
-  </select>
+<div class="liste-arama">
+  <div class="arama-kutu">
+    <span class="arama-ikon">🔍</span>
+    <input type="text" id="liste-arama-input" class="arama-input" placeholder="Plaj ara... (örn. Mimoza, Altınkum)" data-i18n="searchPlaceholder" data-i18n-attr="placeholder" autocomplete="off">
+  </div>
 </div>
+
+<div class="filtreler" id="filtreler"></div>
 
 <div class="sonuc-sayisi" id="sonuc-sayisi"></div>
 
@@ -51,6 +39,6 @@
 <script src="js/i18n.js?v=5"></script>
 <script src="js/rating.js?v=1"></script>
 <script src="js/data.js?v=61"></script>
-<script src="js/liste.js?v=32"></script>
+<script src="js/liste.js?v=33"></script>
 </body>
 </html>

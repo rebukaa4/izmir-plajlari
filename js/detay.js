@@ -142,12 +142,29 @@ function acLightbox(fotograflar, baslangicIndex) {
   const sayac = kapak.querySelector(".lightbox-sayac");
   const kapatButon = kapak.querySelector(".lightbox-kapat");
 
-  img.addEventListener("click", (e) => {
-    e.stopPropagation();
-    index = (index + 1) % fotograflar.length;
+  function goster(yeniIndex) {
+    index = (yeniIndex + fotograflar.length) % fotograflar.length;
     img.src = fotograflar[index];
     sayac.textContent = `${index + 1} / ${fotograflar.length}`;
+  }
+
+  img.addEventListener("click", (e) => {
+    e.stopPropagation();
+    goster(index + 1);
   });
+
+  // Parmakla kaydırma: sola kaydır → sonraki, sağa kaydır → önceki
+  let dokunusBaslangicX = null;
+  kapak.addEventListener("touchstart", (e) => {
+    dokunusBaslangicX = e.touches[0].clientX;
+  }, { passive: true });
+  kapak.addEventListener("touchend", (e) => {
+    if (dokunusBaslangicX === null) return;
+    const fark = e.changedTouches[0].clientX - dokunusBaslangicX;
+    dokunusBaslangicX = null;
+    if (Math.abs(fark) < 40) return;
+    goster(fark < 0 ? index + 1 : index - 1);
+  }, { passive: true });
 
   kapatButon.addEventListener("click", (e) => {
     e.stopPropagation();
