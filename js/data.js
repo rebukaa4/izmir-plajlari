@@ -610,7 +610,7 @@ const PLAJLAR = [
     cocukUygun: "Deniz sakin ve sığ, çocuklu aileler ve yüzme bilmeyenler tarafından tercih ediliyor.",
     kalabalik: "Genelde sakin ama yaz hafta sonlarında kalabalıklaşıyor, erken gelmek öneriliyor.",
     temizlik: "Mavi Bayraklı, temiz ve berrak deniz.",
-    notlar: "Kumsal kumlu ama deniz tabanı kayalık — bu yüzden zemin 'Kum-Taşlık' olarak güncellendi.",
+    notlar: "Kumsal kumlu ama deniz tabanı kayalıktır.",
     ceviriler: {
       en: {
         parkNotu: "Parking is free.",
@@ -620,17 +620,17 @@ const PLAJLAR = [
         cocukUygun: "The sea is calm and shallow, preferred by families with children and non-swimmers.",
         kalabalik: "Generally calm but gets crowded on summer weekends; arriving early is recommended.",
         temizlik: "Blue Flag certified, clean and clear sea.",
-        notlar: "The beach is sandy but the seabed is rocky — hence the ground type was updated to 'Sand-Rock'."
+        notlar: "The beach is sandy but the seabed is rocky."
       },
       de: {
         parkNotu: "Parken ist kostenlos.",
-        tuvaletNotu: "Es gibt eine Gemeindeeinrichtung: eine preiswerte Verpflegungsstelle, Dusche und Umkleidekabine vorhanden — aktualisiert die frühere Angabe 'keine Einrichtungen'.",
+        tuvaletNotu: "Es gibt eine Gemeindeeinrichtung: eine preiswerte Verpflegungsstelle, Dusche und Umkleidekabine sind vorhanden.",
         yayaMesafe: "20-25 Minuten zu Fuß vom Busbahnhof Foça (etwas weit).",
         sezlong: "Liegen sind kostenpflichtig.",
         cocukUygun: "Das Meer ist ruhig und flach, bevorzugt von Familien mit Kindern und Nichtschwimmern.",
         kalabalik: "In der Regel ruhig, wird aber an Sommerwochenenden voll; frühes Kommen wird empfohlen.",
         temizlik: "Mit Blauer Flagge zertifiziert, sauberes und klares Meer.",
-        notlar: "Der Strand ist sandig, aber der Meeresboden felsig — daher wurde der Untergrundtyp auf 'Sand-Fels' aktualisiert."
+        notlar: "Der Strand ist sandig, aber der Meeresboden ist felsig."
       },
       ru: {
         parkNotu: "Парковка бесплатная.",
@@ -732,7 +732,7 @@ const PLAJLAR = [
     dus: false,
     tuvalet: false,
     kabin: false,
-    tuvaletNotu: "Plajda otopark, tuvalet, duş gibi tesisler yok; arkasında kafe ve market var. Not: bir kaynak restoran ve şezlong/şemsiye kiralama imkanı olduğunu iddia ediyor ama bu, çoğunluk kaynaklarla (tesis yok) çelişiyor; çoğunluğa göre kaydedildi.",
+    tuvaletNotu: "Plajda otopark, tuvalet, duş gibi tesisler yok; arkasında kafe ve market var.",
     yayaMesafe: "",
     sezlong: "Çoğunluk kaynağa göre yok, kendi ekipmanınızı getirmeniz gerekiyor.",
     dalgaDurumu: "Rüzgarlı bir bölge, rüzgar tahminleri saatlik takip edilebiliyor.",
@@ -744,7 +744,7 @@ const PLAJLAR = [
     ceviriler: {
       en: {
         parkNotu: "There's a free parking area for those arriving by car.",
-        tuvaletNotu: "No facilities like parking, toilet, or shower on the beach itself; there's a cafe and market behind it. Note: one source claims there's a restaurant and sunbed/umbrella rental, but this conflicts with most sources (no facilities); recorded per the majority.",
+        tuvaletNotu: "No facilities like parking, toilet, or shower on the beach itself; there's a cafe and market behind it.",
         sezlong: "Not available according to most sources; you need to bring your own equipment.",
         dalgaDurumu: "A windy area; wind forecasts can be tracked hourly.",
         aliverisYemeIcme: "There's a cafe and market behind the beach.",
@@ -755,7 +755,7 @@ const PLAJLAR = [
       },
       de: {
         parkNotu: "Für Autofahrer gibt es einen kostenlosen Parkplatz.",
-        tuvaletNotu: "Am Strand selbst keine Einrichtungen wie Parkplatz, Toilette oder Dusche; dahinter gibt es ein Café und einen Markt. Hinweis: Eine Quelle behauptet, es gebe ein Restaurant sowie Liegen-/Sonnenschirmverleih, was jedoch der Mehrheit der Quellen widerspricht (keine Einrichtungen); gemäß Mehrheit erfasst.",
+        tuvaletNotu: "Am Strand selbst keine Einrichtungen wie Parkplatz, Toilette oder Dusche; dahinter gibt es ein Café und einen Markt.",
         sezlong: "Laut den meisten Quellen nicht vorhanden, eigene Ausrüstung muss mitgebracht werden.",
         dalgaDurumu: "Eine windige Gegend, Windvorhersagen können stündlich verfolgt werden.",
         aliverisYemeIcme: "Hinter dem Strand gibt es ein Café und einen Markt.",
@@ -1123,7 +1123,7 @@ const PLAJLAR = [
     cocukUygun: "Deniz çok hızlı derinleşmiyor, aileler tarafından tercih ediliyor.",
     kalabalik: "Sığacık'tan Pamucak'a uzanan uzun kıyı şeridi sayesinde kalabalık dağılıyor.",
     temizlik: "Kaynaklar arasında çelişki var: bazı ziyaretçiler temiz ve berrak olduğunu, bazıları ise düzensiz yapılaşma ve kirlilik olduğunu belirtiyor.",
-    notlar: "Seferihisar Belediyesi işletiyor, giriş ücretsiz. Seferihisar merkeze ~4 km, İzmir merkeze ~52 km. Engelli rampası ve denize giriş aracı mevcut. Girişi kayalık, ilerisi kumluk — bu yüzden zemin 'Kum-Taşlık' olarak güncellendi.",
+    notlar: "Seferihisar Belediyesi işletiyor, giriş ücretsiz. Seferihisar merkeze ~4 km, İzmir merkeze ~52 km. Engelli rampası ve denize giriş aracı mevcut. Girişi kayalık, ilerisi kumluktur.",
     ceviriler: {
       en: {
         tuvaletNotu: "The municipality has a free shower and WC area. There's also a disabled-accessible toilet.",
@@ -1132,7 +1132,7 @@ const PLAJLAR = [
         cocukUygun: "The sea doesn't deepen too quickly, favored by families.",
         kalabalik: "Thanks to the long coastline stretching from Sığacık to Pamucak, crowds spread out.",
         temizlik: "Sources conflict: some visitors say it's clean and clear, others mention disorganized development and pollution.",
-        notlar: "Run by Seferihisar Municipality, free entry. About 4 km from central Seferihisar, ~52 km from central İzmir. There's a disabled-access ramp and a sea-entry device. Entry is rocky, further in is sandy — hence the ground type was updated to 'Sand-Rock'."
+        notlar: "Run by Seferihisar Municipality, free entry. About 4 km from central Seferihisar, ~52 km from central İzmir. There's a disabled-access ramp and a sea-entry device. Entry is rocky, further in is sandy."
       },
       de: {
         tuvaletNotu: "Die Gemeinde bietet einen kostenlosen Dusch- und WC-Bereich. Es gibt auch eine barrierefreie Toilette.",
@@ -1141,7 +1141,7 @@ const PLAJLAR = [
         cocukUygun: "Das Meer wird nicht zu schnell tief, bei Familien beliebt.",
         kalabalik: "Dank der langen Küstenlinie von Sığacık bis Pamucak verteilt sich die Menge.",
         temizlik: "Die Quellen widersprechen sich: Manche Besucher sagen, es sei sauber und klar, andere erwähnen unorganisierte Bebauung und Verschmutzung.",
-        notlar: "Betrieben von der Gemeinde Seferihisar, kostenloser Eintritt. Etwa 4 km vom Zentrum Seferihisar, ~52 km vom Zentrum İzmir entfernt. Es gibt eine Rollstuhlrampe und ein Gerät zum Einstieg ins Meer. Der Eingang ist felsig, weiter hinten sandig — daher wurde der Untergrund auf 'Sand-Fels' aktualisiert."
+        notlar: "Betrieben von der Gemeinde Seferihisar, kostenloser Eintritt. Etwa 4 km vom Zentrum Seferihisar, ~52 km vom Zentrum İzmir entfernt. Es gibt eine Rollstuhlrampe und ein Gerät zum Einstieg ins Meer. Der Eingang ist felsig, weiter hinten sandig."
       },
       ru: {
         tuvaletNotu: "У муниципалитета есть бесплатная зона с душем и туалетом. Также есть туалет для людей с инвалидностью.",
@@ -2094,7 +2094,7 @@ const PLAJLAR = [
     cocukUygun: "Su ne çok sıcak ne çok soğuk, uzun mesafe boyunca sığ ve kumlu — çocuklar ve yüzme bilmeyenler için oldukça uygun.",
     kalabalik: "Özellikle hafta sonları oldukça kalabalıklaşıyor; sakin bir ziyaret için hafta içi önerilir.",
     temizlik: "Mavi Bayraklı bölümü var; ziyaretçi yorumları arasında hem 'ideal deniz sıcaklığı ve temizliği' hem de temizliğin daha iyi olabileceğine dair yorumlar bulunuyor.",
-    notlar: "Belediyenin işlettiği plaj; zemin baştan sona kumdur (kayalık giriş iddiası hatalıydı, düzeltildi), yer yer kumun içinde küçük çakıl taşlarına rastlanabiliyor. 'Urla Kum Denizi' veya 'Kum Deniz Plajı' adlarıyla da anılıyor. Beach/özel işletme, belediye plajı ve ücretsiz halk plajı olmak üzere üç bölümden oluşuyor.",
+    notlar: "Belediyenin işlettiği plaj; zemin baştan sona kumdur, yer yer kumun içinde küçük çakıl taşlarına rastlanabiliyor. 'Urla Kum Denizi' veya 'Kum Deniz Plajı' adlarıyla da anılıyor. Beach/özel işletme, belediye plajı ve ücretsiz halk plajı olmak üzere üç bölümden oluşuyor.",
     ceviriler: {
       en: {
         parkNotu: "The municipal facility has paid parking; free parking can also be found a bit further away.",
@@ -2105,7 +2105,7 @@ const PLAJLAR = [
         cocukUygun: "The water is neither too warm nor too cold, shallow and sandy for a long stretch — quite suitable for children and non-swimmers.",
         kalabalik: "Gets quite crowded especially on weekends; visiting on weekdays is recommended for a calmer experience.",
         temizlik: "There's a Blue Flag section; visitor reviews range from 'ideal sea temperature and cleanliness' to comments that cleanliness could be improved.",
-        notlar: "A municipality-run beach; the ground is sandy from end to end (the earlier claim of a rocky entry was incorrect and has been fixed), though small pebbles can occasionally be found mixed into the sand. Also known as 'Urla Kum Denizi' or 'Kum Deniz Plajı'. Consists of three sections: a beach club/private business, a municipal beach, and a free public beach."
+        notlar: "A municipality-run beach; the ground is sandy from end to end, though small pebbles can occasionally be found mixed into the sand. Also known as 'Urla Kum Denizi' or 'Kum Deniz Plajı'. Consists of three sections: a beach club/private business, a municipal beach, and a free public beach."
       },
       de: {
         parkNotu: "Die Gemeindeeinrichtung hat einen kostenpflichtigen Parkplatz; etwas weiter entfernt lässt sich auch kostenloses Parken finden.",
@@ -2116,7 +2116,7 @@ const PLAJLAR = [
         cocukUygun: "Das Wasser ist weder zu warm noch zu kalt, über eine lange Strecke flach und sandig — sehr geeignet für Kinder und Nichtschwimmer.",
         kalabalik: "Wird besonders an Wochenenden ziemlich voll; für ein ruhigeres Erlebnis wird ein Besuch unter der Woche empfohlen.",
         temizlik: "Es gibt einen Bereich mit Blauer Flagge; Besucherbewertungen reichen von 'idealer Wassertemperatur und Sauberkeit' bis zu Hinweisen, dass die Sauberkeit verbessert werden könnte.",
-        notlar: "Ein von der Gemeinde betriebener Strand; der Untergrund ist durchgehend sandig (die frühere Behauptung eines felsigen Zugangs war falsch und wurde korrigiert), gelegentlich können jedoch kleine Kieselsteine im Sand vorkommen. Auch bekannt als 'Urla Kum Denizi' oder 'Kum Deniz Plajı'. Besteht aus drei Bereichen: ein Beach-Club/privater Betrieb, ein Gemeindestrand und ein kostenloser öffentlicher Strand."
+        notlar: "Ein von der Gemeinde betriebener Strand; der Untergrund ist durchgehend sandig, gelegentlich können jedoch kleine Kieselsteine im Sand vorkommen. Auch bekannt als 'Urla Kum Denizi' oder 'Kum Deniz Plajı'. Besteht aus drei Bereichen: ein Beach-Club/privater Betrieb, ein Gemeindestrand und ein kostenloser öffentlicher Strand."
       },
       ru: {
         parkNotu: "У муниципального заведения есть платная парковка; чуть дальше можно найти и бесплатную.",
@@ -2127,7 +2127,7 @@ const PLAJLAR = [
         cocukUygun: "Вода не слишком тёплая и не слишком холодная, мелкая и песчаная на большом расстоянии — вполне подходит для детей и не умеющих плавать.",
         kalabalik: "Особенно многолюдно по выходным; для более спокойного отдыха рекомендуется посещение в будни.",
         temizlik: "Есть зона с «Голубым флагом»; отзывы посетителей варьируются от «идеальная температура и чистота моря» до замечаний, что чистоту можно улучшить.",
-        notlar: "Пляж, управляемый муниципалитетом; дно полностью песчаное (более ранее утверждение о каменистом входе было ошибочным и исправлено), хотя изредка в песке могут попадаться мелкие камешки. Также известен как «Urla Kum Denizi» или «Kum Deniz Plajı». Состоит из трёх частей: пляжный клуб/частное заведение, муниципальный пляж и бесплатный общественный пляж."
+        notlar: "Пляж, управляемый муниципалитетом; дно полностью песчаное, хотя изредка в песке могут попадаться мелкие камешки. Также известен как «Urla Kum Denizi» или «Kum Deniz Plajı». Состоит из трёх частей: пляжный клуб/частное заведение, муниципальный пляж и бесплатный общественный пляж."
       }
     },
     fotograflar: [
@@ -4327,7 +4327,7 @@ const PLAJLAR = [
     cocukUygun: "Sahilde çocuk oyun alanı bulunuyor; engelli erişimine uygun düzenlenmiş bir plaj alanı olarak biliniyor.",
     kalabalik: "Halka açık bölüm yoğun; sahilin doğusu ağırlıklı olarak 5 yıldızlı otel önleri.",
     temizlik: "Mavi Bayrak'lı plaj.",
-    notlar: "Halk plajında kadınlar ve erkekler için ayrı mescit bulunuyor. İsmin eski bir Luvi dilinde 'kum' anlamına geldiği iddia ediliyor (tek kaynaklı, doğrulanmamış bir bilgi).",
+    notlar: "Halk plajında kadınlar ve erkekler için ayrı mescit bulunuyor. İsmin eski bir Luvi dilinde 'kum' anlamına geldiği söylenir.",
     ceviriler: {
       en: {
         tuvaletNotu: "The public beach section (Lara Halk Plajı) has toilets and changing cabins.",
@@ -4338,7 +4338,7 @@ const PLAJLAR = [
         cocukUygun: "There's a children's playground on the beach; the beach area is known to be set up for disabled access.",
         kalabalik: "The public section is busy; the eastern part of the coastline is mostly fronted by 5-star hotels.",
         temizlik: "A Blue Flag beach.",
-        notlar: "The public beach has separate prayer rooms for women and men. It's claimed (from a single, unverified source) that the name comes from an old Luwian word meaning 'sand'."
+        notlar: "The public beach has separate prayer rooms for women and men. The name is said to come from an old Luwian word meaning 'sand'."
       },
       de: {
         tuvaletNotu: "Im öffentlichen Strandbereich (Lara Halk Plajı) gibt es Toiletten und Umkleidekabinen.",
@@ -4349,7 +4349,7 @@ const PLAJLAR = [
         cocukUygun: "Am Strand gibt es einen Kinderspielplatz; der Strandbereich gilt als barrierefrei gestaltet.",
         kalabalik: "Der öffentliche Bereich ist gut besucht; der östliche Teil der Küste liegt größtenteils vor 5-Sterne-Hotels.",
         temizlik: "Ein Strand mit Blauer Flagge.",
-        notlar: "Am öffentlichen Strand gibt es getrennte Gebetsräume für Frauen und Männer. Es wird behauptet (aus einer einzigen, nicht verifizierten Quelle), der Name stamme aus einem alten luwischen Wort für 'Sand'."
+        notlar: "Am öffentlichen Strand gibt es getrennte Gebetsräume für Frauen und Männer. Der Name soll von einem alten luwischen Wort für 'Sand' stammen."
       },
       ru: {
         tuvaletNotu: "На общественном участке пляжа (Lara Halk Plajı) есть туалеты и кабинки для переодевания.",
@@ -4360,7 +4360,7 @@ const PLAJLAR = [
         cocukUygun: "На пляже есть детская площадка; территория пляжа приспособлена для людей с ограниченными возможностями.",
         kalabalik: "Общественная часть пляжа многолюдна; восточная часть побережья в основном застроена 5-звёздочными отелями.",
         temizlik: "Пляж с сертификатом «Голубой флаг».",
-        notlar: "На общественном пляже есть отдельные молельные комнаты для женщин и мужчин. По одной непроверенной версии, название происходит от древнего лувийского слова, означающего «песок»."
+        notlar: "На общественном пляже есть отдельные молельные комнаты для женщин и мужчин. Считается, что название происходит от древнего лувийского слова, означающего «песок»."
       }
     },
     fotograflar: [
@@ -4604,7 +4604,7 @@ const PLAJLAR = [
     cocukUygun: "Tekneyle ulaşım ve derin/soğuk su nedeniyle küçük çocuklar için pratik bir seçenek değil; kaynaklarda bu konuda doğrudan bir değerlendirme yok.",
     kalabalik: "Issız ve sakin; Kekova tekne turlarının bir durağı, günübirlikçi kalabalığı görmüyor. Likya Yolu yürüyüşçülerinin kamp yaptığı noktalardan biri olarak da biliniyor.",
     temizlik: "",
-    notlar: "Kaş limanının batısında, Kekova yönünde, karadan yolu olmayan bir koy; sadece tekneyle ulaşılabiliyor. Not: Kaynaklarda 'Akçagerme ile birlikte Kaş'ın Mavi Bayraklı iki plajından biri' iddiasını doğrulayan bir eşleşme bulunamadı — bu muhtemelen Çukurbağ Yarımadası'ndaki, karayoluyla ulaşılan ve plaj kulübü bulunan ayrı bir koy olan Hidayet Koyu ile karıştırılmıştı; kayıt gerçek İnönü Koyu'na göre düzeltildi.",
+    notlar: "Kaş limanının batısında, Kekova yönünde, karadan yolu olmayan bir koy; sadece tekneyle ulaşılabiliyor.",
     ceviriler: {
       en: {
         parkNotu: "No road access by land, not relevant to parking.",
@@ -4615,7 +4615,7 @@ const PLAJLAR = [
         aliverisYemeIcme: "None, no businesses on the shore.",
         cocukUygun: "Not a practical option for small children due to boat-only access and deep/cold water; sources offer no direct assessment on this.",
         kalabalik: "Remote and calm; a stop on Kekova boat tours, doesn't see day-tripper crowds. Also known as one of the spots where Lycian Way hikers camp.",
-        notlar: "A cove west of Kaş harbor, toward Kekova, with no road access by land; reachable only by boat. Note: no source was found confirming the claim that it is 'one of Kaş's two Blue Flag beaches along with Akçagerme' — this was likely confused with Hidayet Koyu, a separate cove on the Çukurbağ Peninsula reachable by road with a beach club; the entry has been corrected to reflect the real İnönü Koyu."
+        notlar: "A cove west of Kaş harbor, toward Kekova, with no road access by land; reachable only by boat."
       },
       de: {
         parkNotu: "Kein Landweg vorhanden, für Parken nicht relevant.",
@@ -4626,7 +4626,7 @@ const PLAJLAR = [
         aliverisYemeIcme: "Keine vorhanden, keine Betriebe an der Küste.",
         cocukUygun: "Wegen des nur per Boot erreichbaren Zugangs und des tiefen/kalten Wassers keine praktische Option für kleine Kinder; die Quellen bieten hierzu keine direkte Einschätzung.",
         kalabalik: "Abgelegen und ruhig; ein Stopp bei Kekova-Bootstouren, sieht keine Tagesausflügler-Menge. Auch als einer der Camping-Orte für Wanderer des Lykischen Wegs bekannt.",
-        notlar: "Eine Bucht westlich des Hafens Kaş, Richtung Kekova, ohne Landzugang; nur per Boot erreichbar. Hinweis: Es wurde keine Quelle gefunden, die die Behauptung bestätigt, sie sei 'einer von Kaş' zwei Stränden mit Blauer Flagge zusammen mit Akçagerme' — dies wurde vermutlich mit Hidayet Koyu verwechselt, einer separaten, über Land erreichbaren Bucht auf der Halbinsel Çukurbağ mit Beach Club; der Eintrag wurde entsprechend dem tatsächlichen İnönü Koyu korrigiert."
+        notlar: "Eine Bucht westlich des Hafens Kaş, Richtung Kekova, ohne Landzugang; nur per Boot erreichbar."
       },
       ru: {
         parkNotu: "Дороги по суше нет, к парковке не относится.",
@@ -4637,7 +4637,7 @@ const PLAJLAR = [
         aliverisYemeIcme: "Отсутствует, заведений на берегу нет.",
         cocukUygun: "Не самый практичный вариант для маленьких детей из-за доступа только на лодке и глубокой/холодной воды; источники не дают прямой оценки по этому поводу.",
         kalabalik: "Уединённо и спокойно; остановка на лодочных турах Кекова, не видит толп однодневных туристов. Также известна как одно из мест, где разбивают лагерь туристы Ликийской тропы.",
-        notlar: "Бухта к западу от гавани Каша, в сторону Кекова, без дороги по суше; добраться можно только на лодке. Примечание: не найдено источника, подтверждающего утверждение, что это «один из двух пляжей Каша с «Голубым флагом» вместе с Акчагерме» — вероятно, это путали с Хидает-Койю, отдельной бухтой на полуострове Чукурбаг с дорожным доступом и пляжным клубом; запись исправлена в соответствии с реальной бухтой Инёню."
+        notlar: "Бухта к западу от гавани Каша, в сторону Кекова, без дороги по суше; добраться можно только на лодке."
       }
     },
     fotograflar: [
