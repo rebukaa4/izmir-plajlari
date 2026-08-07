@@ -829,3 +829,21 @@ header.app-header p {
   color: #c3ccd1;
   padding: 0 2px;
 }
+
+.geri-bildirim-link {
+  display: block;
+  margin: 18px auto 8px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--deniz);
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px dashed #bfe6da;
+  border-radius: 12px;
+  background: #f4fbf9;
+}
+
+.geri-bildirim-link:active {
+  background: #e8f6f1;
+}

@@ -73,6 +73,9 @@ const I18N = {
     cleanliness: "Temizlik",
     otherNotes: "Diğer Notlar",
     directions: "📍 Yol Tarifi Al",
+    feedbackLink: "✏️ Bu plajda hatalı veya eksik bilgi mi var? Bize bildirin",
+    feedbackSubject: "Düzeltme önerisi",
+    feedbackBody: "Merhaba, aşağıdaki plaj hakkında bir düzeltme/eksik bilgi bildirmek istiyorum:\n\nPlaj: ",
     sourcePrefix: "Kaynak:",
     lightboxClose: "✕ Kapat",
 
@@ -167,6 +170,9 @@ const I18N = {
     cleanliness: "Cleanliness",
     otherNotes: "Other Notes",
     directions: "📍 Get Directions",
+    feedbackLink: "✏️ Spotted wrong or missing info for this beach? Let us know",
+    feedbackSubject: "Correction suggestion",
+    feedbackBody: "Hello, I'd like to report a correction / missing info about the following beach:\n\nBeach: ",
     sourcePrefix: "Source:",
     lightboxClose: "✕ Close",
 
@@ -261,6 +267,9 @@ const I18N = {
     cleanliness: "Sauberkeit",
     otherNotes: "Weitere Hinweise",
     directions: "📍 Route anzeigen",
+    feedbackLink: "✏️ Falsche oder fehlende Infos zu diesem Strand? Sag uns Bescheid",
+    feedbackSubject: "Korrekturvorschlag",
+    feedbackBody: "Hallo, ich möchte eine Korrektur / fehlende Information zu folgendem Strand melden:\n\nStrand: ",
     sourcePrefix: "Quelle:",
     lightboxClose: "✕ Schließen",
 
@@ -355,6 +364,9 @@ const I18N = {
     cleanliness: "Чистота",
     otherNotes: "Прочие заметки",
     directions: "📍 Построить маршрут",
+    feedbackLink: "✏️ Заметили неверную или неполную информацию об этом пляже? Сообщите нам",
+    feedbackSubject: "Предложение по исправлению",
+    feedbackBody: "Здравствуйте, хочу сообщить об исправлении / недостающей информации о следующем пляже:\n\nПляж: ",
     sourcePrefix: "Источник:",
     lightboxClose: "✕ Закрыть",
 

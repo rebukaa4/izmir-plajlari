@@ -73,6 +73,8 @@ if (!plaj) {
     <a class="harita-buton" href="${plaj.haritaLinki}" target="_blank" rel="noopener">${t("directions")}</a>
 
     ${plaj.kaynaklar && plaj.kaynaklar.length > 0 ? `<div class="kaynak-mini">${t("sourcePrefix")} ${plaj.kaynaklar.join(", ")}</div>` : ""}
+
+    <a class="geri-bildirim-link" href="mailto:rebukaa4@gmail.com?subject=${encodeURIComponent(t("feedbackSubject") + " — " + plaj.isim)}&body=${encodeURIComponent(t("feedbackBody") + plaj.isim + " (" + plaj.ilce + " / " + plaj.il + ")\n\n")}">${t("feedbackLink")}</a>
   `;
 
   document.querySelectorAll(".foto-galeri img").forEach((img, i) => {
