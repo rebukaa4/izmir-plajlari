@@ -150,22 +150,33 @@ function acLightbox(fotograflar, baslangicIndex) {
     sayac.textContent = `${index + 1} / ${fotograflar.length}`;
   }
 
+  // Parmakla kaydırma durumu
+  let baslangicX = null;
+  let kaydirildi = false;
+
   img.addEventListener("click", (e) => {
     e.stopPropagation();
+    if (kaydirildi) { kaydirildi = false; return; } // kaydırma yapıldıysa dokunmayı yoksay
     goster(index + 1);
   });
 
   // Parmakla kaydırma: sola kaydır → sonraki, sağa kaydır → önceki
-  let dokunusBaslangicX = null;
   kapak.addEventListener("touchstart", (e) => {
-    dokunusBaslangicX = e.touches[0].clientX;
+    baslangicX = e.touches[0].clientX;
+    kaydirildi = false;
+  }, { passive: true });
+  kapak.addEventListener("touchmove", (e) => {
+    if (baslangicX !== null && Math.abs(e.touches[0].clientX - baslangicX) > 10) {
+      kaydirildi = true;
+    }
   }, { passive: true });
   kapak.addEventListener("touchend", (e) => {
-    if (dokunusBaslangicX === null) return;
-    const fark = e.changedTouches[0].clientX - dokunusBaslangicX;
-    dokunusBaslangicX = null;
-    if (Math.abs(fark) < 40) return;
-    goster(fark < 0 ? index + 1 : index - 1);
+    if (baslangicX === null) return;
+    const fark = e.changedTouches[0].clientX - baslangicX;
+    baslangicX = null;
+    if (Math.abs(fark) >= 40) {
+      goster(fark < 0 ? index + 1 : index - 1);
+    }
   }, { passive: true });
 
   kapatButon.addEventListener("click", (e) => {
