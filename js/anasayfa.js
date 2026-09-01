@@ -3,7 +3,7 @@
     "İzmir": ["Çeşme", "Urla", "Foça", "Seferihisar", "Dikili", "Karaburun"],
     "Aydın": ["Kuşadası", "Didim"],
     "Muğla": ["Fethiye", "Marmaris", "Bodrum", "Dalyan/Ortaca"],
-    "Antalya": ["Muratpaşa", "Kaş", "Kemer"]
+    "Antalya": ["Muratpaşa", "Alanya", "Manavgat", "Kaş", "Kemer"]
   };
   const renkler = ["r1", "r2", "r3", "r4", "r5", "r6"];
   // Şehir kartları için, karışmasın diye birbirinden belirgin şekilde uzak renkler

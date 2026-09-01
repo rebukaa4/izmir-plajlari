@@ -5182,6 +5182,341 @@ const PLAJLAR = [
     kaynak: "internet",
     kaynaklar: ["beachsearcher.com.tr", "localcappadocia.com", "antalyayikesfediyoruz.com", "rotasenin.com"],
     haritaLinki: "https://maps.google.com/?q=Adrasan+Plajı+Kumluca+Antalya"
+  },
+
+  {
+    id: 84,
+    isim: "Manavgat Halk Plajı",
+    ilce: "Manavgat",
+    il: "Antalya",
+    zemin: "Kumsal",
+    derinlik: "Bilinmiyor",
+    park: "ucretsiz",
+    parkNotu: "Geniş ve ücretsiz bir otoparkı var, 24 saat güvenlik hizmeti sunuluyor.",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "",
+    kabin: true,
+    yayaMesafe: "",
+    sezlong: "Şezlong ve şemsiye kiralanabiliyor.",
+    dalgaDurumu: "",
+    aliverisYemeIcme: "Tesis içinde restoran ve kafe hizmeti var.",
+    cocukUygun: "Çocuk oyun alanı bulunuyor.",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "Bisiklet ve yürüyüş yolları, basketbol sahası, çadır-kamp alanı ve gölgeli piknik alanları bulunuyor. Manavgat merkezine yakın bir mesire ve plaj alanı.",
+    ceviriler: {
+      en: {
+        parkNotu: "It has a large, free parking area with 24-hour security.",
+        sezlong: "Sunbeds and umbrellas can be rented.",
+        aliverisYemeIcme: "There's a restaurant and café on site.",
+        cocukUygun: "There's a children's playground.",
+        notlar: "Features cycling and walking paths, a basketball court, a tent-camping area, and shaded picnic spots. A recreation and beach area close to Manavgat's town center."
+      },
+      de: {
+        parkNotu: "Es gibt einen großen, kostenlosen Parkplatz mit 24-Stunden-Sicherheitsdienst.",
+        sezlong: "Liegen und Sonnenschirme können gemietet werden.",
+        aliverisYemeIcme: "Vor Ort gibt es ein Restaurant und ein Café.",
+        cocukUygun: "Es gibt einen Kinderspielplatz.",
+        notlar: "Verfügt über Rad- und Wanderwege, einen Basketballplatz, einen Zeltcampingbereich und schattige Picknickplätze. Ein Naherholungs- und Strandgebiet nahe dem Zentrum von Manavgat."
+      },
+      ru: {
+        parkNotu: "Есть большая бесплатная парковка с круглосуточной охраной.",
+        sezlong: "Можно арендовать шезлонги и зонтики.",
+        aliverisYemeIcme: "На территории есть ресторан и кафе.",
+        cocukUygun: "Есть детская игровая площадка.",
+        notlar: "Здесь есть велосипедные и пешеходные дорожки, баскетбольная площадка, зона для кемпинга с палатками и тенистые места для пикника. Зона отдыха и пляж рядом с центром Манавгата."
+      }
+    },
+    fotograflar: [
+      "images/manavgat/manavgat-1.jpg",
+      "images/manavgat/manavgat-2.jpg",
+      "images/manavgat/manavgat-3.jpg",
+      "images/manavgat/manavgat-4.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["ktbhalkplajlari.com", "basin.ktb.gov.tr"],
+    haritaLinki: "https://maps.google.com/?q=Manavgat+Halk+Plajı+Antalya"
+  },
+
+  {
+    id: 85,
+    isim: "Ilıca Halk Plajı",
+    ilce: "Manavgat",
+    il: "Antalya",
+    zemin: "Bilinmiyor",
+    derinlik: "Sığ",
+    park: "ucretli",
+    parkNotu: "Otoparkta zaman zaman yer bulmakta zorlanılabiliyor, çevre sokaklara ücretli park imkânı da var.",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "",
+    kabin: true,
+    yayaMesafe: "",
+    sezlong: "Şezlong ve şemsiye kiralanabiliyor.",
+    dalgaDurumu: "",
+    aliverisYemeIcme: "Tesis içinde restoran var, yakın çevrede çeşitli lokanta ve büfeler bulunuyor.",
+    cocukUygun: "Sığ denizi nedeniyle aileler tarafından tercih ediliyor.",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "Side'ye yakın Kumköy bölgesinde yer alıyor. Yaklaşık 26 karavan kapasiteli bir kamp alanı da bulunuyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "Parking can sometimes be hard to find; paid parking is also available on nearby streets.",
+        sezlong: "Sunbeds and umbrellas can be rented.",
+        aliverisYemeIcme: "There's a restaurant on site, and various eateries and snack bars nearby.",
+        cocukUygun: "Its shallow sea makes it popular with families.",
+        notlar: "Located in the Kumköy area near Side. There's also a camping area with space for around 26 caravans."
+      },
+      de: {
+        parkNotu: "Parkplätze können gelegentlich knapp sein; kostenpflichtiges Parken ist auch in den umliegenden Straßen möglich.",
+        sezlong: "Liegen und Sonnenschirme können gemietet werden.",
+        aliverisYemeIcme: "Vor Ort gibt es ein Restaurant, in der Nähe verschiedene Lokale und Imbisse.",
+        cocukUygun: "Das flache Meer macht ihn bei Familien beliebt.",
+        notlar: "Liegt im Gebiet Kumköy nahe Side. Es gibt außerdem einen Campingplatz mit Platz für etwa 26 Wohnwagen."
+      },
+      ru: {
+        parkNotu: "Иногда бывает сложно найти место для парковки; на близлежащих улицах также доступна платная парковка.",
+        sezlong: "Можно арендовать шезлонги и зонтики.",
+        aliverisYemeIcme: "На территории есть ресторан, поблизости — различные кафе и закусочные.",
+        cocukUygun: "Мелководное море делает его популярным среди семей.",
+        notlar: "Расположен в районе Кумкёй рядом с Сиде. Здесь также есть кемпинг примерно на 26 караванов."
+      }
+    },
+    fotograflar: [
+      "images/ilicaantalya/ilicaantalya-1.jpg",
+      "images/ilicaantalya/ilicaantalya-2.jpg",
+      "images/ilicaantalya/ilicaantalya-3.jpg",
+      "images/ilicaantalya/ilicaantalya-4.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["ktbhalkplajlari.com", "tripadvisor.com"],
+    haritaLinki: "https://maps.google.com/?q=Ilıca+Halk+Plajı+Manavgat+Antalya"
+  },
+
+  {
+    id: 86,
+    isim: "Galip Dere Halk Plajı",
+    ilce: "Alanya",
+    il: "Antalya",
+    zemin: "Kumsal",
+    derinlik: "Sığ",
+    park: "bilinmiyor",
+    parkNotu: "",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "Belediyeye ait tuvalet ve duşlar günlük olarak temizleniyor.",
+    kabin: true,
+    yayaMesafe: "Alanya limanına yakın, şehir merkezinde konumlanıyor.",
+    sezlong: "Alanya Belediyesi tarafından ücretsiz şezlong ve şemsiye hizmeti sunuluyor.",
+    dalgaDurumu: "Dalgasız ve berrak bir denize sahip.",
+    aliverisYemeIcme: "",
+    cocukUygun: "Sığ ve dalgasız denizi nedeniyle çocuklu aileler için uygun.",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "200 metrelik şamandıralı yüzme alanı ve cankurtaran kulesi bulunuyor. Plaj içinde rampalar, tekerlekli sandalyeli araç desteği ve engellilere özel şezlong gibi düzenlemelerle 'Engelsiz Halk Plajı' unvanını taşıyor — bu bir yer adı değil, engelli erişimine uygun plajlara verilen bir statü.",
+    ceviriler: {
+      en: {
+        tuvaletNotu: "The municipal toilets and showers are cleaned daily.",
+        yayaMesafe: "Located in the city center, close to Alanya's harbor.",
+        sezlong: "Alanya Municipality provides free sunbeds and umbrellas.",
+        dalgaDurumu: "The sea is calm and clear, with no waves.",
+        cocukUygun: "Its shallow, wave-free sea makes it suitable for families with children.",
+        notlar: "Has a 200-meter buoyed swimming area and a lifeguard tower. With ramps, wheelchair-accessible vehicle support, and sunbeds designed for people with disabilities, the beach carries the 'Engelsiz Halk Plajı' (Accessible Public Beach) designation — a status awarded to accessible beaches, not a separate place."
+      },
+      de: {
+        tuvaletNotu: "Die städtischen Toiletten und Duschen werden täglich gereinigt.",
+        yayaMesafe: "Liegt im Stadtzentrum, nahe dem Hafen von Alanya.",
+        sezlong: "Die Stadtverwaltung Alanya stellt kostenlose Liegen und Sonnenschirme zur Verfügung.",
+        dalgaDurumu: "Das Meer ist ruhig und klar, ohne Wellen.",
+        cocukUygun: "Das flache, wellenfreie Meer eignet sich für Familien mit Kindern.",
+        notlar: "Verfügt über einen 200 Meter langen, mit Bojen markierten Schwimmbereich und einen Rettungsschwimmer-Turm. Mit Rampen, rollstuhlgerechter Fahrzeugunterstützung und speziellen Liegen für Menschen mit Behinderungen trägt der Strand die Auszeichnung „Engelsiz Halk Plajı“ (barrierefreier Strand) — ein Gütesiegel für barrierefreie Strände, kein eigener Ort."
+      },
+      ru: {
+        tuvaletNotu: "Муниципальные туалеты и душевые убираются ежедневно.",
+        yayaMesafe: "Расположен в центре города, рядом с портом Аланьи.",
+        sezlong: "Муниципалитет Аланьи предоставляет бесплатные шезлонги и зонтики.",
+        dalgaDurumu: "Море спокойное и чистое, без волн.",
+        cocukUygun: "Мелководное море без волн подходит для семей с детьми.",
+        notlar: "Есть зона для плавания с буями длиной 200 метров и вышка спасателя. Благодаря пандусам, поддержке транспорта для инвалидных колясок и специальным шезлонгам для людей с инвалидностью пляж носит статус «Engelsiz Halk Plajı» (безбарьерный пляж) — это звание для доступных пляжей, а не отдельное место."
+      }
+    },
+    fotograflar: [
+      "images/galipdere/galipdere-1.jpg",
+      "images/galipdere/galipdere-2.jpg",
+      "images/galipdere/galipdere-3.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["alanya.bel.tr", "isletmeler.alanya.bel.tr"],
+    haritaLinki: "https://maps.google.com/?q=Galip+Dere+Halk+Plajı+Alanya+Antalya"
+  },
+
+  {
+    id: 87,
+    isim: "Keykubat Halk Plajı",
+    ilce: "Alanya",
+    il: "Antalya",
+    zemin: "Kum-Çakıl",
+    derinlik: "Sığ",
+    park: "bilinmiyor",
+    parkNotu: "",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "",
+    kabin: true,
+    yayaMesafe: "Alanya şehir merkezine yakın bir konumda.",
+    sezlong: "Alanya Belediyesi tarafından ücretsiz şezlong ve şemsiye hizmeti sunuluyor.",
+    dalgaDurumu: "Yakındaki dere nedeniyle yağmur sonrası deniz suyu geçici olarak bulanıklaşabiliyor.",
+    aliverisYemeIcme: "Sahil boyunca sık aralıklarla büfe ve kafeler bulunuyor.",
+    cocukUygun: "Derin olmayan denizi aileler için uygun.",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "Mavi Bayraklı bir plaj, su sporları imkanları sunuluyor.",
+    ceviriler: {
+      en: {
+        yayaMesafe: "Close to Alanya's city center.",
+        sezlong: "Alanya Municipality provides free sunbeds and umbrellas.",
+        dalgaDurumu: "Due to a nearby stream, the seawater can become temporarily cloudy after rain.",
+        aliverisYemeIcme: "Snack bars and cafés are spaced closely along the shore.",
+        cocukUygun: "Its shallow sea makes it suitable for families.",
+        notlar: "A Blue Flag beach offering water sports facilities."
+      },
+      de: {
+        yayaMesafe: "Nahe dem Stadtzentrum von Alanya.",
+        sezlong: "Die Stadtverwaltung Alanya stellt kostenlose Liegen und Sonnenschirme zur Verfügung.",
+        dalgaDurumu: "Durch einen nahegelegenen Bach kann das Meerwasser nach Regen vorübergehend trüb werden.",
+        aliverisYemeIcme: "Entlang der Küste gibt es in kurzen Abständen Imbisse und Cafés.",
+        cocukUygun: "Das flache Meer eignet sich für Familien.",
+        notlar: "Ein Strand mit Blauer Flagge, der Wassersportmöglichkeiten bietet."
+      },
+      ru: {
+        yayaMesafe: "Рядом с центром города Аланья.",
+        sezlong: "Муниципалитет Аланьи предоставляет бесплатные шезлонги и зонтики.",
+        dalgaDurumu: "Из-за близлежащего ручья морская вода после дождя может временно мутнеть.",
+        aliverisYemeIcme: "Вдоль побережья часто расположены закусочные и кафе.",
+        cocukUygun: "Неглубокое море подходит для семей.",
+        notlar: "Пляж с Голубым флагом, предлагающий возможности для водных видов спорта."
+      }
+    },
+    fotograflar: [
+      "images/keykubat/keykubat-1.jpg",
+      "images/keykubat/keykubat-2.jpg",
+      "images/keykubat/keykubat-3.jpg",
+      "images/keykubat/keykubat-4.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["isletmeler.alanya.bel.tr"],
+    haritaLinki: "https://maps.google.com/?q=Keykubat+Halk+Plajı+Alanya+Antalya"
+  },
+
+  {
+    id: 88,
+    isim: "Damlataş Halk Plajı",
+    ilce: "Alanya",
+    il: "Antalya",
+    zemin: "Kum-Çakıl",
+    derinlik: "Bilinmiyor",
+    park: "bilinmiyor",
+    parkNotu: "Yaz aylarında yoğun dönemlerde otopark bulmak zorlaşabiliyor, yakında ücretli alternatif otopark bulunuyor.",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "Tuvalet, duş ve soyunma kabinleri Alanya Belediyesi tarafından ücretsiz sunuluyor.",
+    kabin: true,
+    yayaMesafe: "Damlataş Mağarası ve Alanya Kalesi eteklerinde, şehir merkezine çok yakın bir konumda.",
+    sezlong: "Alanya Belediyesi tarafından ücretsiz şezlong ve şemsiye hizmeti sunuluyor.",
+    dalgaDurumu: "Bazı dönemlerde dalgalı olabiliyor, denize girerken dikkatli olunması öneriliyor.",
+    aliverisYemeIcme: "Çevresinde çok sayıda kafe ve restoran bulunuyor.",
+    cocukUygun: "",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "Kleopatra Plajı'na komşu, aynı sahil şeridinin bir kesimi olarak da anılıyor.",
+    ceviriler: {
+      en: {
+        parkNotu: "Parking can get tight during busy summer periods; a paid alternative parking area is nearby.",
+        tuvaletNotu: "Toilets, showers, and changing cabins are provided free of charge by Alanya Municipality.",
+        yayaMesafe: "At the foot of Damlataş Cave and Alanya Castle, very close to the city center.",
+        sezlong: "Alanya Municipality provides free sunbeds and umbrellas.",
+        dalgaDurumu: "Can get wavy at times; caution is advised when swimming.",
+        aliverisYemeIcme: "Numerous cafés and restaurants are nearby.",
+        notlar: "Adjacent to Kleopatra Beach, and sometimes referred to as part of the same stretch of coast."
+      },
+      de: {
+        parkNotu: "In den geschäftigen Sommermonaten kann das Parken knapp werden; in der Nähe gibt es einen kostenpflichtigen Alternativparkplatz.",
+        tuvaletNotu: "Toiletten, Duschen und Umkleidekabinen werden von der Stadtverwaltung Alanya kostenlos zur Verfügung gestellt.",
+        yayaMesafe: "Am Fuße der Damlataş-Höhle und der Burg von Alanya, sehr nahe am Stadtzentrum.",
+        sezlong: "Die Stadtverwaltung Alanya stellt kostenlose Liegen und Sonnenschirme zur Verfügung.",
+        dalgaDurumu: "Kann zeitweise wellig sein; beim Schwimmen ist Vorsicht geboten.",
+        aliverisYemeIcme: "In der Umgebung gibt es zahlreiche Cafés und Restaurants.",
+        notlar: "Grenzt an den Kleopatra-Strand und wird manchmal als Teil desselben Küstenabschnitts bezeichnet."
+      },
+      ru: {
+        parkNotu: "В напряжённые летние периоды с парковкой могут быть сложности; поблизости есть платная альтернативная парковка.",
+        tuvaletNotu: "Туалеты, душевые и кабинки для переодевания предоставляются муниципалитетом Аланьи бесплатно.",
+        yayaMesafe: "У подножия пещеры Дамлаташ и крепости Аланьи, очень близко к центру города.",
+        sezlong: "Муниципалитет Аланьи предоставляет бесплатные шезлонги и зонтики.",
+        dalgaDurumu: "Иногда может быть волнистым; при купании рекомендуется соблюдать осторожность.",
+        aliverisYemeIcme: "Поблизости много кафе и ресторанов.",
+        notlar: "Соседствует с пляжем Клеопатры, иногда упоминается как часть того же участка побережья."
+      }
+    },
+    fotograflar: [
+      "images/damlatas/damlatas-1.jpg",
+      "images/damlatas/damlatas-2.jpg",
+      "images/damlatas/damlatas-3.jpg",
+      "images/damlatas/damlatas-4.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["alanya.bel.tr"],
+    haritaLinki: "https://maps.google.com/?q=Damlataş+Halk+Plajı+Alanya+Antalya"
+  },
+
+  {
+    id: 89,
+    isim: "Aysultan Halk Plajı",
+    ilce: "Alanya",
+    il: "Antalya",
+    zemin: "Kum-Çakıl",
+    derinlik: "Sığ",
+    park: "bilinmiyor",
+    parkNotu: "",
+    dus: true,
+    tuvalet: true,
+    tuvaletNotu: "",
+    kabin: true,
+    yayaMesafe: "",
+    sezlong: "Alanya Belediyesi tarafından ücretsiz şezlong ve şemsiye hizmeti sunuluyor.",
+    dalgaDurumu: "",
+    aliverisYemeIcme: "",
+    cocukUygun: "Geniş kumsalı ve kademeli derinleşen denizi ile aile plajı olarak biliniyor.",
+    kalabalik: "",
+    temizlik: "",
+    notlar: "Yaklaşık 700 metre uzunluğunda geniş bir kumsala sahip. Plaj 2017-2019 yılları arasında kadınlara özel olarak işletilmiş ve bu nedenle hâlâ bazı kaynaklarda 'Kadınlar Plajı' adıyla anılıyor; yıllarca kapalı kaldıktan sonra 2025'te Alanya Belediyesi tarafından herkese açık bir aile plajı olarak yeniden hizmete açıldı.",
+    ceviriler: {
+      en: {
+        sezlong: "Alanya Municipality provides free sunbeds and umbrellas.",
+        cocukUygun: "Known as a family beach thanks to its wide sand and gently sloping seabed.",
+        notlar: "Has a wide sandy shore roughly 700 meters long. Between 2017 and 2019 it operated as a women-only beach, which is why some sources still refer to it as the 'Women's Beach'; after being closed for years, it reopened in 2025 under Alanya Municipality as a family beach open to everyone."
+      },
+      de: {
+        sezlong: "Die Stadtverwaltung Alanya stellt kostenlose Liegen und Sonnenschirme zur Verfügung.",
+        cocukUygun: "Dank des breiten Sandstrands und des allmählich abfallenden Meeresbodens als Familienstrand bekannt.",
+        notlar: "Verfügt über einen breiten Sandstrand von etwa 700 Metern Länge. Zwischen 2017 und 2019 wurde er als reiner Frauenstrand betrieben, weshalb er in manchen Quellen noch als „Frauenstrand“ bezeichnet wird; nach jahrelanger Schließung wurde er 2025 von der Stadtverwaltung Alanya als für alle offener Familienstrand wiedereröffnet."
+      },
+      ru: {
+        sezlong: "Муниципалитет Аланьи предоставляет бесплатные шезлонги и зонтики.",
+        cocukUygun: "Известен как семейный пляж благодаря широкому песчаному берегу и постепенно углубляющемуся дну.",
+        notlar: "Имеет широкий песчаный берег длиной около 700 метров. С 2017 по 2019 год работал как пляж только для женщин, поэтому в некоторых источниках до сих пор упоминается как «Женский пляж»; после многолетнего закрытия в 2025 году муниципалитет Аланьи вновь открыл его как семейный пляж, доступный для всех."
+      }
+    },
+    fotograflar: [
+      "images/aysultan/aysultan-1.jpg",
+      "images/aysultan/aysultan-2.jpg",
+      "images/aysultan/aysultan-3.jpg",
+      "images/aysultan/aysultan-4.jpg"
+    ],
+    kaynak: "internet",
+    kaynaklar: ["isletmeler.alanya.bel.tr", "mersinhaber.com", "alanyapostasi.com.tr", "yenialanya.com"],
+    haritaLinki: "https://maps.google.com/?q=Aysultan+Halk+Plajı+Alanya+Antalya"
   }
 
 ];
