@@ -50,7 +50,7 @@
       const sayi = PLAJLAR.filter(p => p.ilce === ilce && p.il === il).length;
       const a = document.createElement("a");
       a.className = `ilce-kart ${renkler[i % renkler.length]}`;
-      a.href = `liste.html?ilce=${encodeURIComponent(ilce)}`;
+      a.href = `liste.html?il=${encodeURIComponent(il)}&ilce=${encodeURIComponent(ilce)}`;
       a.innerHTML = `
         <span class="ilce-adi">${ilce}</span>
         <span class="ilce-sayi">${sayi > 0 ? sayi + " " + t("beachSuffix") : t("comingSoon")}</span>
