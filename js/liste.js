@@ -35,22 +35,53 @@ function parkRozetMetni(park) {
   return t("parkNone");
 }
 
+function kartRozetAdaylari(p) {
+  const adaylar = [];
+  if (p.derinlik && p.derinlik !== "Bilinmiyor") adaylar.push([IKON.dalga, trValue("derinlik", p.derinlik)]);
+  if (p.zemin && p.zemin !== "Bilinmiyor") adaylar.push([IKON.zemin, trValue("zemin", p.zemin)]);
+  if (p.dus === true) adaylar.push([IKON.dus, t("showerYes")]);
+  if (p.tuvalet === true) adaylar.push([IKON.tuvalet, t("toiletYes")]);
+  if (p.park === "ucretsiz") adaylar.push([IKON.park, parkRozetMetni(p.park)]);
+  return adaylar.slice(0, 2);
+}
+
 function kartOlustur(p) {
   const a = document.createElement("a");
-  a.className = `plaj-kart ${SEHIR_RENK[p.il] || "r1"}`;
   a.href = `plaj.html?id=${p.id}`;
+  const kapakFoto = p.fotograflar && p.fotograflar.length > 0 ? p.fotograflar[0] : null;
+
+  if (!kapakFoto) {
+    // Fotoğrafı olmayan plajlar için eski (renkli blok) kart
+    a.className = `plaj-kart ${SEHIR_RENK[p.il] || "r1"}`;
+    a.innerHTML = `
+      <div class="plaj-kart-baslik">
+        <h2>${p.isim}</h2>
+        <span class="ilce-etiket">${p.ilce} / ${p.il}</span>
+      </div>
+      <div class="yildiz-rozet">${yildizHtmlOlustur(plajYildizHesapla(p))}</div>
+      <div class="rozet-satir">
+        ${p.zemin && p.zemin !== "Bilinmiyor" ? `<span class="rozet">${trValue("zemin", p.zemin)}</span>` : ""}
+        ${p.derinlik && p.derinlik !== "Bilinmiyor" ? `<span class="rozet">${trValue("derinlik", p.derinlik)}</span>` : ""}
+        ${p.park && p.park !== "bilinmiyor" ? `<span class="rozet ${parkRozetSinifi(p.park)}">${parkRozetMetni(p.park)}</span>` : ""}
+        ${p.dus === true ? `<span class="rozet ucretsiz">${t("showerYes")}</span>` : ""}
+        ${p.tuvalet === true ? `<span class="rozet ucretsiz">${t("toiletYes")}</span>` : (p.tuvalet === false ? `<span class="rozet yok">${t("toiletNo")}</span>` : "")}
+      </div>
+    `;
+    return a;
+  }
+
+  a.className = "plaj-kart-foto";
+  const rozetler = kartRozetAdaylari(p);
   a.innerHTML = `
-    <div class="plaj-kart-baslik">
+    <img class="plaj-kart-img" src="${kapakFoto}" alt="${p.isim}" loading="lazy">
+    <div class="plaj-kart-scrim"></div>
+    <div class="plaj-kart-puan">${IKON.yildiz}${plajYildizHesapla(p)}</div>
+    <div class="plaj-kart-icerik">
+      <div class="plaj-kart-konum">${p.ilce.toUpperCase()} &middot; ${p.il.toUpperCase()}</div>
       <h2>${p.isim}</h2>
-      <span class="ilce-etiket">${p.ilce} / ${p.il}</span>
-    </div>
-    <div class="yildiz-rozet">${yildizHtmlOlustur(plajYildizHesapla(p))}</div>
-    <div class="rozet-satir">
-      ${p.zemin && p.zemin !== "Bilinmiyor" ? `<span class="rozet">${trValue("zemin", p.zemin)}</span>` : ""}
-      ${p.derinlik && p.derinlik !== "Bilinmiyor" ? `<span class="rozet">${trValue("derinlik", p.derinlik)}</span>` : ""}
-      ${p.park && p.park !== "bilinmiyor" ? `<span class="rozet ${parkRozetSinifi(p.park)}">${parkRozetMetni(p.park)}</span>` : ""}
-      ${p.dus === true ? `<span class="rozet ucretsiz">${t("showerYes")}</span>` : ""}
-      ${p.tuvalet === true ? `<span class="rozet ucretsiz">${t("toiletYes")}</span>` : (p.tuvalet === false ? `<span class="rozet yok">${t("toiletNo")}</span>` : "")}
+      <div class="plaj-kart-rozetler">
+        ${rozetler.map(([ikon, metin]) => `<span class="plaj-kart-rozet">${ikon}${metin}</span>`).join("")}
+      </div>
     </div>
   `;
   return a;

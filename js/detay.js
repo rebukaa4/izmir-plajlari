@@ -28,7 +28,7 @@ if (!plaj) {
     ? `<div class="foto-galeri">
         ${plaj.fotograflar.map(src => `<img src="${src}" alt="${plaj.isim}" loading="lazy">`).join("")}
       </div>`
-    : `<div class="gorsel-yer-tutucu">🏖️</div>`;
+    : `<div class="gorsel-yer-tutucu">${IKON.plaj}</div>`;
 
   const kaynakRozetHtml = plaj.kaynak === "internet"
     ? `<div class="kaynak-uyari">${t("sourceDisclaimer")}</div>`
@@ -83,6 +83,7 @@ if (!plaj) {
 }
 
 function tesisKartiOlustur(plaj) {
+  const ikonlar = { [t("shower")]: IKON.dus, [t("toilet")]: IKON.tuvalet, [t("cabin")]: IKON.kabin };
   const bilinenler = [
     [t("shower"), plaj.dus],
     [t("toilet"), plaj.tuvalet],
@@ -95,7 +96,13 @@ function tesisKartiOlustur(plaj) {
     <div class="bilgi-karti">
       <h3>${t("facilitiesTitle")}</h3>
       ${bilinenler.map(([etiket, deger]) => `
-        <div class="bilgi-satir"><span class="etiket">${etiket}</span><span class="deger">${deger ? t("yes") : t("no")}</span></div>
+        <div class="ikon-satir">
+          <span class="ikon-cip${deger ? "" : " olumsuz"}">${ikonlar[etiket]}</span>
+          <div>
+            <div class="konfor-etiket">${etiket}</div>
+            <div class="konfor-deger">${deger ? t("yes") : t("no")}</div>
+          </div>
+        </div>
       `).join("")}
       ${plaj.tuvaletNotu ? `<p class="not-metni">${lc(plaj, "tuvaletNotu")}</p>` : ""}
     </div>`;
@@ -103,13 +110,13 @@ function tesisKartiOlustur(plaj) {
 
 function konforKartiOlustur(plaj) {
   const satirlar = [
-    [t("walkDistance"), lc(plaj, "yayaMesafe"), "🚶"],
-    [t("sunbed"), lc(plaj, "sezlong"), "⛱️"],
-    [t("waveCondition"), lc(plaj, "dalgaDurumu"), "🌊"],
-    [t("shopping"), lc(plaj, "aliverisYemeIcme"), "🛍️"],
-    [t("childFriendly"), lc(plaj, "cocukUygun"), "🧒"],
-    [t("crowdLevel"), lc(plaj, "kalabalik"), "👥"],
-    [t("cleanliness"), lc(plaj, "temizlik"), "🧹"]
+    [t("walkDistance"), lc(plaj, "yayaMesafe"), IKON.yurume],
+    [t("sunbed"), lc(plaj, "sezlong"), IKON.semsiye],
+    [t("waveCondition"), lc(plaj, "dalgaDurumu"), IKON.dalga],
+    [t("shopping"), lc(plaj, "aliverisYemeIcme"), IKON.torba],
+    [t("childFriendly"), lc(plaj, "cocukUygun"), IKON.cocuk],
+    [t("crowdLevel"), lc(plaj, "kalabalik"), IKON.kalabalik],
+    [t("cleanliness"), lc(plaj, "temizlik"), IKON.temizlik]
   ].filter(([, deger]) => deger);
 
   if (satirlar.length === 0) return "";
@@ -118,8 +125,8 @@ function konforKartiOlustur(plaj) {
     <div class="bilgi-karti">
       <h3>${t("beachComfort")}</h3>
       ${satirlar.map(([etiket, deger, ikon]) => `
-        <div class="konfor-satir">
-          <span class="konfor-ikon">${ikon}</span>
+        <div class="ikon-satir">
+          <span class="ikon-cip">${ikon}</span>
           <div>
             <div class="konfor-etiket">${etiket}</div>
             <div class="konfor-deger">${deger}</div>

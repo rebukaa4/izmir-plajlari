@@ -15,6 +15,11 @@
 
 * { box-sizing: border-box; }
 
+/* Sayfalar arası yumuşak geçiş (destekleyen tarayıcılarda; desteklemeyende hiçbir etkisi yok) */
+@view-transition {
+  navigation: auto;
+}
+
 /* Dil seçici */
 .dil-secici {
   display: flex;
@@ -630,6 +635,103 @@ header.app-header p {
   transform: scale(0.98);
 }
 
+/* Fotoğraflı liste kartı */
+.plaj-kart-foto {
+  position: relative;
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 148px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px -8px rgba(10, 40, 45, 0.45);
+}
+
+.plaj-kart-foto:active {
+  transform: scale(0.98);
+}
+
+.plaj-kart-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(135deg, var(--kum), #e8d3a0);
+}
+
+.plaj-kart-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 30, 35, 0) 40%, rgba(6, 24, 28, 0.82) 100%);
+}
+
+.plaj-kart-puan {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  padding: 4px 10px 4px 7px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--metin);
+}
+
+.plaj-kart-puan svg {
+  width: 11px;
+  height: 11px;
+  color: #f5a623;
+}
+
+.plaj-kart-icerik {
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: 10px;
+  color: #fff;
+}
+
+.plaj-kart-konum {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.plaj-kart-icerik h2 {
+  margin: 1px 0 7px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.02rem;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.plaj-kart-rozetler {
+  display: flex;
+  gap: 6px;
+}
+
+.plaj-kart-rozet {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 3px 9px 3px 7px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.plaj-kart-rozet svg {
+  width: 11px;
+  height: 11px;
+}
+
 .plaj-kart-baslik {
   display: flex;
   justify-content: space-between;
@@ -738,7 +840,13 @@ header.app-header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.4rem;
+}
+
+.gorsel-yer-tutucu svg {
+  width: 52px;
+  height: 52px;
+  color: var(--deniz-koyu);
+  opacity: 0.55;
 }
 
 .foto-galeri {
@@ -806,7 +914,7 @@ header.app-header p {
   background: var(--kart-bg);
   border-radius: var(--radius);
   padding: 14px 16px;
-  border: 1px solid #eef0f2;
+  box-shadow: 0 10px 24px -16px rgba(15, 40, 45, 0.35);
 }
 
 .bilgi-karti h3 {
@@ -835,19 +943,36 @@ header.app-header p {
   margin: 0;
 }
 
-.konfor-satir {
+.ikon-satir {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 8px 0;
+  gap: 12px;
+  padding: 10px 0;
   border-bottom: 1px solid #f1f3f5;
 }
 
-.konfor-satir:last-child { border-bottom: none; }
+.ikon-satir:last-child { border-bottom: none; }
 
-.konfor-ikon {
-  font-size: 1.2rem;
-  line-height: 1.4;
+.ikon-cip {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: #e1f2f6;
+  color: var(--deniz);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ikon-cip svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ikon-cip.olumsuz {
+  background: #fbeae8;
+  color: var(--kirmizi);
 }
 
 .konfor-etiket {
