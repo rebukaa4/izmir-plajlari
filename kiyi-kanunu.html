@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kıyı Kanunu — Ücretsiz Halk Plajları</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#0f7ea3">
+<meta name="color-scheme" content="light only">
+<link rel="stylesheet" href="css/fonts.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=42">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="dil-secici sag-ust" id="dil-secici"></div>
+  <a href="index.html" class="geri-link" data-i18n="backToHomePage">&larr; Ana Sayfa</a>
+  <h1 data-i18n="coastalLawHeading">Kıyı Kanunu Nedir?</h1>
+  <p data-i18n="coastalLawUpdated">3621 sayılı Kanun'a dayanan özet bilgilendirme</p>
+</header>
+
+<div class="detay-icerik">
+
+  <div class="bilgi-karti">
+    <p class="not-metni" data-i18n="coastalLawIntro">Türkiye'de kıyılar ve plajlar herkesin ortak malıdır. Bu sayfa, 3621 sayılı Kıyı Kanunu'nun halkın plaj kullanım haklarıyla ilgili en önemli hükümlerini özetler.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawOwnershipTitle">Kıyılar kime ait?</h3>
+    <p class="not-metni" data-i18n="coastalLawOwnershipText">Kıyılar Devletin hüküm ve tasarrufu altındadır ve herkesin eşit ve serbestçe yararlanmasına açıktır (Madde 5). Hiç kimse kıyıyı kendi mülkü gibi kullanamaz.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawFreeAccessTitle">Denize girmek ve kumsalda oturmak ücretsizdir</h3>
+    <p class="not-metni" data-i18n="coastalLawFreeAccessText">Hiçbir işletme sizi denize girmekten, kumsalda kendi havlunuzu sermekten veya kıyı boyunca yürümekten alıkoyamaz ya da bunun karşılığında ücret talep edemez. Yalnızca şezlong, şemsiye, yiyecek-içecek gibi ek hizmetler ücretli olabilir.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawForbiddenTitle">Kıyıda yasak olanlar (Madde 6)</h3>
+    <p class="not-metni" data-i18n="coastalLawForbiddenText">Kıyıda hiçbir yapı inşa edilemez. Duvar, çit, parmaklık, tel örgü, hendek, kazık veya benzeri hiçbir engel konulamaz. Kıyıyı değiştirecek kazı yapılamaz, kum veya çakıl alınamaz. Moloz, toprak, çöp gibi atıklar dökülemez.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawDistanceTitle">Yapılaşma mesafeleri</h3>
+    <p class="not-metni" data-i18n="coastalLawDistanceText">Kıyı kenar çizgisinden itibaren ilk 50 metreye hiçbir bina yapılamaz; bu alan yalnızca yaya yolu, gezinti, dinlenme ve seyir amacıyla düzenlenebilir. Sahil şeridi, kıyı kenar çizgisinden itibaren en az 100 metre genişlikte korunur.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawRightsTitle">Hakkınız engellenirse</h3>
+    <p class="not-metni" data-i18n="coastalLawRightsText">Yargı kararlarına göre halkın kıyıya serbest erişimini engellemek hukuka aykırıdır. Bir sorunla karşılaşırsanız ilgili belediyeye, Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'ne veya CİMER (cimer.gov.tr) üzerinden bildirimde bulunabilirsiniz.</p>
+  </div>
+
+  <div class="bilgi-karti">
+    <h3 data-i18n="coastalLawSourceTitle">Kaynak</h3>
+    <p class="not-metni" data-i18n="coastalLawSourceText">Bu özet, 3621 sayılı Kıyı Kanunu'na dayanmaktadır. Kanunun resmi tam metnine aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
+    <p class="not-metni"><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3621&MevzuatTur=1&MevzuatTertip=5" target="_blank" rel="noopener" data-i18n="coastalLawSourceLinkText">3621 sayılı Kıyı Kanunu — mevzuat.gov.tr</a></p>
+  </div>
+
+</div>
+
+<script src="js/i18n.js?v=8"></script>
+<script>
+  document.title = t("pageTitleCoastalLaw");
+  dilSeciciOlustur("dil-secici");
+  applyI18n();
+</script>
+</body>
+</html>
