@@ -6,7 +6,7 @@ const DIL_ISIM = { tr: "Türkçe", en: "English", de: "Deutsch", ru: "Русск
 
 const I18N = {
   tr: {
-    freeBadge: "🆓 Ücretsiz Halk Plajları",
+    freeBadge: "Ücretsiz Halk Plajları",
     heroTitle: "Nereye gidelim?",
     heroSubtitle: "Güzel bir plajı herkes hak eder",
     searchPlaceholder: "Plaj ara... (örn. Mimoza, Altınkum)",
@@ -122,7 +122,7 @@ const I18N = {
   },
 
   en: {
-    freeBadge: "🆓 Free Public Beaches",
+    freeBadge: "Free Public Beaches",
     heroTitle: "Where shall we go?",
     heroSubtitle: "Everyone deserves a great beach",
     searchPlaceholder: "Search a beach... (e.g. Mimoza, Altınkum)",
@@ -238,7 +238,7 @@ const I18N = {
   },
 
   de: {
-    freeBadge: "🆓 Kostenlose öffentliche Strände",
+    freeBadge: "Kostenlose öffentliche Strände",
     heroTitle: "Wohin soll's gehen?",
     heroSubtitle: "Jeder verdient einen schönen Strand",
     searchPlaceholder: "Strand suchen... (z. B. Mimoza, Altınkum)",
@@ -354,7 +354,7 @@ const I18N = {
   },
 
   ru: {
-    freeBadge: "🆓 Бесплатные общественные пляжи",
+    freeBadge: "Бесплатные общественные пляжи",
     heroTitle: "Куда отправимся?",
     heroSubtitle: "Каждый заслуживает хороший пляж",
     searchPlaceholder: "Поиск пляжа... (напр. Mimoza, Altınkum)",
