@@ -13,6 +13,11 @@ const PARK_SIRASI = ["ucretsiz", "kismi", "ucretli", "bilinmiyor"];
 
 // Seçili filtre durumu
 const secili = { il: "", ilce: "", zemin: "", derinlik: "", park: "" };
+let gelismisAcik = false;
+
+function aktifGelismisSayisi() {
+  return ["zemin", "derinlik", "park"].filter(k => secili[k]).length;
+}
 
 function parkRozetSinifi(park) {
   if (park === "ucretsiz") return "ucretsiz";
@@ -122,9 +127,28 @@ function filtreleriCiz() {
   filtrelerEl.innerHTML = "";
   filtrelerEl.appendChild(chipGrubuOlustur("il", "allCities", v => v));
   filtrelerEl.appendChild(chipGrubuOlustur("ilce", "allDistricts", v => v));
-  filtrelerEl.appendChild(chipGrubuOlustur("zemin", "allGrounds"));
-  filtrelerEl.appendChild(chipGrubuOlustur("derinlik", "allDepths"));
-  filtrelerEl.appendChild(chipGrubuOlustur("park", "allParking", parkRozetMetni, PARK_SIRASI));
+
+  const sayi = aktifGelismisSayisi();
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "gelismis-filtre-toggle" + (gelismisAcik ? " acik" : "");
+  toggle.innerHTML = `
+    <span>${t("moreFilters")}</span>
+    ${sayi > 0 ? `<span class="gelismis-rozet">${sayi}</span>` : ""}
+    <span class="gelismis-ok">▾</span>
+  `;
+  toggle.addEventListener("click", () => {
+    gelismisAcik = !gelismisAcik;
+    filtreleriCiz();
+  });
+  filtrelerEl.appendChild(toggle);
+
+  const gelismisKapsayici = document.createElement("div");
+  gelismisKapsayici.className = "gelismis-filtreler" + (gelismisAcik ? " acik" : "");
+  gelismisKapsayici.appendChild(chipGrubuOlustur("zemin", "allGrounds"));
+  gelismisKapsayici.appendChild(chipGrubuOlustur("derinlik", "allDepths"));
+  gelismisKapsayici.appendChild(chipGrubuOlustur("park", "allParking", parkRozetMetni, PARK_SIRASI));
+  filtrelerEl.appendChild(gelismisKapsayici);
 }
 
 function turkceKucuk(s) {

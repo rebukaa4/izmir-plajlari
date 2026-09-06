@@ -538,6 +538,60 @@ header.app-header p {
   transform: scale(0.96);
 }
 
+.gelismis-filtre-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  margin: 0 16px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid #bfe6da;
+  background: white;
+  color: var(--deniz-koyu);
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.gelismis-filtre-toggle:active {
+  transform: scale(0.96);
+}
+
+.gelismis-rozet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--deniz);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.gelismis-ok {
+  transition: transform 0.15s;
+  font-size: 0.75rem;
+}
+
+.gelismis-filtre-toggle.acik .gelismis-ok {
+  transform: rotate(180deg);
+}
+
+.gelismis-filtreler {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gelismis-filtreler.acik {
+  display: flex;
+}
+
 .sonuc-sayisi {
   padding: 10px 16px 4px;
   font-size: 0.85rem;
