@@ -138,38 +138,73 @@ function konforKartiOlustur(plaj) {
 
 function acLightbox(fotograflar, baslangicIndex) {
   let index = baslangicIndex;
+  const sayi = fotograflar.length;
 
   const kapak = document.createElement("div");
   kapak.className = "lightbox";
   kapak.innerHTML = `
-    <div class="lightbox-sayac">${index + 1} / ${fotograflar.length}</div>
-    <img src="${fotograflar[index]}" alt="">
+    <div class="lightbox-sayac">${index + 1} / ${sayi}</div>
+    <div class="lightbox-viewport">
+      <div class="lightbox-track">
+        ${fotograflar.map(src => `<img src="${src}" alt="" draggable="false">`).join("")}
+      </div>
+    </div>
     <button type="button" class="lightbox-kapat">${t("lightboxClose")}</button>
   `;
 
-  const img = kapak.querySelector("img");
+  const viewport = kapak.querySelector(".lightbox-viewport");
+  const track = kapak.querySelector(".lightbox-track");
   const sayac = kapak.querySelector(".lightbox-sayac");
   const kapatButon = kapak.querySelector(".lightbox-kapat");
 
-  function goster(yeniIndex) {
-    index = (yeniIndex + fotograflar.length) % fotograflar.length;
-    img.src = fotograflar[index];
-    sayac.textContent = `${index + 1} / ${fotograflar.length}`;
+  // Fotoğraflar parmakla/fareyle sürüklenerek gerçek zamanlı kaydırılır,
+  // bırakıldığında en yakın fotoğrafa yumuşakça oturur.
+  function konumlandir(animasyonlu) {
+    track.style.transition = animasyonlu ? "transform 0.28s cubic-bezier(.22,.61,.36,1)" : "none";
+    track.style.transform = `translateX(${-index * viewport.clientWidth}px)`;
+    sayac.textContent = `${index + 1} / ${sayi}`;
   }
 
-  // Fotoğraflar yalnızca parmakla kaydırılarak değişir: sola → sonraki, sağa → önceki
   let baslangicX = null;
-  kapak.addEventListener("touchstart", (e) => {
-    baslangicX = e.touches[0].clientX;
-  }, { passive: true });
-  kapak.addEventListener("touchend", (e) => {
-    if (baslangicX === null) return;
-    const fark = e.changedTouches[0].clientX - baslangicX;
+  let surukleniyor = false;
+
+  function baslat(x) {
+    baslangicX = x;
+    surukleniyor = true;
+    track.style.transition = "none";
+    viewport.classList.add("suruklenir");
+  }
+
+  function tasi(x) {
+    if (!surukleniyor) return;
+    const fark = x - baslangicX;
+    track.style.transform = `translateX(${-index * viewport.clientWidth + fark}px)`;
+  }
+
+  function birak(x) {
+    if (!surukleniyor) return;
+    surukleniyor = false;
+    viewport.classList.remove("suruklenir");
+    const fark = x - baslangicX;
     baslangicX = null;
-    if (Math.abs(fark) >= 40) {
-      goster(fark < 0 ? index + 1 : index - 1);
+    if (Math.abs(fark) >= 50) {
+      index = (index + (fark < 0 ? 1 : -1) + sayi) % sayi;
     }
-  }, { passive: true });
+    konumlandir(true);
+  }
+
+  viewport.addEventListener("touchstart", (e) => baslat(e.touches[0].clientX), { passive: true });
+  viewport.addEventListener("touchmove", (e) => tasi(e.touches[0].clientX), { passive: true });
+  viewport.addEventListener("touchend", (e) => birak(e.changedTouches[0].clientX));
+
+  viewport.addEventListener("pointerdown", (e) => {
+    if (e.pointerType === "touch") return;
+    baslat(e.clientX);
+  });
+  window.addEventListener("pointermove", (e) => tasi(e.clientX));
+  window.addEventListener("pointerup", (e) => birak(e.clientX));
+
+  window.addEventListener("resize", () => konumlandir(false));
 
   kapatButon.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -177,4 +212,5 @@ function acLightbox(fotograflar, baslangicIndex) {
   });
 
   document.body.appendChild(kapak);
+  konumlandir(false);
 }
