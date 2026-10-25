@@ -390,3 +390,19 @@
   .ana-icerik { margin-top: -32px; }
   .sehir-grid { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* Dil düğmeleri her fotoğrafta okunabilsin: koyu buzlu cam */
+.yeni-anasayfa .dil-secici .dil-buton {
+  background: rgba(4, 30, 45, .42);
+  border-color: rgba(255, 255, 255, .28);
+  color: #fff;
+  backdrop-filter: blur(10px) saturate(1.2);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+}
+.yeni-anasayfa .dil-secici .dil-buton .dil-isim { color: rgba(255, 255, 255, .85); }
+.yeni-anasayfa .dil-secici .dil-buton.aktif {
+  background: rgba(255, 255, 255, .92);
+  color: var(--gece);
+}
+.yeni-anasayfa .dil-secici .dil-buton.aktif .dil-isim { color: var(--yazi-soluk); }
+.vitrin-kanun { background: rgba(4, 30, 45, .42) !important; }
