@@ -26,7 +26,12 @@ if (!plaj) {
 
   const fotografHtml = (plaj.fotograflar && plaj.fotograflar.length > 0)
     ? `<div class="foto-galeri">
-        ${plaj.fotograflar.map(src => `<img src="${src}" alt="${plaj.isim}" loading="lazy">`).join("")}
+        ${plaj.fotograflar.map((src, i) => {
+          const kucuk = typeof kucukFoto === "function" ? kucukFoto(src) : src;
+          const onizleme = i === 0 && typeof KAPAK_ONIZLEME !== "undefined" && KAPAK_ONIZLEME[src];
+          return `<img src="${kucuk}" alt="${plaj.isim}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
+            ${onizleme ? `style="background:url(${onizleme}) center/cover"` : ""} onerror="this.onerror=null;this.src='${src}'">`;
+        }).join("")}
       </div>`
     : `<div class="gorsel-yer-tutucu">${IKON.plaj}</div>`;
 

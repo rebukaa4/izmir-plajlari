@@ -71,9 +71,12 @@ function kartOlustur(p) {
   }
 
   a.className = "plaj-kart-foto";
+  const onizleme = (typeof KAPAK_ONIZLEME !== "undefined" && KAPAK_ONIZLEME[kapakFoto]) || "";
+  if (onizleme) a.style.backgroundImage = `url(${onizleme})`;
   const rozetler = kartRozetAdaylari(p);
   a.innerHTML = `
-    <img class="plaj-kart-img" src="${kapakFoto}" alt="${p.isim}" loading="lazy">
+    <img class="plaj-kart-img" src="${kucukFoto(kapakFoto)}" alt="${p.isim}" loading="lazy" decoding="async"
+      onload="this.classList.add('yuklendi')" onerror="this.onerror=null;this.src='${kapakFoto}'">
     <div class="plaj-kart-scrim"></div>
     <div class="plaj-kart-puan">${IKON.yildiz}${plajYildizHesapla(p)}</div>
     <div class="plaj-kart-icerik">
@@ -97,8 +100,19 @@ function aktifFiltreler(haric) {
   };
 }
 
+// Ana sayfadaki "Ne arıyorsun?" kısayolları (liste.html?ozellik=...)
+const OZELLIKLER = {
+  cocuk: { etiket: "qKids", ikon: "👨‍👩‍👧", test: p => p.derinlik === "Sığ" || p.derinlik === "Çok Sığ" },
+  park: { etiket: "qFreePark", ikon: "🅿️", test: p => p.park === "ucretsiz" },
+  kumsal: { etiket: "qSand", ikon: "🏖️", test: p => p.zemin === "Kumsal" || p.zemin === "Kum" },
+  dus: { etiket: "qShower", ikon: "🚿", test: p => p.dus === true },
+  mavi: { etiket: "qBlueFlag", ikon: "🏳️", test: p => /mavi bayrak/i.test(`${p.temizlik} ${p.notlar}`) }
+};
+let ozellik = "";
+
 function eslesenler(f) {
   return PLAJLAR.filter(p => {
+    if (ozellik && OZELLIKLER[ozellik] && !OZELLIKLER[ozellik].test(p)) return false;
     if (f.il && p.il !== f.il) return false;
     if (f.ilce && p.ilce !== f.ilce) return false;
     if (f.zemin && p.zemin !== f.zemin) return false;
@@ -156,6 +170,21 @@ function chipGrubuOlustur(alanAdi, tumAnahtar, etiketFn, siraliDeger) {
 
 function filtreleriCiz() {
   filtrelerEl.innerHTML = "";
+  if (ozellik && OZELLIKLER[ozellik]) {
+    const o = OZELLIKLER[ozellik];
+    const aktif = document.createElement("button");
+    aktif.type = "button";
+    aktif.className = "ozellik-aktif";
+    aktif.innerHTML = `<span>${o.ikon} ${t(o.etiket)}</span><span class="ozellik-kapat" aria-label="${t("clearQuick")}">✕</span>`;
+    aktif.addEventListener("click", () => {
+      ozellik = "";
+      const u = new URL(location.href);
+      u.searchParams.delete("ozellik");
+      history.replaceState(null, "", u);
+      filtreleVeCiz();
+    });
+    filtrelerEl.appendChild(aktif);
+  }
   filtrelerEl.appendChild(chipGrubuOlustur("il", "allCities", v => v));
   filtrelerEl.appendChild(chipGrubuOlustur("ilce", "allDistricts", v => v));
 
@@ -211,5 +240,6 @@ aramaInput.addEventListener("input", filtreleVeCiz);
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get("il")) secili.il = urlParams.get("il");
 if (urlParams.get("ilce")) secili.ilce = urlParams.get("ilce");
+if (OZELLIKLER[urlParams.get("ozellik")]) ozellik = urlParams.get("ozellik");
 
 filtreleVeCiz();

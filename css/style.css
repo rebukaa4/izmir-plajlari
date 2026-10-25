@@ -1,7 +1,7 @@
 :root {
   color-scheme: light only;
-  --deniz: #0f7ea3;
-  --deniz-koyu: #095670;
+  --deniz: #0e86ad;
+  --deniz-koyu: #06324a;
   --kum: #f4e3c1;
   --yesil: #2f9e5a;
   --turuncu: #d97b1f;
@@ -688,6 +688,9 @@ header.app-header p {
   height: 148px;
   text-decoration: none;
   box-shadow: 0 8px 20px -8px rgba(10, 40, 45, 0.45);
+  /* Fotoğraf gelene kadar aynı fotoğrafın minik bulanık hali görünür */
+  background: linear-gradient(135deg, #8fd3e3, #2a8fb5) center / cover no-repeat;
+  transition: transform 0.15s ease;
 }
 
 .plaj-kart-foto:active {
@@ -700,7 +703,23 @@ header.app-header p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: linear-gradient(135deg, var(--kum), #e8d3a0);
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.45s ease, transform 0.8s cubic-bezier(.2,.7,.2,1);
+}
+
+.plaj-kart-img.yuklendi {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Bulanık önizlemeyi yumuşatmak için kartın arka planına hafif bulanıklık katmanı */
+.plaj-kart-foto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
 }
 
 .plaj-kart-scrim {
@@ -1088,4 +1107,33 @@ header.app-header p {
 
 .geri-bildirim-link:active {
   background: #e8f6f1;
+}
+
+/* Ana sayfa kısayolundan gelinen aktif filtre */
+.ozellik-aktif {
+  display: flex;
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  align-items: center;
+  gap: 8px;
+  margin: 0 16px 10px;
+  padding: 7px 8px 7px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #06324a, #0e86ad);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  box-shadow: 0 8px 18px -10px rgba(6, 50, 74, 0.8);
+}
+.ozellik-kapat {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 0.72rem;
 }
