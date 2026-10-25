@@ -1137,3 +1137,50 @@ header.app-header p {
   background: rgba(255, 255, 255, 0.22);
   font-size: 0.72rem;
 }
+
+/* Detay sayfası: başlık plajın fotoğrafının üzerinde */
+header.app-header.fotolu {
+  position: relative;
+  min-height: min(48vh, 420px);
+  min-height: min(48svh, 420px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 72px 18px 22px;
+  background: #06324a var(--kapak, none) center / cover no-repeat;
+  isolation: isolate;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+header.app-header.fotolu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(4, 30, 45, .55) 0%, rgba(4, 30, 45, 0) 30%),
+    linear-gradient(0deg, rgba(4, 30, 45, .9) 0%, rgba(4, 30, 45, .25) 45%, rgba(4, 30, 45, 0) 70%);
+}
+header.app-header.fotolu:not(.hazir) { filter: saturate(1.1); }
+header.app-header.fotolu .geri-link {
+  position: absolute;
+  top: max(14px, env(safe-area-inset-top));
+  left: 14px;
+  background: rgba(4, 30, 45, .42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: rgba(255, 255, 255, .3);
+}
+header.app-header.fotolu .dil-secici .dil-buton {
+  background: rgba(4, 30, 45, .42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+header.app-header.fotolu .dil-secici .dil-buton.aktif { background: rgba(255, 255, 255, .92); color: #06324a; }
+header.app-header.fotolu h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: clamp(1.7rem, 7.5vw, 2.3rem);
+  line-height: 1.05;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .4);
+}
+header.app-header.fotolu p { opacity: .95; }

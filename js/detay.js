@@ -24,11 +24,25 @@ if (!plaj) {
   basligEl.textContent = plaj.isim;
   ilceEl.innerHTML = `${plaj.ilce} / ${plaj.il} &nbsp;<span class="yildiz-rozet">${yildizHtmlOlustur(plajYildizHesapla(plaj))}</span>`;
 
+  // Başlık, plajın kendi fotoğrafının üzerinde: önce bulanık önizleme → küçük kopya → büyük foto
+  if (plaj.fotograflar && plaj.fotograflar.length) {
+    const baslik = document.querySelector("header.app-header");
+    const kapak = plaj.fotograflar[0];
+    const onizleme = typeof KAPAK_ONIZLEME !== "undefined" && KAPAK_ONIZLEME[kapak];
+    baslik.classList.add("fotolu");
+    if (onizleme) baslik.style.setProperty("--kapak", `url(${onizleme})`);
+    const katman = (src, sonra) => { const im = new Image(); im.onload = () => { baslik.style.setProperty("--kapak", `url("${new URL(src, location.href).href}")`); baslik.classList.add("hazir"); sonra && sonra(); }; im.src = src; };
+    katman(typeof kucukFoto === "function" ? kucukFoto(kapak) : kapak, () => setTimeout(() => katman(kapak), 600));
+    baslik.addEventListener("click", e => { if (!e.target.closest("a, button")) acLightbox(plaj.fotograflar, 0); });
+  }
+
+  // İlk fotoğraf zaten başlıkta; şeritte diğerleri gösterilir
+  const galeriBas = plaj.fotograflar && plaj.fotograflar.length > 1 ? 1 : 0;
   const fotografHtml = (plaj.fotograflar && plaj.fotograflar.length > 0)
     ? `<div class="foto-galeri">
-        ${plaj.fotograflar.map((src, i) => {
+        ${plaj.fotograflar.slice(galeriBas).map((src, i) => {
           const kucuk = typeof kucukFoto === "function" ? kucukFoto(src) : src;
-          const onizleme = i === 0 && typeof KAPAK_ONIZLEME !== "undefined" && KAPAK_ONIZLEME[src];
+          const onizleme = i === 0 && galeriBas === 0 && typeof KAPAK_ONIZLEME !== "undefined" && KAPAK_ONIZLEME[src];
           return `<img src="${kucuk}" alt="${plaj.isim}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
             ${onizleme ? `style="background:url(${onizleme}) center/cover"` : ""} onerror="this.onerror=null;this.src='${src}'">`;
         }).join("")}
@@ -83,7 +97,7 @@ if (!plaj) {
   `;
 
   document.querySelectorAll(".foto-galeri img").forEach((img, i) => {
-    img.addEventListener("click", () => acLightbox(plaj.fotograflar, i));
+    img.addEventListener("click", () => acLightbox(plaj.fotograflar, i + galeriBas));
   });
 }
 
