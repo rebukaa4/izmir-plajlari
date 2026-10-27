@@ -63,7 +63,7 @@ PLAJ_FILTRELERI.forEach(f => {
   b.innerHTML = `<span class="filtre-cip-ikon">${f.ikon}</span><span>${t(f.etiket)}</span><span class="filtre-cip-sayi"></span>`;
   b.addEventListener("click", () => {
     if (secili.includes(f.anahtar)) secili = secili.filter(a => a !== f.anahtar);
-    else secili = secili.filter(a => a !== f.karsit).concat(f.anahtar);
+    else secili = secili.filter(a => !(f.karsit || []).includes(a)).concat(f.anahtar);
     guncelle();
   });
   cipKutusu.appendChild(b);
@@ -89,15 +89,13 @@ function guncelle() {
     if (n) gorunen++;
   });
 
-  // Her çipin yanında: o filtre de eklenirse kaç plaj kalır
+  // Her çipin yanında: bu şehirde o özelliğe sahip plaj sayısı (diğer seçimlerden bağımsız, sabit)
   cipKutusu.querySelectorAll(".filtre-cip").forEach(b => {
     const a = b.dataset.anahtar;
     const acik = secili.includes(a);
-    const f = filtreBul(a);
-    const deneme = acik ? secili : secili.filter(x => x !== f.karsit).concat(a);
-    const n = sehirPlajlari.filter(p => plajFiltreyeUyar(p, deneme)).length;
+    const n = sehirPlajlari.filter(p => plajFiltreyeUyar(p, [a])).length;
     b.classList.toggle("secili", acik);
-    b.classList.toggle("bos", !acik && n === 0);
+    b.classList.toggle("bos", n === 0);
     b.disabled = !acik && n === 0;
     b.setAttribute("aria-pressed", acik ? "true" : "false");
     b.querySelector(".filtre-cip-sayi").textContent = n;
