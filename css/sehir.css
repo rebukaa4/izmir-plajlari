@@ -1,0 +1,209 @@
+/* Şehir sayfası — sade: fotoğraflı başlık, ilçeler, filtreler */
+.sehir-sayfasi {
+  --gece: #06324a;
+  --lagun: #0e86ad;
+  --gunes: #ffc94a;
+  --kum-acik: #fbf7f0;
+  --kum-kenar: #efe5d3;
+  --yazi-koyu: #0f2a36;
+  --yazi-soluk: #5b7480;
+  background: var(--kum-acik);
+  color: var(--yazi-koyu);
+  padding-bottom: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* Başlık: şehrin fotoğrafı */
+.sehir-baslik {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 70px 18px 34px;
+  background: var(--gece) var(--kapak, none) center / cover no-repeat;
+  color: #fff;
+  isolation: isolate;
+}
+.sehir-baslik::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(4, 30, 45, .55) 0%, rgba(4, 30, 45, 0) 40%),
+    linear-gradient(0deg, rgba(4, 30, 45, .85) 0%, rgba(4, 30, 45, 0) 75%);
+}
+.sehir-geri {
+  position: absolute;
+  top: max(14px, env(safe-area-inset-top));
+  left: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(4, 30, 45, .42);
+  border: 1px solid rgba(255, 255, 255, .3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.sehir-baslik .dil-secici .dil-buton {
+  background: rgba(4, 30, 45, .42);
+  border-color: rgba(255, 255, 255, .28);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.sehir-baslik .dil-secici .dil-buton.aktif { background: rgba(255, 255, 255, .92); color: var(--gece); }
+.sehir-baslik h1 {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 10vw, 3rem);
+  line-height: 1;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .4);
+}
+.sehir-baslik p { margin: 4px 0 0; font-weight: 700; opacity: .9; }
+
+/* İçerik kartı başlığın üstüne biner */
+.sehir-icerik {
+  position: relative;
+  min-height: calc(100svh - 182px);
+  margin-top: -18px;
+  padding: 22px 16px max(28px, env(safe-area-inset-bottom));
+  background: var(--kum-acik);
+  border-radius: 24px 24px 0 0;
+}
+.sehir-bolum-baslik {
+  margin: 0 0 12px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/* İlçe kartları */
+.ilce-kartlari {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.ilce-karti {
+  position: relative;
+  min-height: 78px;
+  border-radius: 18px;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #2a8fb5, #06324a);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 22px -16px rgba(6, 50, 74, .9);
+  transition: opacity .3s ease, transform .3s ease, filter .3s ease;
+}
+.ilce-karti img {
+  position: absolute; inset: 0; z-index: -2;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.ilce-karti img.yuklendi { opacity: 1; }
+.ilce-karti::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(4, 30, 45, .85) 0%, rgba(4, 30, 45, .15) 80%);
+}
+.ilce-karti:active { transform: scale(.96); }
+.ilce-karti-ad { font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 1.12rem; line-height: 1.1; }
+.ilce-karti-sayi { font-size: .76rem; font-weight: 700; opacity: .9; }
+/* Filtreye uymayan ilçe kaybolur */
+.ilce-karti.gizli { display: none; }
+
+.filtre-bos {
+  margin: 4px 0 0;
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px dashed var(--kum-kenar);
+  color: var(--yazi-soluk);
+  font-size: .9rem;
+  text-align: center;
+}
+
+/* Filtre çipleri */
+.sehir-icerik section + section { margin-top: 24px; }
+.filtre-baslik-satir { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.filtre-temizle {
+  border: 0;
+  background: none;
+  color: var(--lagun);
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.filtre-cipleri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filtre-cip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px 9px 10px;
+  border-radius: 14px;
+  border: 1px solid var(--kum-kenar);
+  background: #fff;
+  color: var(--yazi-koyu);
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 14px -12px rgba(6, 50, 74, .6);
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .12s ease, opacity .2s ease;
+}
+.filtre-cip:active { transform: scale(.95); }
+.filtre-cip-ikon { font-size: 1rem; }
+.filtre-cip-sayi {
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #eef3f5;
+  color: var(--yazi-soluk);
+  font-size: .72rem;
+  text-align: center;
+}
+.filtre-cip.secili {
+  background: var(--gece);
+  border-color: var(--gece);
+  color: #fff;
+}
+.filtre-cip.secili .filtre-cip-sayi { background: var(--gunes); color: var(--gece); }
+.filtre-cip.bos { opacity: .4; cursor: default; }
+
+/* Tümünü göster */
+.tum-sehir-plajlari {
+  display: block;
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-radius: 18px;
+  background: linear-gradient(120deg, var(--gece), var(--lagun));
+  color: #fff;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 16px 30px -20px rgba(6, 50, 74, .9);
+}
+.tum-sehir-plajlari.pasif { opacity: .45; pointer-events: none; }
+
+@media (min-width: 700px) {
+  .sehir-icerik { max-width: 720px; margin-left: auto; margin-right: auto; }
+  .ilce-kartlari { grid-template-columns: repeat(3, 1fr); }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ücretsiz Halk Plajları Rehberi</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#06324a">
+<meta name="color-scheme" content="light only">
+<style>html { background: #06324a; } body { background: #fbf7f0; }</style>
+<link rel="stylesheet" href="css/fonts.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=52">
+<link rel="stylesheet" href="css/sehir.css?v=2">
+</head>
+<body class="sehir-sayfasi">
+
+<header class="sehir-baslik" id="sehir-baslik">
+  <a href="index.html" class="sehir-geri" data-i18n="backToCities">← Şehirler</a>
+  <div class="dil-secici sag-ust" id="dil-secici"></div>
+  <div class="sehir-baslik-icerik">
+    <h1 id="sehir-adi">Şehir</h1>
+    <p id="sehir-alt"></p>
+  </div>
+</header>
+
+<main class="sehir-icerik">
+  <section>
+    <h2 class="sehir-bolum-baslik" data-i18n="districtQuestion">Hangi bölgede?</h2>
+    <div class="ilce-kartlari" id="ilce-kartlari"></div>
+    <p class="filtre-bos" id="filtre-bos" hidden data-i18n="noDistrictMatch">Bu özelliklerin hepsine uyan plaj yok.</p>
+  </section>
+
+  <section>
+    <div class="filtre-baslik-satir">
+      <h2 class="sehir-bolum-baslik" data-i18n="filterQuestion">Nasıl bir plaj istersiniz?</h2>
+      <button type="button" class="filtre-temizle" id="filtre-temizle" hidden data-i18n="clearFilters">Filtreleri temizle</button>
+    </div>
+    <div class="filtre-cipleri" id="filtre-cipleri"></div>
+  </section>
+
+  <a class="tum-sehir-plajlari" id="tum-sehir-plajlari" href="liste.html"></a>
+</main>
+
+<script src="js/i18n.js?v=11"></script>
+<script src="js/data.js?v=69"></script>
+<script src="js/kapaklar.js?v=1"></script>
+<script src="js/filtreler.js?v=1"></script>
+<script src="js/sehir.js?v=1"></script>
+</body>
+</html>

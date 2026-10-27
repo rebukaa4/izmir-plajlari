@@ -100,19 +100,12 @@ function aktifFiltreler(haric) {
   };
 }
 
-// Ana sayfadaki "Ne arıyorsun?" kısayolları (liste.html?ozellik=...)
-const OZELLIKLER = {
-  cocuk: { etiket: "qKids", ikon: "👨‍👩‍👧", test: p => p.derinlik === "Sığ" || p.derinlik === "Çok Sığ" },
-  park: { etiket: "qFreePark", ikon: "🅿️", test: p => p.park === "ucretsiz" },
-  kumsal: { etiket: "qSand", ikon: "🏖️", test: p => p.zemin === "Kumsal" || p.zemin === "Kum" },
-  dus: { etiket: "qShower", ikon: "🚿", test: p => p.dus === true },
-  mavi: { etiket: "qBlueFlag", ikon: "🏳️", test: p => /mavi bayrak/i.test(`${p.temizlik} ${p.notlar}`) }
-};
-let ozellik = "";
+// Şehir sayfasında seçilen "Nasıl bir plaj?" filtreleri (liste.html?ozellik=kumlu,sig,...) — tanımlar js/filtreler.js'de
+let ozellikler = [];
 
 function eslesenler(f) {
   return PLAJLAR.filter(p => {
-    if (ozellik && OZELLIKLER[ozellik] && !OZELLIKLER[ozellik].test(p)) return false;
+    if (!plajFiltreyeUyar(p, ozellikler)) return false;
     if (f.il && p.il !== f.il) return false;
     if (f.ilce && p.ilce !== f.ilce) return false;
     if (f.zemin && p.zemin !== f.zemin) return false;
@@ -170,22 +163,29 @@ function chipGrubuOlustur(alanAdi, tumAnahtar, etiketFn, siraliDeger) {
 
 function filtreleriCiz() {
   filtrelerEl.innerHTML = "";
-  if (ozellik && OZELLIKLER[ozellik]) {
-    const o = OZELLIKLER[ozellik];
-    const aktif = document.createElement("button");
-    aktif.type = "button";
-    aktif.className = "ozellik-aktif";
-    aktif.innerHTML = `<span>${o.ikon} ${t(o.etiket)}</span><span class="ozellik-kapat" aria-label="${t("clearQuick")}">✕</span>`;
-    aktif.addEventListener("click", () => {
-      ozellik = "";
-      const u = new URL(location.href);
-      u.searchParams.delete("ozellik");
-      history.replaceState(null, "", u);
-      filtreleVeCiz();
+  if (ozellikler.length) {
+    const satir = document.createElement("div");
+    satir.className = "ozellik-satir";
+    ozellikler.forEach(anahtar => {
+      const o = filtreBul(anahtar);
+      const aktif = document.createElement("button");
+      aktif.type = "button";
+      aktif.className = "ozellik-aktif";
+      aktif.innerHTML = `<span>${o.ikon} ${t(o.etiket)}</span><span class="ozellik-kapat" aria-label="${t("clearQuick")}">✕</span>`;
+      aktif.addEventListener("click", () => {
+        ozellikler = ozellikler.filter(a => a !== anahtar);
+        const u = new URL(location.href);
+        if (ozellikler.length) u.searchParams.set("ozellik", ozellikler.join(",")); else u.searchParams.delete("ozellik");
+        history.replaceState(null, "", u);
+        filtreleVeCiz();
+      });
+      satir.appendChild(aktif);
     });
-    filtrelerEl.appendChild(aktif);
+    filtrelerEl.appendChild(satir);
   }
-  filtrelerEl.appendChild(chipGrubuOlustur("il", "allCities", v => v));
+  const ilGrubu = chipGrubuOlustur("il", "allCities", v => v);
+  ilGrubu.classList.add("il-grubu");
+  filtrelerEl.appendChild(ilGrubu);
   filtrelerEl.appendChild(chipGrubuOlustur("ilce", "allDistricts", v => v));
 
   const sayi = aktifGelismisSayisi();
@@ -240,6 +240,28 @@ aramaInput.addEventListener("input", filtreleVeCiz);
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get("il")) secili.il = urlParams.get("il");
 if (urlParams.get("ilce")) secili.ilce = urlParams.get("ilce");
-if (OZELLIKLER[urlParams.get("ozellik")]) ozellik = urlParams.get("ozellik");
+ozellikler = filtreParametresiOku(urlParams);
 
 filtreleVeCiz();
+
+// Şehir sayfasından gelindiyse geri düğmesi o şehre döner (seçili filtrelerle)
+if (secili.il) {
+  const geri = document.querySelector(".geri-link");
+  if (geri) {
+    geri.href = `sehir.html?il=${encodeURIComponent(secili.il)}${ozellikler.length ? "&ozellik=" + ozellikler.join(",") : ""}`;
+    geri.removeAttribute("data-i18n");
+    geri.textContent = `← ${secili.il}`;
+  }
+}
+
+// Şehir/ilçe seçilerek gelindiyse sade görünüm: arama, şehir çipleri ve ek filtreler gizli; başlıkta yer adı
+if (secili.il) {
+  document.body.classList.add("sehirden");
+  const h1 = document.querySelector("header.app-header h1");
+  const alt = document.querySelector("header.app-header p");
+  const yerAdiYaz = () => {
+    if (h1) { h1.removeAttribute("data-i18n"); h1.textContent = secili.ilce || secili.il; }
+    if (alt) { alt.removeAttribute("data-i18n"); alt.textContent = secili.ilce ? secili.il : t("listSubtitle"); }
+  };
+  yerAdiYaz();
+}

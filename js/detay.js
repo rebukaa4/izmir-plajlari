@@ -233,3 +233,9 @@ function acLightbox(fotograflar, baslangicIndex) {
   document.body.appendChild(kapak);
   konumlandir(false);
 }
+
+// "Listeye Dön": gelinen listeye (filtreleriyle birlikte) geri dön
+const listeyeDon = document.querySelector(".geri-link");
+if (listeyeDon && document.referrer && new URL(document.referrer).origin === location.origin) {
+  listeyeDon.addEventListener("click", e => { e.preventDefault(); history.back(); });
+}

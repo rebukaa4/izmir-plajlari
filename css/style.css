@@ -1184,3 +1184,14 @@ header.app-header.fotolu h1 {
   text-shadow: 0 3px 18px rgba(0, 0, 0, .4);
 }
 header.app-header.fotolu p { opacity: .95; }
+
+/* Seçili filtreler satırı (birden fazla olabilir) */
+.ozellik-satir { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 4px; }
+.ozellik-satir .ozellik-aktif { margin: 0; max-width: none; }
+
+/* Liste: şehir sayfasından gelindiğinde sade görünüm */
+body.sehirden .liste-arama,
+body.sehirden .filtreler > .il-grubu,
+body.sehirden .gelismis-filtre-toggle,
+body.sehirden .gelismis-filtreler { display: none; }
+body.sehirden .filtreler { padding-top: 12px; }
